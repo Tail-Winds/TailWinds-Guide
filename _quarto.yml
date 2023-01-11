@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "TailWinds-Guide"
-  author: "Jane Doe"
+  title: "TailWinds Guide"
+  author: "Mike O'Brien, with other in the future"
   date: "1/11/2023"
   chapters:
     - index.qmd
