@@ -1,0 +1,42 @@
+# R
+
+Why do this in R?
+
+You don't have to use R to do any of this -- it also will work with Jupyter notebooks or in the command line, e.g. For the purposes of this guide, I (Mike) am assuming that our current *lingua franca* is R. Also, it's just the language that I'm used to using.
+
+## Install R
+
+So, if you don't have R installed on your machine, go ahead and [download it here](https://cran.r-project.org/), then install. We've already run into issues where old versions of the programs we're using can mess up how the website renders, so check to see if there's a new version of R if you haven't updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?
+
+```{r}
+R.Version()$version.string
+```
+
+Yep.
+
+## RStudio
+
+Again, this isn't the only program that will run Quarto, I'm just assuming that it's common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you're using RStudio. Download [by following this link](https://posit.co/download/rstudio-desktop/) and install.
+
+If you already have RStudio installed, go ahead and check that it's the most-recent version (version 2022.12.0.353). Am I up to date?
+
+```{r}
+#| eval: false
+rstudioapi::versionInfo()$version
+```
+
+Yes.
+
+## Quarto
+
+I'm fairly certain that RStudio comes with a version of [Quarto](https://quarto.org/docs/get-started/), the program we'll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.
+
+Once you install it, restart R/RStudio. Then go to Tools \> Terminal \>New Terminal and type
+
+    quarto --version
+
+It should return 1.2.313 or greater. If it doesn't, let me know!
+
+## GitHub
+
+Pop on over to [GitHub](https://github.com/) and sign up for a free account. After you're done, let me know and I'll add you to the [TailWinds GitHub organization](https://github.com/Tail-Winds).

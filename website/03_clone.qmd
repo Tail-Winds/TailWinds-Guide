@@ -1,0 +1,23 @@
+# Clone
+
+Downloading the website's source code to your computer is also known as "cloning the repository" in Git/GitHub speak.
+
+Think of GitHub as Google Drive and Git as the "track changes" in a Microsoft Word document. When you want to make changes to the Word doc, you:
+
+-   download it to your computer,
+-   edit as you see fit (with Word tracking the changes),
+-   make sure that no one else has edited the document since you last downloaded it,
+    -   (combine the changes if you need to), then
+-   upload the file back to Google Drive for the world to see.
+
+We're doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let's consider the above process, but replacing with Git/GitHub terms:
+
+-   ***clone*** the ***repository*** to your computer
+-   edit as you see fit (with ***commits*** tracking the changes),
+-   ***pull the repository to your computer*** to make sure that no one else has edited the ***repository*** since you last ***pulled***
+    -   (***merge*** the files if you need to), then
+-   ***push your commits*** back to ***GitHub*** for the world to see.
+
+I suggest using RStudio, following the [instructions in section 16.2.2 here](https://happygitwithr.com/existing-github-first.html#rstudio-ide-1) . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.
+
+Now you're good to go!

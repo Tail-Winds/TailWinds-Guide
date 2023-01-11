@@ -1,0 +1,5 @@
+# TailWinds Guide
+
+A guide for the *guide*. Heaven help us.
+
+- index.qmd has to be the first page and it can't be numbered. Messes up the file organization, but oh well.

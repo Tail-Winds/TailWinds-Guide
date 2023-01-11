@@ -7,8 +7,17 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - part: website/website_intro.qmd
+      chapters:
+        - website/01_downloading.qmd
+        - website/02_git.qmd
+        - website/03_clone.qmd
+        - website/04_branch.qmd
+        - website/05_commit.qmd
+        - website/06_pull.qmd
+        - website/07_push.qmd
+        - website/08_pull_request.qmd
+    - 02_guide.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -16,8 +25,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 
 

@@ -1,0 +1,7 @@
+# Installing Git
+
+Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I'm going to outsource the explaining of how to do it.
+
+I'm saying it again: this is the hardest part. *Seriousl*y. Installing git is way more annoying than it should be. Luckily, there's a really good guide called [Happy Git with R](https://happygitwithr.com/install-intro.html) that walks through this process in a friendly manner while being candid about the pitfalls.
+
+The guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website.
