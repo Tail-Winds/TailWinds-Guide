@@ -7,7 +7,7 @@ book:
   date: last-modified
   chapters:
     - index.qmd
-    - part: website/website_intro.qmd
+    - part: website/index.qmd
       chapters:
         - website/01_downloading.qmd
         - website/02_git.qmd
@@ -18,7 +18,15 @@ book:
         - website/07_pull.qmd
         - website/08_push.qmd
         - website/09_pull_request.qmd
-    - 02_guide.qmd
+    - part: guide/index.qmd
+      chapters: 
+        - guide/01_editing.qmd
+    - part: frm/index.qmd
+      chapters:
+        - frm/01_pot.qmd
+        - frm/02_knots.qmd
+        - frm/03_rec.qmd
+        - frm/04_dissection.qmd
     - references.qmd
 
 bibliography: references.bib
