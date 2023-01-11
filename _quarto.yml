@@ -3,7 +3,7 @@ project:
 
 book:
   title: "TailWinds Guide"
-  author: "Mike O'Brien, with other in the future"
+  author: "Mike O'Brien, with others in the future"
   date: last-modified
   chapters:
     - index.qmd
@@ -13,10 +13,11 @@ book:
         - website/02_git.qmd
         - website/03_clone.qmd
         - website/04_branch.qmd
-        - website/05_commit.qmd
-        - website/06_pull.qmd
-        - website/07_push.qmd
-        - website/08_pull_request.qmd
+        - website/05_write.qmd
+        - website/06_commit.qmd
+        - website/07_pull.qmd
+        - website/08_push.qmd
+        - website/09_pull_request.qmd
     - 02_guide.qmd
     - references.qmd
 
