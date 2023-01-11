@@ -7,45 +7,73 @@
     "text": "Preface\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
   },
   {
-    "objectID": "intro.html#r",
-    "href": "intro.html#r",
-    "title": "1  Website",
-    "section": "1.1 R",
-    "text": "1.1 R\nYou don’t have to use R to do any of this – it also will work with Jupyter notebooks or in the command line, e.g. For the purposes of this guide, I’m assuming that our current lingua franca is R.\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install."
+    "objectID": "website/website_intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
+    "href": "website/website_intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
+    "title": "Website",
+    "section": "Create/edit Quarto (.qmd) files for the desired page",
+    "text": "Create/edit Quarto (.qmd) files for the desired page\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes.\nGo to the Git tab and click the “Pull” button. This will download any changes that have made to the website since step 1.\nClick the “Commit” button and select the files you want to add to the website. Put a message describing the changes you’ve made in the “Commit message” box so that others can see what is going on.\nClick “Commit” in the dialog box to log these changes.\nClick the “Push” button. This sends all of your changes to GitHub, where the website is compiled and built in the cloud!\nIn a few seconds, the website will be updated.\n\nWhen making an edit to a page that already exits:\n\nClick “Pull” in the Git tab.\nEdit your file.\nPreview website as before to build the HTML.\nClick “Pull” again.\nCommit changes.\nPush to GitHub"
   },
   {
-    "objectID": "intro.html#rstudio",
-    "href": "intro.html#rstudio",
-    "title": "1  Website",
+    "objectID": "website/01_downloading.html#install-r",
+    "href": "website/01_downloading.html#install-r",
+    "title": "1  R",
+    "section": "1.1 Install R",
+    "text": "1.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
+  },
+  {
+    "objectID": "website/01_downloading.html#rstudio",
+    "href": "website/01_downloading.html#rstudio",
+    "title": "1  R",
     "section": "1.2 RStudio",
-    "text": "1.2 RStudio\nAgain, this isn’t the only program that will do that, I’m just assuming that it’s common language at this point. Download by following this link and install. I’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed.\n\n1.2.1 Quarto\nJust in case I’m wrong about that, click here to download Quarto, then install."
+    "text": "1.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
   },
   {
-    "objectID": "intro.html#git-and-github",
-    "href": "intro.html#git-and-github",
-    "title": "1  Website",
-    "section": "1.3 Git and GitHub",
-    "text": "1.3 Git and GitHub\nThis is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that does a pretty good job walking through this process while being candid about the pitfalls.\nThe guide also walks you through signing up for GitHub, which is easy, free, and neccesary for you to access the website."
+    "objectID": "website/01_downloading.html#quarto",
+    "href": "website/01_downloading.html#quarto",
+    "title": "1  R",
+    "section": "1.3 Quarto",
+    "text": "1.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!"
   },
   {
-    "objectID": "intro.html#download-the-website-to-your-computer",
-    "href": "intro.html#download-the-website-to-your-computer",
-    "title": "1  Website",
-    "section": "1.4 Download the website to your computer",
-    "text": "1.4 Download the website to your computer\nThis is also known as “cloning the repository” in Git/GitHub speak. I suggest using RStudio, following the instructions in section 16.2.2 here. Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
+    "objectID": "website/01_downloading.html#github",
+    "href": "website/01_downloading.html#github",
+    "title": "1  R",
+    "section": "1.4 GitHub",
+    "text": "1.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
   },
   {
-    "objectID": "intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
-    "href": "intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
-    "title": "1  Website",
-    "section": "1.5 Create/edit Quarto (.qmd) files for the desired page",
-    "text": "1.5 Create/edit Quarto (.qmd) files for the desired page\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes.\nGo to the Git tab and click the “Pull” button. This will download any changes that have made to the website since step 1.\nClick the “Commit” button and select the files you want to add to the website. Put a message describing the changes you’ve made in the “Commit message” box so that others can see what is going on.\nClick “Commit” in the dialog box to log these changes.\nClick the “Push” button. This sends all of your changes to GitHub, where the website is compiled and built in the cloud!\nIn a few seconds, the website will be updated.\n\nWhen making an edit to a page that already exits:\n\nClick “Pull” in the Git tab.\nEdit your file.\nPreview website as before to build the HTML.\nClick “Pull” again.\nCommit changes.\nPush to GitHub"
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
+    "objectID": "website/02_git.html",
+    "href": "website/02_git.html",
+    "title": "2  Installing Git",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+    "text": "Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website."
+  },
+  {
+    "objectID": "website/03_clone.html",
+    "href": "website/03_clone.html",
+    "title": "3  Clone",
+    "section": "",
+    "text": "Downloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\n\ndownload it to your computer,\nedit as you see fit (with Word tracking the changes),\nmake sure that no one else has edited the document since you last downloaded it,\n\n(combine the changes if you need to), then\n\nupload the file back to Google Drive for the world to see.\n\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\n\nclone the repository to your computer\nedit as you see fit (with commits tracking the changes),\npull the repository to your computer to make sure that no one else has edited the repository since you last pulled\n\n(merge the files if you need to), then\n\npush your commits back to GitHub for the world to see.\n\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
+  },
+  {
+    "objectID": "website/06_pull.html",
+    "href": "website/06_pull.html",
+    "title": "6  Pull",
+    "section": "",
+    "text": "No, we’re not shooting skeet."
+  },
+  {
+    "objectID": "website/07_push.html",
+    "href": "website/07_push.html",
+    "title": "7  Push",
+    "section": "",
+    "text": "Take a deep breath, like Lamaze for your code."
+  },
+  {
+    "objectID": "02_guide.html",
+    "href": "02_guide.html",
+    "title": "9  TailWinds Guide",
+    "section": "",
+    "text": "A guide for the guide. Heaven help us.\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
   }
 ]
