@@ -1,3 +1,17 @@
-# Preface {.unnumbered}
+# Preface and Definitions {.unnumbered}
 
 This guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we'll see.
+
+## Acronyms
+
+-   EFP: Exempted Fishing Permit
+-   IACUC: International Animal Care and Use Committee
+-   LOA: Letter of Authorization
+-   MMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
+-   FRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
+-   RTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
+
+## Definitions
+
+-   Console: Where you type commands into R.
+-   Terminal: Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
