@@ -5,3 +5,10 @@
 ## Packing list
 
 ## Protocols
+
+## Vessels
+
+| Owner Name       | Vessel Name | Vessel Permit \# | USCG/State \# |
+|------------------|-------------|------------------|---------------|
+| Cory Harrington  | Sea Born    | xxx              | xxx           |
+| Kerry Harrington | Integrity   | xxx              | xxx           |

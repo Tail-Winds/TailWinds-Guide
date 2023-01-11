@@ -1,3 +1,9 @@
 # Editing
 
 More of the same.
+
+But type
+
+`quarto publish`
+
+into the terminal.
