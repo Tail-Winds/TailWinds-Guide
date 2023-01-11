@@ -4,77 +4,21 @@
     "href": "index.html",
     "title": "TailWinds Guide",
     "section": "",
-    "text": "Preface\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
+    "text": "Preface and Definitions\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
   },
   {
-    "objectID": "website/index.html",
-    "href": "website/index.html",
-    "title": "Website",
-    "section": "",
-    "text": "In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once."
+    "objectID": "index.html#acronyms",
+    "href": "index.html#acronyms",
+    "title": "TailWinds Guide",
+    "section": "Acronyms",
+    "text": "Acronyms\n\nEFP: Exempted Fishing Permit\nIACUC: International Animal Care and Use Committee\nLOA: Letter of Authorization\nMMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\nFRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\nRTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
   },
   {
-    "objectID": "website/01_downloading.html#install-r",
-    "href": "website/01_downloading.html#install-r",
-    "title": "1  R",
-    "section": "1.1 Install R",
-    "text": "1.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
-  },
-  {
-    "objectID": "website/01_downloading.html#rstudio",
-    "href": "website/01_downloading.html#rstudio",
-    "title": "1  R",
-    "section": "1.2 RStudio",
-    "text": "1.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
-  },
-  {
-    "objectID": "website/01_downloading.html#quarto",
-    "href": "website/01_downloading.html#quarto",
-    "title": "1  R",
-    "section": "1.3 Quarto",
-    "text": "1.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n1.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n1.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n1.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
-  },
-  {
-    "objectID": "website/01_downloading.html#github",
-    "href": "website/01_downloading.html#github",
-    "title": "1  R",
-    "section": "1.4 GitHub",
-    "text": "1.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
-  },
-  {
-    "objectID": "website/02_git.html",
-    "href": "website/02_git.html",
-    "title": "2  Installing Git",
-    "section": "",
-    "text": "Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website."
-  },
-  {
-    "objectID": "website/03_clone.html",
-    "href": "website/03_clone.html",
-    "title": "3  Clone",
-    "section": "",
-    "text": "Downloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\n\ndownload it to your computer,\nedit as you see fit (with Word tracking the changes),\nmake sure that no one else has edited the document since you last downloaded it,\n\n(combine the changes if you need to), then\n\nupload the file back to Google Drive for the world to see.\n\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\n\nclone the repository to your computer\nedit as you see fit (with commits tracking the changes),\npull the repository to your computer to make sure that no one else has edited the repository since you last pulled\n\n(merge the files if you need to), then\n\npush your commits back to GitHub for the world to see.\n\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
-  },
-  {
-    "objectID": "website/05_write.html",
-    "href": "website/05_write.html",
-    "title": "5  Write",
-    "section": "",
-    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes."
-  },
-  {
-    "objectID": "website/07_pull.html",
-    "href": "website/07_pull.html",
-    "title": "7  Pull",
-    "section": "",
-    "text": "No, we’re not shooting skeet."
-  },
-  {
-    "objectID": "website/08_push.html",
-    "href": "website/08_push.html",
-    "title": "8  Push",
-    "section": "",
-    "text": "Take a deep breath, like Lamaze for your code."
+    "objectID": "index.html#definitions",
+    "href": "index.html#definitions",
+    "title": "TailWinds Guide",
+    "section": "Definitions",
+    "text": "Definitions\n\nConsole: Where you type commands into R.\nTerminal: Command-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
   },
   {
     "objectID": "guide/index.html",
@@ -86,8 +30,155 @@
   {
     "objectID": "guide/01_editing.html",
     "href": "guide/01_editing.html",
-    "title": "10  Editing",
+    "title": "1  Editing",
     "section": "",
-    "text": "More of the same."
+    "text": "More of the same.\nBut type\nquarto publish\ninto the terminal."
+  },
+  {
+    "objectID": "website/index.html",
+    "href": "website/index.html",
+    "title": "Website",
+    "section": "",
+    "text": "In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once."
+  },
+  {
+    "objectID": "website/01_downloading.html#install-r",
+    "href": "website/01_downloading.html#install-r",
+    "title": "2  R",
+    "section": "2.1 Install R",
+    "text": "2.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
+  },
+  {
+    "objectID": "website/01_downloading.html#rstudio",
+    "href": "website/01_downloading.html#rstudio",
+    "title": "2  R",
+    "section": "2.2 RStudio",
+    "text": "2.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
+  },
+  {
+    "objectID": "website/01_downloading.html#quarto",
+    "href": "website/01_downloading.html#quarto",
+    "title": "2  R",
+    "section": "2.3 Quarto",
+    "text": "2.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n2.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n2.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n2.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
+  },
+  {
+    "objectID": "website/01_downloading.html#github",
+    "href": "website/01_downloading.html#github",
+    "title": "2  R",
+    "section": "2.4 GitHub",
+    "text": "2.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
+  },
+  {
+    "objectID": "website/02_git.html",
+    "href": "website/02_git.html",
+    "title": "3  Installing Git",
+    "section": "",
+    "text": "Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website."
+  },
+  {
+    "objectID": "website/03_clone.html",
+    "href": "website/03_clone.html",
+    "title": "4  Clone",
+    "section": "",
+    "text": "Downloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\n\ndownload it to your computer,\nedit as you see fit (with Word tracking the changes),\nmake sure that no one else has edited the document since you last downloaded it,\n\n(combine the changes if you need to), then\n\nupload the file back to Google Drive for the world to see.\n\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\n\nclone the repository to your computer\nedit as you see fit (with commits tracking the changes),\npull the repository to your computer to make sure that no one else has edited the repository since you last pulled\n\n(merge the files if you need to), then\n\npush your commits back to GitHub for the world to see.\n\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
+  },
+  {
+    "objectID": "website/05_write.html",
+    "href": "website/05_write.html",
+    "title": "6  Write",
+    "section": "",
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes."
+  },
+  {
+    "objectID": "website/07_pull.html",
+    "href": "website/07_pull.html",
+    "title": "8  Pull",
+    "section": "",
+    "text": "No, we’re not shooting skeet."
+  },
+  {
+    "objectID": "website/08_push.html",
+    "href": "website/08_push.html",
+    "title": "9  Push",
+    "section": "",
+    "text": "Take a deep breath, like Lamaze for your code."
+  },
+  {
+    "objectID": "frm/01_pot.html#site-selection-process",
+    "href": "frm/01_pot.html#site-selection-process",
+    "title": "11  Pot survey",
+    "section": "11.1 Site selection process",
+    "text": "11.1 Site selection process"
+  },
+  {
+    "objectID": "frm/01_pot.html#packing-list",
+    "href": "frm/01_pot.html#packing-list",
+    "title": "11  Pot survey",
+    "section": "11.2 Packing list",
+    "text": "11.2 Packing list"
+  },
+  {
+    "objectID": "frm/01_pot.html#protocols",
+    "href": "frm/01_pot.html#protocols",
+    "title": "11  Pot survey",
+    "section": "11.3 Protocols",
+    "text": "11.3 Protocols"
+  },
+  {
+    "objectID": "frm/01_pot.html#vessels",
+    "href": "frm/01_pot.html#vessels",
+    "title": "11  Pot survey",
+    "section": "11.4 Vessels",
+    "text": "11.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+  },
+  {
+    "objectID": "frm/03_rec.html#site-selection-process",
+    "href": "frm/03_rec.html#site-selection-process",
+    "title": "13  Recreational survey",
+    "section": "13.1 Site selection process",
+    "text": "13.1 Site selection process"
+  },
+  {
+    "objectID": "frm/03_rec.html#packing-list",
+    "href": "frm/03_rec.html#packing-list",
+    "title": "13  Recreational survey",
+    "section": "13.2 Packing list",
+    "text": "13.2 Packing list"
+  },
+  {
+    "objectID": "frm/03_rec.html#protocols",
+    "href": "frm/03_rec.html#protocols",
+    "title": "13  Recreational survey",
+    "section": "13.3 Protocols",
+    "text": "13.3 Protocols"
+  },
+  {
+    "objectID": "frm/supplies.html#pot-survey",
+    "href": "frm/supplies.html#pot-survey",
+    "title": "15  Supplies",
+    "section": "15.1 Pot survey",
+    "text": "15.1 Pot survey\n\n15.1.1 Pot warp\n\n\n15.1.2 Hardware"
+  },
+  {
+    "objectID": "frm/supplies.html#recreational-survey",
+    "href": "frm/supplies.html#recreational-survey",
+    "title": "15  Supplies",
+    "section": "15.2 Recreational survey",
+    "text": "15.2 Recreational survey"
+  },
+  {
+    "objectID": "purchasing.html#sole-sources",
+    "href": "purchasing.html#sole-sources",
+    "title": "16  Purchasing",
+    "section": "16.1 Sole sources",
+    "text": "16.1 Sole sources"
+  },
+  {
+    "objectID": "purchasing.html#sneades-ace",
+    "href": "purchasing.html#sneades-ace",
+    "title": "16  Purchasing",
+    "section": "16.2 Sneades Ace",
+    "text": "16.2 Sneades Ace"
   }
 ]
