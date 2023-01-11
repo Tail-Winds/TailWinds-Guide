@@ -7,11 +7,11 @@
     "text": "Preface\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
   },
   {
-    "objectID": "website/website_intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
-    "href": "website/website_intro.html#createedit-quarto-.qmd-files-for-the-desired-page",
+    "objectID": "website/website_intro.html",
+    "href": "website/website_intro.html",
     "title": "Website",
-    "section": "Create/edit Quarto (.qmd) files for the desired page",
-    "text": "Create/edit Quarto (.qmd) files for the desired page\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes.\nGo to the Git tab and click the “Pull” button. This will download any changes that have made to the website since step 1.\nClick the “Commit” button and select the files you want to add to the website. Put a message describing the changes you’ve made in the “Commit message” box so that others can see what is going on.\nClick “Commit” in the dialog box to log these changes.\nClick the “Push” button. This sends all of your changes to GitHub, where the website is compiled and built in the cloud!\nIn a few seconds, the website will be updated.\n\nWhen making an edit to a page that already exits:\n\nClick “Pull” in the Git tab.\nEdit your file.\nPreview website as before to build the HTML.\nClick “Pull” again.\nCommit changes.\nPush to GitHub"
+    "section": "",
+    "text": "In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once."
   },
   {
     "objectID": "website/01_downloading.html#install-r",
@@ -32,7 +32,7 @@
     "href": "website/01_downloading.html#quarto",
     "title": "1  R",
     "section": "1.3 Quarto",
-    "text": "1.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!"
+    "text": "1.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n1.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n1.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n1.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
   },
   {
     "objectID": "website/01_downloading.html#github",
@@ -56,23 +56,30 @@
     "text": "Downloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\n\ndownload it to your computer,\nedit as you see fit (with Word tracking the changes),\nmake sure that no one else has edited the document since you last downloaded it,\n\n(combine the changes if you need to), then\n\nupload the file back to Google Drive for the world to see.\n\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\n\nclone the repository to your computer\nedit as you see fit (with commits tracking the changes),\npull the repository to your computer to make sure that no one else has edited the repository since you last pulled\n\n(merge the files if you need to), then\n\npush your commits back to GitHub for the world to see.\n\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
   },
   {
-    "objectID": "website/06_pull.html",
-    "href": "website/06_pull.html",
-    "title": "6  Pull",
+    "objectID": "website/05_write.html",
+    "href": "website/05_write.html",
+    "title": "5  Write",
+    "section": "",
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes."
+  },
+  {
+    "objectID": "website/07_pull.html",
+    "href": "website/07_pull.html",
+    "title": "7  Pull",
     "section": "",
     "text": "No, we’re not shooting skeet."
   },
   {
-    "objectID": "website/07_push.html",
-    "href": "website/07_push.html",
-    "title": "7  Push",
+    "objectID": "website/08_push.html",
+    "href": "website/08_push.html",
+    "title": "8  Push",
     "section": "",
     "text": "Take a deep breath, like Lamaze for your code."
   },
   {
     "objectID": "02_guide.html",
     "href": "02_guide.html",
-    "title": "9  TailWinds Guide",
+    "title": "10  TailWinds Guide",
     "section": "",
     "text": "A guide for the guide. Heaven help us.\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
   }

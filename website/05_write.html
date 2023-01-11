@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TailWinds Guide - 5&nbsp; Commit</title>
+<title>TailWinds Guide - 5&nbsp; Write</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../website/06_pull.html" rel="next">
+<link href="../website/06_commit.html" rel="next">
 <link href="../website/04_branch.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Commit</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Write</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -128,29 +128,34 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/05_commit.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Commit</span></a>
+  <a href="../website/05_write.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Write</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/06_pull.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Pull</span></a>
+  <a href="../website/06_commit.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Commit</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/07_push.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Push</span></a>
+  <a href="../website/07_pull.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pull</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/08_pull_request.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Pull request</span></a>
+  <a href="../website/08_push.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Push</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../website/09_pull_request.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pull request</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../02_guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">TailWinds Guide</span></a>
+  <a href="../02_guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TailWinds Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -170,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Commit</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Write</span></h1>
 </div>
 
 
@@ -185,6 +190,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Now we’re going to create or edit Quarto (.qmd) files for the desired page.</p>
+<p>The Quarto website has <a href="https://quarto.org/docs/get-started/hello/rstudio.html">really thorough guides</a> on how to do this. Slava and I are also on call via Slack!</p>
+<p>Generally:</p>
+<ol type="1">
+<li>Click the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.</li>
+<li>Go to File &gt; New File &gt; Quarto Document to make a new page.</li>
+<li>Write whatever you want to go on the page</li>
+<li>If you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.</li>
+<li>Go to Build &gt; Preview Site. This will convert everything to HTML behind the scenes.</li>
+</ol>
 
 
 
@@ -329,8 +344,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../website/06_pull.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Pull</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../website/06_commit.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Commit</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

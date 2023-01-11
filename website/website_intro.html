@@ -128,29 +128,34 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/05_commit.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Commit</span></a>
+  <a href="../website/05_write.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Write</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/06_pull.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Pull</span></a>
+  <a href="../website/06_commit.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Commit</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/07_push.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Push</span></a>
+  <a href="../website/07_pull.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pull</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/08_pull_request.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Pull request</span></a>
+  <a href="../website/08_push.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Push</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../website/09_pull_request.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Pull request</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../02_guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">TailWinds Guide</span></a>
+  <a href="../02_guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TailWinds Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -163,13 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#createedit-quarto-.qmd-files-for-the-desired-page" id="toc-createedit-quarto-.qmd-files-for-the-desired-page" class="nav-link active" data-scroll-target="#createedit-quarto-.qmd-files-for-the-desired-page">Create/edit Quarto (.qmd) files for the desired page</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -192,34 +191,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once.</p>
-<section id="createedit-quarto-.qmd-files-for-the-desired-page" class="level2">
-<h2 class="anchored" data-anchor-id="createedit-quarto-.qmd-files-for-the-desired-page">Create/edit Quarto (.qmd) files for the desired page</h2>
-<p>The Quarto website has <a href="https://quarto.org/docs/get-started/hello/rstudio.html">really thorough guides</a> on how to do this. Slava and I are also on call via Slack!</p>
-<p>Generally:</p>
-<ol type="1">
-<li>Click the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.</li>
-<li>Go to File &gt; New File &gt; Quarto Document to make a new page.</li>
-<li>Write whatever you want to go on the page</li>
-<li>If you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.</li>
-<li>Go to Build &gt; Preview Site. This will convert everything to HTML behind the scenes.</li>
-<li>Go to the Git tab and click the “Pull” button. This will download any changes that have made to the website since step 1.</li>
-<li>Click the “Commit” button and select the files you want to add to the website. Put a message describing the changes you’ve made in the “Commit message” box so that others can see what is going on.</li>
-<li>Click “Commit” in the dialog box to log these changes.</li>
-<li>Click the “Push” button. This sends all of your changes to GitHub, where the website is compiled and built in the cloud!</li>
-<li>In a few seconds, the website will be updated.</li>
-</ol>
-<p>When making an edit to a page that already exits:</p>
-<ol type="1">
-<li>Click “Pull” in the Git tab.</li>
-<li>Edit your file.</li>
-<li>Preview website as before to build the HTML.</li>
-<li>Click “Pull” again.</li>
-<li>Commit changes.</li>
-<li>Push to GitHub</li>
-</ol>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
