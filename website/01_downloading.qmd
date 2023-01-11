@@ -37,6 +37,25 @@ Once you install it, restart R/RStudio. Then go to Tools \> Terminal \>New Termi
 
 It should return 1.2.313 or greater. If it doesn't, let me know!
 
+### Quarto extensions
+
+Okay, I got a little cute and put fun little icons linking to everyone's various social media presence on the [Team page](https://tailwinds.umces.edu/team). I've found out that now, because I've done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don't worry, they're safe (and kind of neat if you want to give them a look).
+
+#### Font Awesome
+
+[Font Awesome icons](https://fontawesome.com/icons) are just what they say they are: some awesome icons! There are literally thousands of them -- go check them out. They even have a wind turbine, but you have to pay for it. 🙁\
+Anyway, we need to install an extension to get them to work with Quarto. Go to Tools \> Terminal \> New Terminal and type:
+
+`quarto install extension quarto-ext/fontawesome`
+
+That's it!
+
+#### academicons
+
+[Academicons](https://jpswalsh.github.io/academicons/) are the academic's answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools \> Terminal \> New Terminal and type:
+
+`quarto install extension schochastics/academicons`
+
 ## GitHub
 
 Pop on over to [GitHub](https://github.com/) and sign up for a free account. After you're done, let me know and I'll add you to the [TailWinds GitHub organization](https://github.com/Tail-Winds).
