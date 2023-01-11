@@ -7,8 +7,8 @@
     "text": "Preface\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
   },
   {
-    "objectID": "website/website_intro.html",
-    "href": "website/website_intro.html",
+    "objectID": "website/index.html",
+    "href": "website/index.html",
     "title": "Website",
     "section": "",
     "text": "In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once."
@@ -77,10 +77,17 @@
     "text": "Take a deep breath, like Lamaze for your code."
   },
   {
-    "objectID": "02_guide.html",
-    "href": "02_guide.html",
-    "title": "10  TailWinds Guide",
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
+    "title": "TailWinds Guide",
     "section": "",
     "text": "A guide for the guide. Heaven help us.\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
+  },
+  {
+    "objectID": "guide/01_editing.html",
+    "href": "guide/01_editing.html",
+    "title": "10  Editing",
+    "section": "",
+    "text": "More of the same."
   }
 ]
