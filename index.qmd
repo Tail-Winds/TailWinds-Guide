@@ -6,14 +6,28 @@ Inspired by [Gavin Fay's Lab Manual](https://thefaylab.github.io/lab-manual/), t
 
 ## Acronyms
 
--   EFP: Exempted Fishing Permit
--   IACUC: Institutional Animal Care and Use Committee
--   LOA: Letter of Authorization
--   MMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
--   FRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
--   RTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
+EFP
+:   Exempted Fishing Permit
+
+IACUC
+: Institutional Animal Care and Use Committee
+
+LOA
+: Letter of Authorization
+
+MMM
+: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
+
+FRM
+: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
+
+RTWB
+: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
 
 ## Definitions
 
--   Console: Where you type commands into R.
--   Terminal: Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
+Console
+: Where you type commands into R.
+
+Terminal
+: Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
