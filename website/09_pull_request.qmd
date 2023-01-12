@@ -1,1 +1,12 @@
 # Pull request
+
+lorem ipsum
+
+## Open a pull request
+
+## Prune a deleted branch
+
+So you've created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can "prune" this branch by running the following in the Terminal, assuming that "branch-to-delete" is the name of the branch you want to delete:
+
+    git branch -d branch-to-delete
+    git fetch -p
