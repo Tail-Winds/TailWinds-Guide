@@ -11,28 +11,35 @@
     "href": "index.html#acronyms",
     "title": "TailWinds Guide",
     "section": "Acronyms",
-    "text": "Acronyms\n\nEFP: Exempted Fishing Permit\nIACUC: Institutional Animal Care and Use Committee\nLOA: Letter of Authorization\nMMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\nFRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\nRTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
+    "text": "Acronyms\n\nEFP\n\nExempted Fishing Permit\n\nIACUC\n\nInstitutional Animal Care and Use Committee\n\nLOA\n\nLetter of Authorization\n\nMMM\n\nMarine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nFRM\n\nFishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nRTWB\n\n(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
   },
   {
     "objectID": "index.html#definitions",
     "href": "index.html#definitions",
     "title": "TailWinds Guide",
     "section": "Definitions",
-    "text": "Definitions\n\nConsole: Where you type commands into R.\nTerminal: Command-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
+    "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
   },
   {
     "objectID": "guide/index.html",
     "href": "guide/index.html",
     "title": "TailWinds Guide",
     "section": "",
-    "text": "A guide for the guide. Heaven help us.\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
+    "text": "A guide for the guide. Heaven help us.\nGeneral notes:\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
+  },
+  {
+    "objectID": "guide/01_editing.html#source-vs-visual-editor",
+    "href": "guide/01_editing.html#source-vs-visual-editor",
+    "title": "1  Editing",
+    "section": "1.1 Source vs Visual editor",
+    "text": "1.1 Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
   },
   {
     "objectID": "guide/01_editing.html#guide-editing-workflow",
     "href": "guide/01_editing.html#guide-editing-workflow",
     "title": "1  Editing",
-    "section": "1.1 Guide editing workflow",
-    "text": "1.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
+    "section": "1.2 Guide editing workflow",
+    "text": "1.2 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
