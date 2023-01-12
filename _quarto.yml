@@ -27,6 +27,7 @@ book:
         - frm/02_knots.qmd
         - frm/03_rec.qmd
         - frm/04_dissection.qmd
+        - frm/05_permits.qmd
         - frm/supplies.qmd
     - purchasing.qmd
     - references.qmd
