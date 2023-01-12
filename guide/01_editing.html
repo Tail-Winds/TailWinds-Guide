@@ -254,21 +254,23 @@ ul.task-list li input[type="checkbox"] {
 <p>Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type</p>
 <p><code>quarto publish</code></p>
 <p>into the terminal. This compiles everything and commits the changes to the <code>gh-pages</code> branch. This branch is then used to deploy the website, so don’t edit that branch.</p>
+<p>Note that <code>quarto publish</code> will publish changes from <strong><em>ANY BRANCH</em></strong>, so the branching paradigm doesn’t necessarily work once that command has been run.</p>
 <section id="guide-editing-workflow" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="guide-editing-workflow"><span class="header-section-number">1.1</span> Guide editing workflow</h2>
 <ol type="1">
-<li>Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide</li>
-<li>If you’re making relatively minor changes, commit them to the <code>master</code> branch.</li>
-<li>If you’re making substantial changes, create a new branch. You can do this either by:
+<li><p>Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide</p></li>
+<li><p>If you’re making relatively minor changes, commit them to the <code>master</code> branch.</p></li>
+<li><p>If you’re making substantial changes, create a new branch. You can do this either by:</p>
 <ol type="1">
 <li><p>On GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or<img src="images/create_branch.png" class="img-fluid"></p></li>
 <li><p>Clicking “New Branch” in the Git pane in RStudio <img src="images/create_branch_rstudio.png" class="img-fluid"></p></li>
 </ol></li>
-<li>Preview your changes in one document by clicking “Render” in the editing pane. <img src="images/render_button.png" class="img-fluid"></li>
-<li>Preview your changes to the whole document by clicking “Render Book” in the Build pane. <img src="images/render_book.png" class="img-fluid"></li>
-<li>Commit your changes to your working branch.</li>
-<li>If you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).</li>
-<li>If your changes are ready for prime time, enter <code>quarto publish</code> into the Terminal. It will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”.<img src="images/quarto_publish.png" class="img-fluid"></li>
+<li><p>Preview your changes in one document by clicking “Render” in the editing pane. <img src="images/render_button.png" class="img-fluid"></p></li>
+<li><p>Preview your changes to the whole document by clicking “Render Book” in the Build pane. <img src="images/render_book.png" class="img-fluid"></p></li>
+<li><p>Commit your changes to your working branch.</p></li>
+<li><p>If you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).</p></li>
+<li><p>If your changes are ready for prime time, enter <code>quarto publish</code> into the Terminal. <img src="images/quarto_publish.png" class="img-fluid"></p>
+<p>It will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”. <img src="images/quarto_publish_confirm.png" class="img-fluid"></p></li>
 </ol>
 
 

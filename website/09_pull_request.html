@@ -223,7 +223,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#open-a-pull-request" id="toc-open-a-pull-request" class="nav-link active" data-scroll-target="#open-a-pull-request"><span class="toc-section-number">10.1</span>  Open a pull request</a></li>
+  <li><a href="#prune-a-deleted-branch" id="toc-prune-a-deleted-branch" class="nav-link" data-scroll-target="#prune-a-deleted-branch"><span class="toc-section-number">10.2</span>  Prune a deleted branch</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -245,8 +252,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>lorem ipsum</p>
+<section id="open-a-pull-request" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="open-a-pull-request"><span class="header-section-number">10.1</span> Open a pull request</h2>
+</section>
+<section id="prune-a-deleted-branch" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="prune-a-deleted-branch"><span class="header-section-number">10.2</span> Prune a deleted branch</h2>
+<p>So you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:</p>
+<pre><code>git branch -d branch-to-delete
+git fetch -p</code></pre>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

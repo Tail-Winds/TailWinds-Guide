@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "TailWinds Guide",
     "section": "",
-    "text": "Preface and Definitions\nThis guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we’ll see."
+    "text": "Preface and Definitions\nThis guide is intended to be a place to host our accumulated institutional knowledge and standard operating procedures regarding the TailWinds project. We’ve already had mild amounts of staff turnover, so the hope is that this will alleviate some of the pain associated with onboarding – or “re-onboarding” our current members after periods away from the project.\nInspired by Gavin Fay’s Lab Manual, this is a living document which everyone should be able to edit."
   },
   {
     "objectID": "index.html#acronyms",
@@ -32,14 +32,14 @@
     "href": "guide/01_editing.html#guide-editing-workflow",
     "title": "1  Editing",
     "section": "1.1 Guide editing workflow",
-    "text": "1.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. It will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
+    "text": "1.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
   },
   {
-    "objectID": "website/index.html",
-    "href": "website/index.html",
+    "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
+    "href": "website/index.html#other-websites-of-which-we-are-covetous",
     "title": "Website",
-    "section": "",
-    "text": "In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once."
+    "section": "Other websites of which we are covetous",
+    "text": "Other websites of which we are covetous\n\nhttps://rowlrs.marine.rutgers.edu/"
   },
   {
     "objectID": "website/01_downloading.html#install-r",
@@ -77,11 +77,18 @@
     "text": "Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website."
   },
   {
-    "objectID": "website/03_clone.html",
-    "href": "website/03_clone.html",
+    "objectID": "website/03_clone.html#aside-forking",
+    "href": "website/03_clone.html#aside-forking",
     "title": "4  Clone",
-    "section": "",
-    "text": "Downloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\n\ndownload it to your computer,\nedit as you see fit (with Word tracking the changes),\nmake sure that no one else has edited the document since you last downloaded it,\n\n(combine the changes if you need to), then\n\nupload the file back to Google Drive for the world to see.\n\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\n\nclone the repository to your computer\nedit as you see fit (with commits tracking the changes),\npull the repository to your computer to make sure that no one else has edited the repository since you last pulled\n\n(merge the files if you need to), then\n\npush your commits back to GitHub for the world to see.\n\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!"
+    "section": "4.1 Aside: Forking",
+    "text": "4.1 Aside: Forking\nCloning someone else’s GitHub repository is called “forking”. This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.\nGenerally, when you wish to contribute to someone else’s package/code/repository, you:\n\nFork it to your GitHub account,\nClone the forked repository to your computer,\nCreate a new branch (see the next step in this guide),\nCommit your changes to the new branch,\nPush them back to GitHub,\nOpen a pull request for the original repository’s maintainer to pull your changes into their version of the repository."
+  },
+  {
+    "objectID": "website/04_branch.html#making-a-branch",
+    "href": "website/04_branch.html#making-a-branch",
+    "title": "5  Branch",
+    "section": "5.1 Making a branch",
+    "text": "5.1 Making a branch\nNote that these instructions are intentionally redundant to the section on making a branch to edit the Guide. You can make a new branch either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch,\nClicking “New Branch” in the Git pane in RStudio\n\nIf you used method #1, pull the GitHub repository. The new branch will appear on the right side of the Git pane. If you used method #2, the branch should automatically be pushed to GitHub and RStudio will switch to this branch."
   },
   {
     "objectID": "website/05_write.html",
@@ -103,6 +110,20 @@
     "title": "9  Push",
     "section": "",
     "text": "Take a deep breath, like Lamaze for your code."
+  },
+  {
+    "objectID": "website/09_pull_request.html#open-a-pull-request",
+    "href": "website/09_pull_request.html#open-a-pull-request",
+    "title": "10  Pull request",
+    "section": "10.1 Open a pull request",
+    "text": "10.1 Open a pull request"
+  },
+  {
+    "objectID": "website/09_pull_request.html#prune-a-deleted-branch",
+    "href": "website/09_pull_request.html#prune-a-deleted-branch",
+    "title": "10  Pull request",
+    "section": "10.2 Prune a deleted branch",
+    "text": "10.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
   },
   {
     "objectID": "frm/01_pot.html#site-selection-process",
