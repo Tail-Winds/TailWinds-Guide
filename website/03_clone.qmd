@@ -21,3 +21,16 @@ We're doing the same thing, but for code. Git can track changes in any text file
 I suggest using RStudio, following the [instructions in section 16.2.2 here](https://happygitwithr.com/existing-github-first.html#rstudio-ide-1) . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.
 
 Now you're good to go!
+
+## Aside: Forking
+
+Cloning someone else's GitHub repository is called "forking". This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.
+
+Generally, when you wish to contribute to someone else's package/code/repository, you:
+
+1.  Fork it to your GitHub account,
+2.  Clone the forked repository to your computer,
+3.  Create a new branch (see the next step in this guide),
+4.  Commit your changes to the new branch,
+5.  Push them back to GitHub,
+6.  Open a pull request for the original repository's maintainer to pull your changes into their version of the repository.
