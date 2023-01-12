@@ -2,7 +2,9 @@
 
 Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don't run "render website", but instead type
 
-`quarto publish`
+``` bash
+quarto publish
+```
 
 into the terminal. This compiles everything and commits the changes to the `gh-pages` branch. This branch is then used to deploy the website, so don't edit that branch.
 
