@@ -5,7 +5,7 @@ This guide is starting out as a way to write down how everyone can access and ed
 ## Acronyms
 
 -   EFP: Exempted Fishing Permit
--   IACUC: International Animal Care and Use Committee
+-   IACUC: Institutional Animal Care and Use Committee
 -   LOA: Letter of Authorization
 -   MMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
 -   FRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
