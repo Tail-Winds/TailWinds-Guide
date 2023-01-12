@@ -1,6 +1,8 @@
 # Preface and Definitions {.unnumbered}
 
-This guide is starting out as a way to write down how everyone can access and edit the website In the future, it could also become a place to house our SOPs, but we'll see.
+This guide is intended to be a place to host our accumulated institutional knowledge and standard operating procedures regarding the TailWinds project. We've already had mild amounts of staff turnover, so the hope is that this will alleviate some of the pain associated with onboarding -- or "re-onboarding" our current members after periods away from the project.
+
+Inspired by [Gavin Fay's Lab Manual](https://thefaylab.github.io/lab-manual/), this is a living document which everyone should be able to edit.
 
 ## Acronyms
 
