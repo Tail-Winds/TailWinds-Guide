@@ -11,7 +11,7 @@
     "href": "index.html#acronyms",
     "title": "TailWinds Guide",
     "section": "Acronyms",
-    "text": "Acronyms\n\nEFP: Exempted Fishing Permit\nIACUC: International Animal Care and Use Committee\nLOA: Letter of Authorization\nMMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\nFRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\nRTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
+    "text": "Acronyms\n\nEFP: Exempted Fishing Permit\nIACUC: Institutional Animal Care and Use Committee\nLOA: Letter of Authorization\nMMM: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\nFRM: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\nRTWB: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
   },
   {
     "objectID": "index.html#definitions",
@@ -154,31 +154,45 @@
     "text": "13.3 Protocols"
   },
   {
+    "objectID": "frm/05_permits.html#iacuc",
+    "href": "frm/05_permits.html#iacuc",
+    "title": "15  Permits",
+    "section": "15.1 IACUC",
+    "text": "15.1 IACUC"
+  },
+  {
+    "objectID": "frm/05_permits.html#efp",
+    "href": "frm/05_permits.html#efp",
+    "title": "15  Permits",
+    "section": "15.2 EFP",
+    "text": "15.2 EFP"
+  },
+  {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
-    "title": "15  Supplies",
-    "section": "15.1 Pot survey",
-    "text": "15.1 Pot survey\n\n15.1.1 Pot warp\n\n\n15.1.2 Hardware"
+    "title": "16  Supplies",
+    "section": "16.1 Pot survey",
+    "text": "16.1 Pot survey\n\n16.1.1 Pot warp\n\n\n16.1.2 Hardware"
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
-    "title": "15  Supplies",
-    "section": "15.2 Recreational survey",
-    "text": "15.2 Recreational survey"
+    "title": "16  Supplies",
+    "section": "16.2 Recreational survey",
+    "text": "16.2 Recreational survey"
   },
   {
     "objectID": "purchasing.html#sole-sources",
     "href": "purchasing.html#sole-sources",
-    "title": "16  Purchasing",
-    "section": "16.1 Sole sources",
-    "text": "16.1 Sole sources"
+    "title": "17  Purchasing",
+    "section": "17.1 Sole sources",
+    "text": "17.1 Sole sources"
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "16  Purchasing",
-    "section": "16.2 Sneades Ace",
-    "text": "16.2 Sneades Ace"
+    "title": "17  Purchasing",
+    "section": "17.2 Sneades Ace",
+    "text": "17.2 Sneades Ace"
   }
 ]
