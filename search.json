@@ -28,11 +28,11 @@
     "text": "A guide for the guide. Heaven help us.\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
   },
   {
-    "objectID": "guide/01_editing.html",
-    "href": "guide/01_editing.html",
+    "objectID": "guide/01_editing.html#guide-editing-workflow",
+    "href": "guide/01_editing.html#guide-editing-workflow",
     "title": "1  Editing",
-    "section": "",
-    "text": "Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type\nquarto publish\ninto the terminal. This compiles everything and commits the changes to the gh-pages branch which the website uses to put the guide on the website, so don’t edit that branch.\nSo, the coarse steps are:\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch; it’ll wind up changing the Guide directly.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nCommit your changes to the new branch."
+    "section": "1.1 Guide editing workflow",
+    "text": "1.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. It will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
   },
   {
     "objectID": "website/index.html",
