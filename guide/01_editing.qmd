@@ -1,9 +1,17 @@
 # Editing
 
-More of the same.
-
-But type
+Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don't run "render website", but instead type
 
 `quarto publish`
 
-into the terminal.
+into the terminal. This compiles everything and commits the changes to the `gh-pages` branch which the website uses to put the guide on the website, so don't edit that branch.
+
+So, the coarse steps are:
+
+1.  Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide
+2.  If you're making relatively minor changes, commit them to the `master` branch; it'll wind up changing the Guide directly.
+3.  If you're making substantial changes, create a new branch. You can do this either by:
+    1.   On GitHub, clicking the box on the top left that says "master" and typing in whatever you want to call the new branch, or![](images/create_branch.png)
+
+    2.  Clicking "New Branch" in the Git pane in RStudio ![](images/create_branch_rstudio.png)
+4.  Commit your changes to the new branch.
