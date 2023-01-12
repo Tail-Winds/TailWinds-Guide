@@ -245,10 +245,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>More of the same.</p>
-<p>But type</p>
+<p>Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type</p>
 <p><code>quarto publish</code></p>
-<p>into the terminal.</p>
+<p>into the terminal. This compiles everything and commits the changes to the <code>gh-pages</code> branch which the website uses to put the guide on the website, so don’t edit that branch.</p>
+<p>So, the coarse steps are:</p>
+<ol type="1">
+<li>Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide</li>
+<li>If you’re making relatively minor changes, commit them to the <code>master</code> branch; it’ll wind up changing the Guide directly.</li>
+<li>If you’re making substantial changes, create a new branch. You can do this either by:
+<ol type="1">
+<li><p>On GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or<img src="images/create_branch.png" class="img-fluid"></p></li>
+<li><p>Clicking “New Branch” in the Git pane in RStudio <img src="images/create_branch_rstudio.png" class="img-fluid"></p></li>
+</ol></li>
+<li>Commit your changes to the new branch.</li>
+</ol>
 
 
 
