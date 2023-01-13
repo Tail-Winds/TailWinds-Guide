@@ -11,7 +11,7 @@
     "href": "index.html#acronyms",
     "title": "TailWinds Guide",
     "section": "Acronyms",
-    "text": "Acronyms\n\nEFP\n\nExempted Fishing Permit\n\nIACUC\n\nInstitutional Animal Care and Use Committee\n\nLOA\n\nLetter of Authorization\n\nMMM\n\nMarine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nFRM\n\nFishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nRTWB\n\n(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?"
+    "text": "Acronyms\n\nBACI\n\nBefore-After-Control-Impact design\n\nBAG\n\nBefore-After-Gradient design\n\nBSB\n\nblack sea bass, Centropristis striata\n\nCBL\n\nChesapeake Biological Laboratory\n\nEFP\n\nExempted Fishing Permit\n\nFRM\n\nFishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nIACUC\n\nInstitutional Animal Care and Use Committee\n\nLOA\n\nLetter of Authorization/Acknowledgement\n\nMCBP\n\nMaryland Coastal Bays Program\n\nMD DNR\n\nMaryland Department of Natural Resources\n\nMDWEA\n\nMaryland Wind Energy Area, also known as the Maryland Lease Area\n\nMMM\n\nMarine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nPAM\n\nPassive acoustic monitoring\n\nRTWB\n\n(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?\n\nUMCES\n\nUniversity of Maryland Center for Environmental Science\n\nWHOI\n\nWoods Hole Oceanographic Institute"
   },
   {
     "objectID": "index.html#definitions",
@@ -19,6 +19,13 @@
     "title": "TailWinds Guide",
     "section": "Definitions",
     "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
+  },
+  {
+    "objectID": "index.html#instrumentation",
+    "href": "index.html#instrumentation",
+    "title": "TailWinds Guide",
+    "section": "Instrumentation",
+    "text": "Instrumentation\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLFDCS\n\nLow-frequency detection and classification system software. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco)."
   },
   {
     "objectID": "guide/index.html",
@@ -135,92 +142,92 @@
   {
     "objectID": "frm/01_pot.html#site-selection-process",
     "href": "frm/01_pot.html#site-selection-process",
-    "title": "11  Pot survey",
-    "section": "11.1 Site selection process",
-    "text": "11.1 Site selection process"
-  },
-  {
-    "objectID": "frm/01_pot.html#packing-list",
-    "href": "frm/01_pot.html#packing-list",
-    "title": "11  Pot survey",
-    "section": "11.2 Packing list",
-    "text": "11.2 Packing list"
-  },
-  {
-    "objectID": "frm/01_pot.html#protocols",
-    "href": "frm/01_pot.html#protocols",
-    "title": "11  Pot survey",
-    "section": "11.3 Protocols",
-    "text": "11.3 Protocols"
-  },
-  {
-    "objectID": "frm/01_pot.html#vessels",
-    "href": "frm/01_pot.html#vessels",
-    "title": "11  Pot survey",
-    "section": "11.4 Vessels",
-    "text": "11.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
-  },
-  {
-    "objectID": "frm/03_rec.html#site-selection-process",
-    "href": "frm/03_rec.html#site-selection-process",
-    "title": "13  Recreational survey",
+    "title": "13  Pot survey",
     "section": "13.1 Site selection process",
     "text": "13.1 Site selection process"
   },
   {
-    "objectID": "frm/03_rec.html#packing-list",
-    "href": "frm/03_rec.html#packing-list",
-    "title": "13  Recreational survey",
+    "objectID": "frm/01_pot.html#packing-list",
+    "href": "frm/01_pot.html#packing-list",
+    "title": "13  Pot survey",
     "section": "13.2 Packing list",
     "text": "13.2 Packing list"
   },
   {
-    "objectID": "frm/03_rec.html#protocols",
-    "href": "frm/03_rec.html#protocols",
-    "title": "13  Recreational survey",
+    "objectID": "frm/01_pot.html#protocols",
+    "href": "frm/01_pot.html#protocols",
+    "title": "13  Pot survey",
     "section": "13.3 Protocols",
     "text": "13.3 Protocols"
   },
   {
+    "objectID": "frm/01_pot.html#vessels",
+    "href": "frm/01_pot.html#vessels",
+    "title": "13  Pot survey",
+    "section": "13.4 Vessels",
+    "text": "13.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+  },
+  {
+    "objectID": "frm/03_rec.html#site-selection-process",
+    "href": "frm/03_rec.html#site-selection-process",
+    "title": "15  Recreational survey",
+    "section": "15.1 Site selection process",
+    "text": "15.1 Site selection process"
+  },
+  {
+    "objectID": "frm/03_rec.html#packing-list",
+    "href": "frm/03_rec.html#packing-list",
+    "title": "15  Recreational survey",
+    "section": "15.2 Packing list",
+    "text": "15.2 Packing list"
+  },
+  {
+    "objectID": "frm/03_rec.html#protocols",
+    "href": "frm/03_rec.html#protocols",
+    "title": "15  Recreational survey",
+    "section": "15.3 Protocols",
+    "text": "15.3 Protocols"
+  },
+  {
     "objectID": "frm/05_permits.html#iacuc",
     "href": "frm/05_permits.html#iacuc",
-    "title": "15  Permits",
-    "section": "15.1 IACUC",
-    "text": "15.1 IACUC"
+    "title": "17  Permits",
+    "section": "17.1 IACUC",
+    "text": "17.1 IACUC"
   },
   {
     "objectID": "frm/05_permits.html#efp",
     "href": "frm/05_permits.html#efp",
-    "title": "15  Permits",
-    "section": "15.2 EFP",
-    "text": "15.2 EFP"
+    "title": "17  Permits",
+    "section": "17.2 EFP",
+    "text": "17.2 EFP"
   },
   {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
-    "title": "16  Supplies",
-    "section": "16.1 Pot survey",
-    "text": "16.1 Pot survey\n\n16.1.1 Pot warp\n\n\n16.1.2 Hardware"
+    "title": "18  Supplies",
+    "section": "18.1 Pot survey",
+    "text": "18.1 Pot survey\n\n18.1.1 Pot warp\n\n\n18.1.2 Hardware"
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
-    "title": "16  Supplies",
-    "section": "16.2 Recreational survey",
-    "text": "16.2 Recreational survey"
+    "title": "18  Supplies",
+    "section": "18.2 Recreational survey",
+    "text": "18.2 Recreational survey"
   },
   {
     "objectID": "purchasing.html#sole-sources",
     "href": "purchasing.html#sole-sources",
-    "title": "17  Purchasing",
-    "section": "17.1 Sole sources",
-    "text": "17.1 Sole sources"
+    "title": "19  Purchasing",
+    "section": "19.1 Sole sources",
+    "text": "19.1 Sole sources"
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "17  Purchasing",
-    "section": "17.2 Sneades Ace",
-    "text": "17.2 Sneades Ace"
+    "title": "19  Purchasing",
+    "section": "19.2 Sneades Ace",
+    "text": "19.2 Sneades Ace"
   }
 ]

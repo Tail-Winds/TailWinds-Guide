@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mike O’Brien, with others in the future">
-<meta name="dcterms.date" content="2023-01-12">
+<meta name="dcterms.date" content="2023-01-13">
 
 <title>TailWinds Guide</title>
 <style>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./frm/index.html" class="sidebar-item-text sidebar-link">Fishery Resource Monitoring</a>
+            <a href="./delphinus/index.html" class="sidebar-item-text sidebar-link">Delphinus</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -179,39 +179,59 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/01_pot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Pot survey</span></a>
+  <a href="./delphinus/rstudio.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">RStudio Server</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/02_knots.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Necessary knots</span></a>
+  <a href="./delphinus/gitlab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Gitlab</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./frm/index.html" class="sidebar-item-text sidebar-link">Fishery Resource Monitoring</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frm/01_pot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Pot survey</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/03_rec.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Recreational survey</span></a>
+  <a href="./frm/02_knots.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Necessary knots</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/04_dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Black sea bass dissection</span></a>
+  <a href="./frm/03_rec.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Recreational survey</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/05_permits.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Permits</span></a>
+  <a href="./frm/04_dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Black sea bass dissection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./frm/supplies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Supplies</span></a>
+  <a href="./frm/05_permits.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Permits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frm/supplies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Supplies</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./purchasing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Purchasing</span></a>
+  <a href="./purchasing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Purchasing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -232,6 +252,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#acronyms" id="toc-acronyms" class="nav-link" data-scroll-target="#acronyms">Acronyms</a></li>
   <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#instrumentation" id="toc-instrumentation" class="nav-link" data-scroll-target="#instrumentation">Instrumentation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -258,7 +279,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 12, 2023</p>
+      <p class="date">January 13, 2023</p>
     </div>
   </div>
   
@@ -275,29 +296,69 @@ ul.task-list li input[type="checkbox"] {
 <section id="acronyms" class="level2">
 <h2 class="anchored" data-anchor-id="acronyms">Acronyms</h2>
 <dl>
+<dt>BACI</dt>
+<dd>
+<p>Before-After-Control-Impact design</p>
+</dd>
+<dt>BAG</dt>
+<dd>
+<p>Before-After-Gradient design</p>
+</dd>
+<dt>BSB</dt>
+<dd>
+<p>black sea bass, <em>Centropristis striata</em></p>
+</dd>
+<dt>CBL</dt>
+<dd>
+<p>Chesapeake Biological Laboratory</p>
+</dd>
 <dt>EFP</dt>
 <dd>
-Exempted Fishing Permit
-</dd>
-<dt>IACUC</dt>
-<dd>
-Institutional Animal Care and Use Committee
-</dd>
-<dt>LOA</dt>
-<dd>
-Letter of Authorization
-</dd>
-<dt>MMM</dt>
-<dd>
-Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
+<p>Exempted Fishing Permit</p>
 </dd>
 <dt>FRM</dt>
 <dd>
-Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
+<p>Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?</p>
+</dd>
+<dt>IACUC</dt>
+<dd>
+<p>Institutional Animal Care and Use Committee</p>
+</dd>
+<dt>LOA</dt>
+<dd>
+<p>Letter of Authorization/Acknowledgement</p>
+</dd>
+<dt>MCBP</dt>
+<dd>
+<p>Maryland Coastal Bays Program</p>
+</dd>
+<dt>MD DNR</dt>
+<dd>
+<p>Maryland Department of Natural Resources</p>
+</dd>
+<dt>MDWEA</dt>
+<dd>
+<p>Maryland Wind Energy Area, also known as the Maryland Lease Area</p>
+</dd>
+<dt>MMM</dt>
+<dd>
+<p>Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?</p>
+</dd>
+<dt>PAM</dt>
+<dd>
+<p>Passive acoustic monitoring</p>
 </dd>
 <dt>RTWB</dt>
 <dd>
-(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
+<p>(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?</p>
+</dd>
+<dt>UMCES</dt>
+<dd>
+<p>University of Maryland Center for Environmental Science</p>
+</dd>
+<dt>WHOI</dt>
+<dd>
+<p>Woods Hole Oceanographic Institute</p>
 </dd>
 </dl>
 </section>
@@ -306,11 +367,48 @@ Fishery Resource Monitoring. One of the three core TailWinds projects. Include F
 <dl>
 <dt>Console</dt>
 <dd>
-Where you type commands into R.
+<p>Where you type commands into R.</p>
 </dd>
 <dt>Terminal</dt>
 <dd>
-Command-line interface to the computer. Access in RStudio via Tools &gt; Terminal &gt; New Terminal
+<p>Command-line interface to the computer. Access in RStudio via Tools &gt; Terminal &gt; New Terminal</p>
+</dd>
+</dl>
+</section>
+<section id="instrumentation" class="level2">
+<h2 class="anchored" data-anchor-id="instrumentation">Instrumentation</h2>
+<dl>
+<dt>C-POD</dt>
+<dd>
+<p>Recording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by <a href="www.chelonia.co.uk">Chelonia, Ltd.</a>. Successor to the T-POD, predecessor to the F-POD.</p>
+</dd>
+<dt>Delphinus</dt>
+<dd>
+<p>Server located on the UMCES-CBL campus</p>
+</dd>
+<dt>DMON</dt>
+<dd>
+<p>Digital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms</p>
+</dd>
+<dt>F-POD</dt>
+<dd>
+<p>Recording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by <a href="www.chelonia.co.uk">Chelonia, Ltd.</a>. Successor to the C-POD.</p>
+</dd>
+<dt>LFDCS</dt>
+<dd>
+<p>Low-frequency detection and classification system software. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations</p>
+</dd>
+<dt>LS1X</dt>
+<dd>
+<p>Hydrophone manufactured by <a href="https://www.loggerhead.com/ls-recorder">Loggerhead, Inc.</a></p>
+</dd>
+<dt>Rockhopper</dt>
+<dd>
+<p>Whale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.</p>
+</dd>
+<dt>VR2AR</dt>
+<dd>
+<p>Fish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco).</p>
 </dd>
 </dl>
 
