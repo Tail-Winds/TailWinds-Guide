@@ -21,6 +21,10 @@ book:
         - website/07_pull.qmd
         - website/08_push.qmd
         - website/09_pull_request.qmd
+    - part: delphinus/index.qmd
+      chapters:
+        - delphinus/rstudio.qmd
+        - delphinus/gitlab.qmd
     - part: frm/index.qmd
       chapters:
         - frm/01_pot.qmd
