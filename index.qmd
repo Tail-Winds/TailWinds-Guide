@@ -6,28 +6,111 @@ Inspired by [Gavin Fay's Lab Manual](https://thefaylab.github.io/lab-manual/), t
 
 ## Acronyms
 
+BACI
+
+:   Before-After-Control-Impact design
+
+BAG
+
+:   Before-After-Gradient design
+
+BSB
+
+:   black sea bass, *Centropristis striata*
+
+CBL
+
+:   Chesapeake Biological Laboratory
+
 EFP
+
 :   Exempted Fishing Permit
 
+FRM
+
+:   Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
+
 IACUC
-: Institutional Animal Care and Use Committee
+
+:   Institutional Animal Care and Use Committee
 
 LOA
-: Letter of Authorization
+
+:   Letter of Authorization/Acknowledgement
+
+MCBP
+
+:   Maryland Coastal Bays Program
+
+MD DNR
+
+:   Maryland Department of Natural Resources
+
+MDWEA
+
+:   Maryland Wind Energy Area, also known as the Maryland Lease Area
 
 MMM
-: Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
 
-FRM
-: Fishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?
+:   Marine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?
+
+PAM
+
+:   Passive acoustic monitoring
 
 RTWB
-: (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
+
+:   (Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?
+
+UMCES
+
+:   University of Maryland Center for Environmental Science
+
+WHOI
+
+:   Woods Hole Oceanographic Institute
 
 ## Definitions
 
 Console
-: Where you type commands into R.
+
+:   Where you type commands into R.
 
 Terminal
-: Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
+
+:   Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
+
+## Instrumentation
+
+C-POD
+
+:   Recording device that consists of a hydrophone and a processor which detects "trains" of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by [Chelonia, Ltd.](www.chelonia.co.uk). Successor to the T-POD, predecessor to the F-POD.
+
+Delphinus
+
+:   Server located on the UMCES-CBL campus
+
+DMON
+
+:   Digital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms
+
+F-POD
+
+:   Recording device that consists of a hydrophone and a processor which detects "trains" of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by [Chelonia, Ltd.](www.chelonia.co.uk). Successor to the C-POD.
+
+LFDCS
+
+:   Low-frequency detection and classification system software. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations
+
+
+LS1X
+
+:   Hydrophone manufactured by [Loggerhead, Inc.](https://www.loggerhead.com/ls-recorder)
+
+Rockhopper
+
+:   Whale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.
+
+VR2AR
+
+:   Fish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco).
