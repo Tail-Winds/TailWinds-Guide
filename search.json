@@ -21,11 +21,18 @@
     "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
   },
   {
-    "objectID": "index.html#instrumentation",
-    "href": "index.html#instrumentation",
+    "objectID": "index.html#software",
+    "href": "index.html#software",
     "title": "TailWinds Guide",
-    "section": "Instrumentation",
-    "text": "Instrumentation\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLFDCS\n\nLow-frequency detection and classification system software. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco)."
+    "section": "Software",
+    "text": "Software\n\nLFDCS\n\n. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations"
+  },
+  {
+    "objectID": "index.html#hardware",
+    "href": "index.html#hardware",
+    "title": "TailWinds Guide",
+    "section": "Hardware",
+    "text": "Hardware\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco)."
   },
   {
     "objectID": "guide/index.html",
