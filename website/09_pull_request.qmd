@@ -1,14 +1,23 @@
 # Pull request
 
-lorem ipsum
+We've already learned what "pull" means in GitHubspeak, and this is no different. You are requesting that the changes you've made in your own branch be *pulled* into the `main` branch, i.e., that the changes you've made become part of the outward-facing website.
 
 ## Open a pull request
+
+To open a pull request:\\
+
+1.  Go to the [website's GitHub page](https://github.com/Tail-Winds/tail-winds.github.io)
+2.  Select your branch by clicking the button that says "main" on the left just above all of the code.
+3.  There will be a button that says "Compare & pull request". Click it.
+4.  This opens a "Open a pull request" page. Go ahead and make a note about what this is going to do and click "Create pull request".
+5.  At this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!
+6.  After thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it's good to go ahead and let this happen. Don't worry, all of the changes you've made are cataloged in commits, which have now been tacked onto the main branch!
 
 ## Prune a deleted branch
 
 So you've created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can "prune" this branch by running the following in the Terminal, assuming that "branch-to-delete" is the name of the branch you want to delete:
 
-```bash
+``` bash
 git branch -d branch-to-delete
 git fetch -p
 ```
