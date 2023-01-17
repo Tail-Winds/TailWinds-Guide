@@ -91,11 +91,18 @@
     "text": "2.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
   },
   {
-    "objectID": "website/02_git.html",
-    "href": "website/02_git.html",
+    "objectID": "website/02_git.html#tell-git-who-you-are",
+    "href": "website/02_git.html#tell-git-who-you-are",
     "title": "3  Installing Git",
-    "section": "",
-    "text": "Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website."
+    "section": "3.1 Tell Git who you are",
+    "text": "3.1 Tell Git who you are\nWe need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.\nI want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:\n\ninstall.packages('usethis')\nusethis::use_git_config(user.name = \"Mike O'Brien\",\n                        user.email = \"obrien@umces.edu\")\n\nAdjust the above code to your own name/email associated with your GitHub account."
+  },
+  {
+    "objectID": "website/02_git.html#connecting-your-computer-to-github",
+    "href": "website/02_git.html#connecting-your-computer-to-github",
+    "title": "3  Installing Git",
+    "section": "3.2 Connecting your computer to GitHub",
+    "text": "3.2 Connecting your computer to GitHub\nPay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on Happy Git and accept the defaults. There are more specifics at that link, but the steps more or less look like this:\n\nDownload the usethis package and run the create_github_token function\n\n\ninstall.packages('usethis')\nusethis::create_github_token()\n\n\nThis will open a website. Click “Generate token”.\nKEEP THIS WINDOW OPEN. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, KEEP THIS WINDOW OPEN.\nType the following into R:\n\n\ngitcreds::gitcreds_set()\n\n\nCopy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes."
   },
   {
     "objectID": "website/03_clone.html#aside-forking",
@@ -116,28 +123,35 @@
     "href": "website/05_write.html",
     "title": "6  Write",
     "section": "",
-    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page\nIf you want the file to show up on the navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nGo to Build > Preview Site. This will convert everything to HTML behind the scenes."
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar or are ready to nudge things to the actual website, go to Build > Preview Site. This will convert everything to HTML behind the scenes."
+  },
+  {
+    "objectID": "website/06_commit.html",
+    "href": "website/06_commit.html",
+    "title": "7  Commit",
+    "section": "",
+    "text": "Saving a version of all of the files in your repository is called a “commit”. To do so, click the “Commit” button in the Git pane. It will open another window showing you all of the files that have changed and their difference from previous versions: green means that something has been added and red means that something has been removed.\nClick the little box in the “Staged” column next to a file or files, then type a little note as to what you’ve changed in the “Commit message” box. Then click the “Commit” button et voilà! These frozen snapshots of differences in your code or text will be stored on your computer and can be accessed later if necessary.\nFrom Happy Git:\n\nThe daily workflow is probably not dramatically different from what you do currently. You work in the usual way, writing R scripts or authoring reports in LaTeX or R Markdown. But instead of only saving individual files, periodically you make a commit, which takes a snapshot of all the files in the entire project. If you have ever versioned a file by adding your initials or the date, you have effectively made a commit, albeit only for a single file. It is a version that is significant to you and that you might want to inspect or revert to later. Periodically, you push commits to GitHub. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. By pushing to GitHub, you make your work and all your accumulated progress accessible to others.\n\nDon’t be afraid to “commit” changes early and often – think of these as breadcrumbs leading you back from where you came. If you’re confident you can get back there, no need to commit everything. If you’re trailblazing through uncharted territory, you probably want to commit more often."
   },
   {
     "objectID": "website/07_pull.html",
     "href": "website/07_pull.html",
     "title": "8  Pull",
     "section": "",
-    "text": "No, we’re not shooting skeet."
+    "text": "No, we’re not shooting skeet.\nThere will probably come a time when someone has made changes to the website between the time that you last downloaded things from GitHub and now. If you try to send your changes (commits) back up to GitHub, it will stop and let you know that things have changed.\nIn order to get ahead of this, click the “Pull” button. This will pull the changes from GitHub onto your computer. Hopefully, it’ll go ahead and merge everything together for you. If it can’t – usually when you have edited the same lines that someone else has – it will combine the two versions of the files and ask you to sort it out. This usually means opening the files and making an executive decision about what text/code you wish to keep."
   },
   {
     "objectID": "website/08_push.html",
     "href": "website/08_push.html",
     "title": "9  Push",
     "section": "",
-    "text": "Take a deep breath, like Lamaze for your code."
+    "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build > Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git."
   },
   {
     "objectID": "website/09_pull_request.html#open-a-pull-request",
     "href": "website/09_pull_request.html#open-a-pull-request",
     "title": "10  Pull request",
     "section": "10.1 Open a pull request",
-    "text": "10.1 Open a pull request"
+    "text": "10.1 Open a pull request\nTo open a pull request:\\\n\nGo to the website’s GitHub page\nSelect your branch by clicking the button that says “main” on the left just above all of the code.\nThere will be a button that says “Compare & pull request”. Click it.\nThis opens a “Open a pull request” page. Go ahead and make a note about what this is going to do and click “Create pull request”.\nAt this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!\nAfter thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it’s good to go ahead and let this happen. Don’t worry, all of the changes you’ve made are cataloged in commits, which have now been tacked onto the main branch!"
   },
   {
     "objectID": "website/09_pull_request.html#prune-a-deleted-branch",

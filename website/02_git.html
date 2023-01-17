@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -243,7 +306,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#tell-git-who-you-are" id="toc-tell-git-who-you-are" class="nav-link active" data-scroll-target="#tell-git-who-you-are"><span class="toc-section-number">3.1</span>  Tell Git who you are</a></li>
+  <li><a href="#connecting-your-computer-to-github" id="toc-connecting-your-computer-to-github" class="nav-link" data-scroll-target="#connecting-your-computer-to-github"><span class="toc-section-number">3.2</span>  Connecting your computer to GitHub</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -266,10 +336,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.</p>
-<p>I’m saying it again: this is the hardest part. <em>Seriousl</em>y. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called <a href="https://happygitwithr.com/install-intro.html">Happy Git with R</a> that walks through this process in a friendly manner while being candid about the pitfalls.</p>
-<p>The guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and neccesary for you to access the website.</p>
+<p>I’m saying it again: this is the hardest part. <em>Seriously</em>. I’m <strong>super serious</strong>. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called <a href="https://happygitwithr.com/install-intro.html">Happy Git with R</a> that walks through this process in a friendly manner while being candid about the pitfalls.</p>
+<p>The guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and necessary for you to access the website.</p>
+<p>I’m going to highlight two things, just because I’ve found them to be sticky parts that push people over the edge after they’ve gone through the (tougher) rigmarole of installing Git in the first place.</p>
+<section id="tell-git-who-you-are" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="tell-git-who-you-are"><span class="header-section-number">3.1</span> Tell Git who you are</h2>
+<p>We need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.</p>
+<p>I want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Mike O'Brien"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">user.email =</span> <span class="st">"obrien@umces.edu"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Adjust the above code to your own name/email associated with your GitHub account.</p>
+</section>
+<section id="connecting-your-computer-to-github" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="connecting-your-computer-to-github"><span class="header-section-number">3.2</span> Connecting your computer to GitHub</h2>
+<p>Pay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on <a href="https://happygitwithr.com/https-pat.html">Happy Git</a> and accept the defaults. There are more specifics at that link, but the steps more or less look like this:</p>
+<ol type="1">
+<li>Download the <code>usethis</code> package and run the <code>create_github_token</code> function</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li><p>This will open a website. Click “Generate token”.</p></li>
+<li><p><strong>KEEP THIS WINDOW OPEN</strong>. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, <strong>KEEP THIS WINDOW OPEN</strong>.</p></li>
+<li><p>Type the following into R:</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="1">
+<li>Copy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
