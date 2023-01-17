@@ -8,6 +8,7 @@ Generally:
 
 1.  Click the "Pull" button in the Git tab. This will download any changes that have made to the website that you don't have.
 2.  Go to File \> New File \> Quarto Document to make a new page.
-3.  Write whatever you want to go on the page
-4.  If you want the file to show up on the navigation bar, edit the \_quarto.yml file -- this serves as the website's map. Feel free to skip this step if you don't want people to navigate to the page just yet. This is similar to the current page you're on -- you can access directly through the URL, but not by clicking to it.
-5.  Go to Build \> Preview Site. This will convert everything to HTML behind the scenes.
+3.  Write whatever you want to go on the page.
+4.  If you want the file to show up on the website's navigation bar, edit the `_quarto.yml` file -- this serves as the website's map. Feel free to skip this step if you don't want people to navigate to the page just yet. This is similar to the current page you're on -- you can access directly through the URL, but not by clicking to it.
+5.  If you want to take a quick glimpse at what the page you are editing will look like, click the "Render" button at the top of the editing pane, between the magnifying glass and cog. This *will not* change any other page or the locations to which the navigation bar points you.
+6.  If you made changes to the navigation bar or are ready to nudge things to the actual website, go to Build \> Preview Site. This will convert everything to HTML behind the scenes.
