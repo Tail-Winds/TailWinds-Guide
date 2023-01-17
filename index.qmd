@@ -80,7 +80,13 @@ Terminal
 
 :   Command-line interface to the computer. Access in RStudio via Tools \> Terminal \> New Terminal
 
-## Instrumentation
+## Software
+
+LFDCS
+
+:   ![Low-frequency detection and classification system software](http://dcs.whoi.edu/resources/LFDCS%20Reference%20Guide%20-%20Version%201.3.pdf). Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations
+
+## Hardware
 
 C-POD
 
@@ -97,11 +103,6 @@ DMON
 F-POD
 
 :   Recording device that consists of a hydrophone and a processor which detects "trains" of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by [Chelonia, Ltd.](www.chelonia.co.uk). Successor to the C-POD.
-
-LFDCS
-
-:   Low-frequency detection and classification system software. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations
-
 
 LS1X
 
