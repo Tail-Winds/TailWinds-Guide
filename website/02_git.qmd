@@ -2,6 +2,48 @@
 
 Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I'm going to outsource the explaining of how to do it.
 
-I'm saying it again: this is the hardest part. *Seriousl*y. Installing git is way more annoying than it should be. Luckily, there's a really good guide called [Happy Git with R](https://happygitwithr.com/install-intro.html) that walks through this process in a friendly manner while being candid about the pitfalls.
+I'm saying it again: this is the hardest part. *Seriously*. I'm **super serious**. Installing git is way more annoying than it should be. Luckily, there's a really good guide called [Happy Git with R](https://happygitwithr.com/install-intro.html) that walks through this process in a friendly manner while being candid about the pitfalls.
 
 The guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and necessary for you to access the website.
+
+I'm going to highlight two things, just because I've found them to be sticky parts that push people over the edge after they've gone through the (tougher) rigmarole of installing Git in the first place.
+
+## Tell Git who you are
+
+We need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.
+
+I want to be called "Mike O'Brien", and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:
+
+```{r}
+#| eval: false
+install.packages('usethis')
+usethis::use_git_config(user.name = "Mike O'Brien",
+                        user.email = "obrien@umces.edu")
+```
+
+Adjust the above code to your own name/email associated with your GitHub account.
+
+## Connecting your computer to GitHub
+
+Pay attention to the section on setting up a personal access token (PAT). This won't matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on [Happy Git](https://happygitwithr.com/https-pat.html) and accept the defaults. There are more specifics at that link, but the steps more or less look like this:
+
+1.  Download the `usethis` package and run the `create_github_token` function
+
+```{r}
+#| eval: false
+install.packages('usethis')
+usethis::create_github_token()
+```
+
+2.  This will open a website. Click "Generate token".
+
+3.  **KEEP THIS WINDOW OPEN**. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, **KEEP THIS WINDOW OPEN**.
+
+4.  Type the following into R:
+
+```{r}
+#| eval: false
+gitcreds::gitcreds_set()
+```
+
+5.  Copy the PAT from the window you kept open and paste it into R. If everything worked as it's supposed to, you should be able to send your changes to GitHub when the time comes.
