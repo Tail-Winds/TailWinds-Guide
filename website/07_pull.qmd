@@ -1,3 +1,7 @@
 # Pull
 
 No, we're not shooting skeet.
+
+There will probably come a time when someone has made changes to the website between the time that you last downloaded things from GitHub and now. If you try to send your changes (commits) back up to GitHub, it will stop and let you know that things have changed.
+
+In order to get ahead of this, click the "Pull" button. This will ***pull*** the changes from GitHub onto your computer. Hopefully, it'll go ahead and merge everything together for you. If it can't -- usually when you have edited the same lines that someone else has -- it will combine the two versions of the files and ask you to sort it out. This usually means opening the files and making an executive decision about what text/code you wish to keep.
