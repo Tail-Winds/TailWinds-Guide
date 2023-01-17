@@ -1,3 +1,7 @@
 # Push
 
 Take a deep breath, like Lamaze for your code.
+
+Now that everything is in line, compile the website one more time via **Build \> Render**, commit changes, and click the "Push" button. This pushes all of the changes you've logged on your computer (via commits) to GitHub. If you've been editing the master branch, this will automatically change the website.
+
+If you've been editing in your own branch, things are less stressful. A new branch is your own little sandbox -- nothing will get added to the website before it's approved by Mike. To get that done, you need to open a pull request (click on!).
