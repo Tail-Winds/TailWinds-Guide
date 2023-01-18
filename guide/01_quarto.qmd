@@ -1,5 +1,16 @@
 # Quarto
 
-General notes:
+The power of Quarto is that it stitches together tools in a bunch of different "languages". You are going to be mushing together about 4 different languages -- none of which may be R!
 
-- index.qmd has to be the first page and it can't be numbered. Messes up the file organization, but oh well.
+The Quarto documentation has [beginner guides on formatting narrative, figures, etc. here](https://quarto.org/docs/authoring/markdown-basics.html). The main pages of interest are:
+
+-   [Text and paragraph formatting (Markdown)](https://quarto.org/docs/authoring/markdown-basics.html)
+-   [Figures and pictures](https://quarto.org/docs/authoring/figures.html)
+
+## `index.qmd`
+
+There should be an `index.qmd` file for every subsection/folder of the website or guide. Every `.qmd` file is rendered to a `.html` file behind the scenes. In website speak, ending a URL in "index.html" means that your referring to the folder/directory, itself. This means that [https://tailwinds.umces.edu/frm/](https://tailwinds.umces.edu/frm/) goes to the same place as [https://tailwinds.umces.edu/frm/index.html](https://tailwinds.umces.edu/frm/index.html), for example.
+
+## Building/Rendering
+
+When you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called `docs/`, and the Guide stores them in a folder called `_book`. These documents are re-written every time you hit that render button, so it's not crucial to track changes to these documents. When you're ready for primetime, however, these rendered documents should be pushed to GitHub.

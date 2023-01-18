@@ -2,6 +2,8 @@
 
 A guide for the *guide*. Heaven help us.
 
+This guide and the TailWinds website were built using [Quarto](https://quarto.org/) and the tools provided in [RStudio](https://posit.co/downloads/). You can use other tools, it's just what we're most familiar with, so that's what we'll use to walk through the larger concepts. The next sections give a general view of Quarto, Git, and YAML; these were developed by trial-and-error and a lot of failing. Hopefully we can use this as reference.
+
 ## Source vs Visual editor
 
 Pretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the [Quarto website](https://quarto.org/docs/authoring/markdown-basics.html). Note that if you're Googling for something related to Markdown formatting, anything sold as "RMarkdown" will also work.
