@@ -1,6 +1,8 @@
-# Website
+# Website and Guide
 
 In walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once.
+
+The website and guide are both Quarto projects; in fact, the guide, though nominally a book, is just a special kind of website. Because of this, editing the website and the guide follow the same workflow as outlined in further chapters.
 
 ## Other websites of which we are covetous
 
