@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -258,7 +321,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#spacing-and-new-lines" id="toc-spacing-and-new-lines" class="nav-link active" data-scroll-target="#spacing-and-new-lines"><span class="toc-section-number">2.1</span>  Spacing and new lines</a></li>
+  <li><a href="#yml-files" id="toc-yml-files" class="nav-link" data-scroll-target="#yml-files"><span class="toc-section-number">2.2</span>  <code>.yml</code> files</a>
+  <ul class="collapse">
+  <li><a href="#quarto.yml" id="toc-quarto.yml" class="nav-link" data-scroll-target="#quarto.yml"><span class="toc-section-number">2.2.1</span>  <code>_quarto.yml</code></a></li>
+  <li><a href="#metadata.yml" id="toc-metadata.yml" class="nav-link" data-scroll-target="#metadata.yml"><span class="toc-section-number">2.2.2</span>  <code>_metadata.yml</code></a></li>
+  </ul></li>
+  <li><a href="#yaml-headers" id="toc-yaml-headers" class="nav-link" data-scroll-target="#yaml-headers"><span class="toc-section-number">2.3</span>  YAML headers</a></li>
+  <li><a href="#code-block-yaml" id="toc-code-block-yaml" class="nav-link" data-scroll-target="#code-block-yaml"><span class="toc-section-number">2.4</span>  Code block YAML</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -280,8 +356,70 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>“YAML” stands for “YAML Ain’t Markup Language”. Cute, but what the heck does that even mean??</p>
+<p>In the context of Quarto documents, and to that extent RMarkdown documents, the YAML files and YAML headers store metadata on what the folder/document is, and how it should be handled.</p>
+<section id="spacing-and-new-lines" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="spacing-and-new-lines"><span class="header-section-number">2.1</span> Spacing and new lines</h2>
+<p>When looking at YAML, the indentation and new lines are very important. Every time we apply a new argument to a YAML option, it needs to be on a new line, indented under the main argument. HTML YAML options are <a href="https://quarto.org/docs/reference/formats/html.html">outlined here</a>. Let’s assume that we want the document to be exported in HTML format. We’d write it like this:</p>
+<pre><code>format: html</code></pre>
+<p>What if we want to include a table of contents? Well, that is an argument to <code>html</code>, so we have to now put <code>html</code> on a new line and indent it under <code>format</code>.</p>
+<pre><code>format:
+  html: toc</code></pre>
+<p>Except <code>toc</code> has an argument of its own – we’ll have to put that on a new line and indent it, as well.</p>
+<pre><code>format:
+  html:
+    toc: true</code></pre>
+<p>There is a hierarchy in how this is implemented <a href="https://quarto.org/docs/projects/quarto-projects.html#metadata-merging">outlined here</a>. I’ll try to plain-English it below.</p>
+</section>
+<section id="yml-files" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="yml-files"><span class="header-section-number">2.2</span> <code>.yml</code> files</h2>
+<section id="quarto.yml" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="quarto.yml"><span class="header-section-number">2.2.1</span> <code>_quarto.yml</code></h3>
+<p><code>.yml</code> files tend to hold the metadata for everything within the folder that it sits. So, the <code>_quarto.yml</code> file in the website and guide’s root directory dictates how everything in the website/guide is handled.</p>
+<p>Go ahead and open the <code>_quarto.yml</code> file and the Guide. See how, in the YAML file, the table of contents is outlined? Now look at the Guide – the table of contents reflects this.</p>
+<p>Click on a different page in the Guide, and you’ll see that the table of contents is unchanged. This is because the <code>_quarto.yml</code> file controls how all of the pages in the project are rendered.</p>
+</section>
+<section id="metadata.yml" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="metadata.yml"><span class="header-section-number">2.2.2</span> <code>_metadata.yml</code></h3>
+<p>What if there is a specific group of files for which you want to have special rules? This is done by grouping those files in a folder and adding a <code>_metadata.yml</code> file to that folder. It then follows a loose flowchart:</p>
+<ol type="1">
+<li>Take all of the options outlined in the main <code>_quarto.yml</code> file.</li>
+<li>Add all of the options outlined in the <code>folder/_metadata.yml</code> file.</li>
+<li>Where there are different options for the same argument, use the option outlined in the <code>folder/_metadata.yml</code> file.</li>
+</ol>
+<p>Now, all of the <code>.qmd</code> files in the specific folder will use those options.</p>
+</section>
+</section>
+<section id="yaml-headers" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="yaml-headers"><span class="header-section-number">2.3</span> YAML headers</h2>
+<p>What if you have options specific to an individual document? These are outlined in the space between the two sets of “<code>---</code>” at the top of the document. Now the flowchart for that document becomes:</p>
+<ol type="1">
+<li>Take all of the options outlined in the main <code>_quarto.yml</code> file.</li>
+<li>Add all of the options outlined in the <code>folder/_metadata.yml</code> file.</li>
+<li>Add all of the options outlined in the YAML header of the document (what’s between the two sets of <code>---</code>).</li>
+<li>Where there are different options for the same argument, first use the option outlined in the document’s YAML header. If nothing is outlined in the header, use that in the <code>folder/_metadata.yml</code> file.</li>
+</ol>
+<p>Open up the source code for the <a href="https://github.com/Tail-Winds/tail-winds.github.io/blob/realtime/rtwb/index.qmd">Real-time Whale Buoy page</a>. There are a series of additions regarding where the page’s audio files are located:</p>
+<pre><code>---
+title: "Real Time Whale Buoy"
+  format:
+    html:
+      resources:
+        - audio
+---</code></pre>
+<p>This applies specifically to this document. What if, for instance, we wanted that to apply to all documents in the <code>rtwb</code> folder? Well, then we would stick the lines from “<code>format</code>” to “<code>- audio</code>” into a <code>_metadata.yml</code> file.</p>
+</section>
+<section id="code-block-yaml" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="code-block-yaml"><span class="header-section-number">2.4</span> Code block YAML</h2>
+<p>Lastly, you can add YAML in individual code blocks by adding “<code>#|</code>”, followed by the YAML. This takes precedence over the YAML in the document header, <code>_metadata.yml</code> file, and <code>_quarto.yml</code> file.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

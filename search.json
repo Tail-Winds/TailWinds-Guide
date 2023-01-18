@@ -42,11 +42,46 @@
     "text": "Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
   },
   {
-    "objectID": "guide/01_quarto.html",
-    "href": "guide/01_quarto.html",
+    "objectID": "guide/01_quarto.html#buildingrendering",
+    "href": "guide/01_quarto.html#buildingrendering",
     "title": "1  Quarto",
-    "section": "",
-    "text": "General notes:\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
+    "section": "1.1 Building/Rendering",
+    "text": "1.1 Building/Rendering"
+  },
+  {
+    "objectID": "guide/02_yaml.html#spacing-and-new-lines",
+    "href": "guide/02_yaml.html#spacing-and-new-lines",
+    "title": "2  YAML",
+    "section": "2.1 Spacing and new lines",
+    "text": "2.1 Spacing and new lines\nWhen looking at YAML, the indentation and new lines are very important. Every time we apply a new argument to a YAML option, it needs to be on a new line, indented under the main argument. HTML YAML options are outlined here. Let’s assume that we want the document to be exported in HTML format. We’d write it like this:\nformat: html\nWhat if we want to include a table of contents? Well, that is an argument to html, so we have to now put html on a new line and indent it under format.\nformat:\n  html: toc\nExcept toc has an argument of its own – we’ll have to put that on a new line and indent it, as well.\nformat:\n  html:\n    toc: true\nThere is a hierarchy in how this is implemented outlined here. I’ll try to plain-English it below."
+  },
+  {
+    "objectID": "guide/02_yaml.html#yml-files",
+    "href": "guide/02_yaml.html#yml-files",
+    "title": "2  YAML",
+    "section": "2.2 .yml files",
+    "text": "2.2 .yml files\n\n2.2.1 _quarto.yml\n.yml files tend to hold the metadata for everything within the folder that it sits. So, the _quarto.yml file in the website and guide’s root directory dictates how everything in the website/guide is handled.\nGo ahead and open the _quarto.yml file and the Guide. See how, in the YAML file, the table of contents is outlined? Now look at the Guide – the table of contents reflects this.\nClick on a different page in the Guide, and you’ll see that the table of contents is unchanged. This is because the _quarto.yml file controls how all of the pages in the project are rendered.\n\n\n2.2.2 _metadata.yml\nWhat if there is a specific group of files for which you want to have special rules? This is done by grouping those files in a folder and adding a _metadata.yml file to that folder. It then follows a loose flowchart:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nWhere there are different options for the same argument, use the option outlined in the folder/_metadata.yml file.\n\nNow, all of the .qmd files in the specific folder will use those options."
+  },
+  {
+    "objectID": "guide/02_yaml.html#yaml-headers",
+    "href": "guide/02_yaml.html#yaml-headers",
+    "title": "2  YAML",
+    "section": "2.3 YAML headers",
+    "text": "2.3 YAML headers\nWhat if you have options specific to an individual document? These are outlined in the space between the two sets of “---” at the top of the document. Now the flowchart for that document becomes:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nAdd all of the options outlined in the YAML header of the document (what’s between the two sets of ---).\nWhere there are different options for the same argument, first use the option outlined in the document’s YAML header. If nothing is outlined in the header, use that in the folder/_metadata.yml file.\n\nOpen up the source code for the Real-time Whale Buoy page. There are a series of additions regarding where the page’s audio files are located:\n---\ntitle: \"Real Time Whale Buoy\"\n  format:\n    html:\n      resources:\n        - audio\n---\nThis applies specifically to this document. What if, for instance, we wanted that to apply to all documents in the rtwb folder? Well, then we would stick the lines from “format” to “- audio” into a _metadata.yml file."
+  },
+  {
+    "objectID": "guide/02_yaml.html#code-block-yaml",
+    "href": "guide/02_yaml.html#code-block-yaml",
+    "title": "2  YAML",
+    "section": "2.4 Code block YAML",
+    "text": "2.4 Code block YAML\nLastly, you can add YAML in individual code blocks by adding “#|”, followed by the YAML. This takes precedence over the YAML in the document header, _metadata.yml file, and _quarto.yml file.\n```{r}\n#| eval: false\n\n1+1\n```"
+  },
+  {
+    "objectID": "guide/03_git.html#merge-conflicts",
+    "href": "guide/03_git.html#merge-conflicts",
+    "title": "3  Git",
+    "section": "3.1 Merge conflicts",
+    "text": "3.1 Merge conflicts"
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
