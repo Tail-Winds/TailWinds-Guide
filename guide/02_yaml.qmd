@@ -1,1 +1,83 @@
 # YAML
+
+"YAML" stands for "YAML Ain't Markup Language". Cute, but what the heck does that even mean??
+
+In the context of Quarto documents, and to that extent RMarkdown documents, the YAML files and YAML headers store metadata on what the folder/document is, and how it should be handled.
+
+## Spacing and new lines
+
+When looking at YAML, the indentation and new lines are very important. Every time we apply a new argument to a YAML option, it needs to be on a new line, indented under the main argument. HTML YAML options are [outlined here](https://quarto.org/docs/reference/formats/html.html). Let's assume that we want the document to be exported in HTML format. We'd write it like this:
+
+```
+format: html
+```
+
+What if we want to include a table of contents? Well, that is an argument to `html`, so we have to now put `html` on a new line and indent it under `format`.
+
+```
+format:
+  html: toc
+```
+
+Except `toc` has an argument of its own -- we'll have to put that on a new line and indent it, as well.
+
+```
+format:
+  html:
+    toc: true
+```
+
+There is a hierarchy in how this is implemented [outlined here](https://quarto.org/docs/projects/quarto-projects.html#metadata-merging). I'll try to plain-English it below.
+
+## `.yml` files
+
+### `_quarto.yml`
+
+`.yml` files tend to hold the metadata for everything within the folder that it sits. So, the `_quarto.yml` file in the website and guide's root directory dictates how everything in the website/guide is handled.
+
+Go ahead and open the `_quarto.yml` file and the Guide. See how, in the YAML file, the table of contents is outlined? Now look at the Guide -- the table of contents reflects this.
+
+Click on a different page in the Guide, and you'll see that the table of contents is unchanged. This is because the `_quarto.yml` file controls how all of the pages in the project are rendered.
+
+### `_metadata.yml`
+
+What if there is a specific group of files for which you want to have special rules? This is done by grouping those files in a folder and adding a `_metadata.yml` file to that folder. It then follows a loose flowchart:
+
+1.  Take all of the options outlined in the main `_quarto.yml` file.
+2.  Add all of the options outlined in the `folder/_metadata.yml` file.
+3.  Where there are different options for the same argument, use the option outlined in the `folder/_metadata.yml` file.
+
+Now, all of the `.qmd` files in the specific folder will use those options.
+
+## YAML headers
+
+What if you have options specific to an individual document? These are outlined in the space between the two sets of "`---`" at the top of the document. Now the flowchart for that document becomes:
+
+1.  Take all of the options outlined in the main `_quarto.yml` file.
+2.  Add all of the options outlined in the `folder/_metadata.yml` file.
+3.  Add all of the options outlined in the YAML header of the document (what's between the two sets of `---`).
+4.  Where there are different options for the same argument, first use the option outlined in the document's YAML header. If nothing is outlined in the header, use that in the `folder/_metadata.yml` file.
+
+Open up the source code for the [Real-time Whale Buoy page](https://github.com/Tail-Winds/tail-winds.github.io/blob/realtime/rtwb/index.qmd). There are a series of additions regarding where the page's audio files are located:
+
+```
+---
+title: "Real Time Whale Buoy"
+  format:
+    html:
+      resources:
+        - audio
+---
+```
+
+This applies specifically to this document. What if, for instance, we wanted that to apply to all documents in the `rtwb` folder? Well, then we would stick the lines from "`format`" to "`- audio`" into a `_metadata.yml` file.
+
+## Code block YAML
+
+Lastly, you can add YAML in individual code blocks by adding "`#|`", followed by the YAML. This takes precedence over the YAML in the document header, `_metadata.yml` file, and `_quarto.yml` file.
+
+``` {{r}}
+#| eval: false
+
+1+1
+```
