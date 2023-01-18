@@ -1,4 +1,4 @@
-# Editing
+# Guide editing
 
 Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don't run "render website", but instead type
 
@@ -9,14 +9,6 @@ quarto publish
 into the terminal. This compiles everything and commits the changes to the `gh-pages` branch. This branch is then used to deploy the website, so don't edit that branch.
 
 Note that `quarto publish` will publish changes from ***ANY BRANCH***, so the branching paradigm doesn't necessarily work once that command has been run.
-
-## Source vs Visual editor
-
-Pretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the [Quarto website](https://quarto.org/docs/authoring/markdown-basics.html). Note that if you're Googling for something related to Markdown formatting, anything sold as "RMarkdown" will also work.
-
-All of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.
-
-RStudio has a visual editor for markdown documents (also called a "what-you-see-is-what-you-get" editor, or WYSIWYG, or "wizzy-wig", how fun!). You can activate this by clicking "Visual" in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you're curious as to what the markdown code looks like, click "Source" and it will switch to editing as if you were a coding expert.
 
 ## Guide editing workflow
 

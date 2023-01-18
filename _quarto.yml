@@ -9,10 +9,9 @@ book:
     - index.qmd
     - part: guide/index.qmd
       chapters: 
-        - guide/01_editing.qmd
-        - guide/02_quarto.qmd
-        - guide/03_yaml.qmd
-        - guide/04_git.qmd
+        - guide/01_quarto.qmd
+        - guide/02_yaml.qmd
+        - guide/03_git.qmd
     - part: website/index.qmd
       chapters:
         - website/01_downloading.qmd
@@ -24,6 +23,7 @@ book:
         - website/07_pull.qmd
         - website/08_push.qmd
         - website/09_pull_request.qmd
+        - website/10_guide.qmd
     - part: delphinus/index.qmd
       chapters:
         - delphinus/rstudio.qmd
