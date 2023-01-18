@@ -10,6 +10,9 @@ book:
     - part: guide/index.qmd
       chapters: 
         - guide/01_editing.qmd
+        - guide/02_quarto.qmd
+        - guide/03_yaml.qmd
+        - guide/04_git.qmd
     - part: website/index.qmd
       chapters:
         - website/01_downloading.qmd
