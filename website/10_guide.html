@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TailWinds Guide - 5&nbsp; Installing Git</title>
+<title>TailWinds Guide - 13&nbsp; Guide editing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,8 +93,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../website/03_clone.html" rel="next">
-<link href="../website/01_downloading.html" rel="prev">
+<link href="../delphinus/index.html" rel="next">
+<link href="../website/09_pull_request.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Git</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Guide editing</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -201,7 +201,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/02_git.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Git</span></a>
+  <a href="../website/02_git.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -241,7 +241,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/10_guide.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Guide editing</span></a>
+  <a href="../website/10_guide.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Guide editing</span></a>
   </div>
 </li>
       </ul>
@@ -325,8 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tell-git-who-you-are" id="toc-tell-git-who-you-are" class="nav-link active" data-scroll-target="#tell-git-who-you-are"><span class="toc-section-number">5.1</span>  Tell Git who you are</a></li>
-  <li><a href="#connecting-your-computer-to-github" id="toc-connecting-your-computer-to-github" class="nav-link" data-scroll-target="#connecting-your-computer-to-github"><span class="toc-section-number">5.2</span>  Connecting your computer to GitHub</a></li>
+  <li><a href="#guide-editing-workflow" id="toc-guide-editing-workflow" class="nav-link active" data-scroll-target="#guide-editing-workflow"><span class="toc-section-number">13.1</span>  Guide editing workflow</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Git</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Guide editing</span></h1>
 </div>
 
 
@@ -350,41 +349,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>Git gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.</p>
-<p>I’m saying it again: this is the hardest part. <em>Seriously</em>. I’m <strong>super serious</strong>. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called <a href="https://happygitwithr.com/install-intro.html">Happy Git with R</a> that walks through this process in a friendly manner while being candid about the pitfalls.</p>
-<p>The guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and necessary for you to access the website.</p>
-<p>I’m going to highlight two things, just because I’ve found them to be sticky parts that push people over the edge after they’ve gone through the (tougher) rigmarole of installing Git in the first place.</p>
-<section id="tell-git-who-you-are" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="tell-git-who-you-are"><span class="header-section-number">5.1</span> Tell Git who you are</h2>
-<p>We need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.</p>
-<p>I want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(<span class="at">user.name =</span> <span class="st">"Mike O'Brien"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">user.email =</span> <span class="st">"obrien@umces.edu"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Adjust the above code to your own name/email associated with your GitHub account.</p>
-</section>
-<section id="connecting-your-computer-to-github" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="connecting-your-computer-to-github"><span class="header-section-number">5.2</span> Connecting your computer to GitHub</h2>
-<p>Pay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on <a href="https://happygitwithr.com/https-pat.html">Happy Git</a> and accept the defaults. There are more specifics at that link, but the steps more or less look like this:</p>
+<p>Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>into the terminal. This compiles everything and commits the changes to the <code>gh-pages</code> branch. This branch is then used to deploy the website, so don’t edit that branch.</p>
+<p>Note that <code>quarto publish</code> will publish changes from <strong><em>ANY BRANCH</em></strong>, so the branching paradigm doesn’t necessarily work once that command has been run.</p>
+<section id="guide-editing-workflow" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="guide-editing-workflow"><span class="header-section-number">13.1</span> Guide editing workflow</h2>
 <ol type="1">
-<li>Download the <code>usethis</code> package and run the <code>create_github_token</code> function</li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'usethis'</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="2" type="1">
-<li><p>This will open a website. Click “Generate token”.</p></li>
-<li><p><strong>KEEP THIS WINDOW OPEN</strong>. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, <strong>KEEP THIS WINDOW OPEN</strong>.</p></li>
-<li><p>Type the following into R:</p></li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ol start="5" type="1">
-<li>Copy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes.</li>
+<li><p>Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide</p></li>
+<li><p>If you’re making relatively minor changes, commit them to the <code>master</code> branch.</p></li>
+<li><p>If you’re making substantial changes, create a new branch. You can do this either by:</p>
+<ol type="1">
+<li><p>On GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or<img src="images/create_branch.png" class="img-fluid"></p></li>
+<li><p>Clicking “New Branch” in the Git pane in RStudio <img src="images/create_branch_rstudio.png" class="img-fluid"></p></li>
+</ol></li>
+<li><p>Preview your changes in one document by clicking “Render” in the editing pane. <img src="images/render_button.png" class="img-fluid"></p></li>
+<li><p>Preview your changes to the whole document by clicking “Render Book” in the Build pane. <img src="images/render_book.png" class="img-fluid"></p></li>
+<li><p>Commit your changes to your working branch.</p></li>
+<li><p>If you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).</p></li>
+<li><p>If your changes are ready for prime time, enter <code>quarto publish</code> into the Terminal. <img src="images/quarto_publish.png" class="img-fluid"></p>
+<p>It will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”. <img src="images/quarto_publish_confirm.png" class="img-fluid"></p></li>
 </ol>
 
 
@@ -526,13 +510,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../website/01_downloading.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R</span></span>
+      <a href="../website/09_pull_request.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Pull request</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../website/03_clone.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Clone</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../delphinus/index.html" class="pagination-link">
+        <span class="nav-page-text">Delphinus</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

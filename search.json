@@ -35,220 +35,220 @@
     "text": "Hardware\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco)."
   },
   {
-    "objectID": "guide/index.html",
-    "href": "guide/index.html",
+    "objectID": "guide/index.html#source-vs-visual-editor",
+    "href": "guide/index.html#source-vs-visual-editor",
     "title": "TailWinds Guide",
+    "section": "Source vs Visual editor",
+    "text": "Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
+  },
+  {
+    "objectID": "guide/01_quarto.html",
+    "href": "guide/01_quarto.html",
+    "title": "1  Quarto",
     "section": "",
-    "text": "A guide for the guide. Heaven help us.\nGeneral notes:\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
-  },
-  {
-    "objectID": "guide/01_editing.html#source-vs-visual-editor",
-    "href": "guide/01_editing.html#source-vs-visual-editor",
-    "title": "1  Editing",
-    "section": "1.1 Source vs Visual editor",
-    "text": "1.1 Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
-  },
-  {
-    "objectID": "guide/01_editing.html#guide-editing-workflow",
-    "href": "guide/01_editing.html#guide-editing-workflow",
-    "title": "1  Editing",
-    "section": "1.2 Guide editing workflow",
-    "text": "1.2 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
+    "text": "General notes:\n\nindex.qmd has to be the first page and it can’t be numbered. Messes up the file organization, but oh well."
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
     "href": "website/index.html#other-websites-of-which-we-are-covetous",
-    "title": "Website",
+    "title": "Website and Guide",
     "section": "Other websites of which we are covetous",
     "text": "Other websites of which we are covetous\n\nhttps://rowlrs.marine.rutgers.edu/"
   },
   {
     "objectID": "website/01_downloading.html#install-r",
     "href": "website/01_downloading.html#install-r",
-    "title": "2  R",
-    "section": "2.1 Install R",
-    "text": "2.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
+    "title": "4  R",
+    "section": "4.1 Install R",
+    "text": "4.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
   },
   {
     "objectID": "website/01_downloading.html#rstudio",
     "href": "website/01_downloading.html#rstudio",
-    "title": "2  R",
-    "section": "2.2 RStudio",
-    "text": "2.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
+    "title": "4  R",
+    "section": "4.2 RStudio",
+    "text": "4.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
   },
   {
     "objectID": "website/01_downloading.html#quarto",
     "href": "website/01_downloading.html#quarto",
-    "title": "2  R",
-    "section": "2.3 Quarto",
-    "text": "2.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n2.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n2.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n2.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
+    "title": "4  R",
+    "section": "4.3 Quarto",
+    "text": "4.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n4.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n4.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n4.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
   },
   {
     "objectID": "website/01_downloading.html#github",
     "href": "website/01_downloading.html#github",
-    "title": "2  R",
-    "section": "2.4 GitHub",
-    "text": "2.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
+    "title": "4  R",
+    "section": "4.4 GitHub",
+    "text": "4.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
   },
   {
     "objectID": "website/02_git.html#tell-git-who-you-are",
     "href": "website/02_git.html#tell-git-who-you-are",
-    "title": "3  Installing Git",
-    "section": "3.1 Tell Git who you are",
-    "text": "3.1 Tell Git who you are\nWe need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.\nI want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:\n\ninstall.packages('usethis')\nusethis::use_git_config(user.name = \"Mike O'Brien\",\n                        user.email = \"obrien@umces.edu\")\n\nAdjust the above code to your own name/email associated with your GitHub account."
+    "title": "5  Installing Git",
+    "section": "5.1 Tell Git who you are",
+    "text": "5.1 Tell Git who you are\nWe need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.\nI want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:\n\ninstall.packages('usethis')\nusethis::use_git_config(user.name = \"Mike O'Brien\",\n                        user.email = \"obrien@umces.edu\")\n\nAdjust the above code to your own name/email associated with your GitHub account."
   },
   {
     "objectID": "website/02_git.html#connecting-your-computer-to-github",
     "href": "website/02_git.html#connecting-your-computer-to-github",
-    "title": "3  Installing Git",
-    "section": "3.2 Connecting your computer to GitHub",
-    "text": "3.2 Connecting your computer to GitHub\nPay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on Happy Git and accept the defaults. There are more specifics at that link, but the steps more or less look like this:\n\nDownload the usethis package and run the create_github_token function\n\n\ninstall.packages('usethis')\nusethis::create_github_token()\n\n\nThis will open a website. Click “Generate token”.\nKEEP THIS WINDOW OPEN. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, KEEP THIS WINDOW OPEN.\nType the following into R:\n\n\ngitcreds::gitcreds_set()\n\n\nCopy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes."
+    "title": "5  Installing Git",
+    "section": "5.2 Connecting your computer to GitHub",
+    "text": "5.2 Connecting your computer to GitHub\nPay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on Happy Git and accept the defaults. There are more specifics at that link, but the steps more or less look like this:\n\nDownload the usethis package and run the create_github_token function\n\n\ninstall.packages('usethis')\nusethis::create_github_token()\n\n\nThis will open a website. Click “Generate token”.\nKEEP THIS WINDOW OPEN. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, KEEP THIS WINDOW OPEN.\nType the following into R:\n\n\ngitcreds::gitcreds_set()\n\n\nCopy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes."
   },
   {
     "objectID": "website/03_clone.html#aside-forking",
     "href": "website/03_clone.html#aside-forking",
-    "title": "4  Clone",
-    "section": "4.1 Aside: Forking",
-    "text": "4.1 Aside: Forking\nCloning someone else’s GitHub repository is called “forking”. This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.\nGenerally, when you wish to contribute to someone else’s package/code/repository, you:\n\nFork it to your GitHub account,\nClone the forked repository to your computer,\nCreate a new branch (see the next step in this guide),\nCommit your changes to the new branch,\nPush them back to GitHub,\nOpen a pull request for the original repository’s maintainer to pull your changes into their version of the repository."
+    "title": "6  Clone",
+    "section": "6.1 Aside: Forking",
+    "text": "6.1 Aside: Forking\nCloning someone else’s GitHub repository is called “forking”. This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.\nGenerally, when you wish to contribute to someone else’s package/code/repository, you:\n\nFork it to your GitHub account,\nClone the forked repository to your computer,\nCreate a new branch (see the next step in this guide),\nCommit your changes to the new branch,\nPush them back to GitHub,\nOpen a pull request for the original repository’s maintainer to pull your changes into their version of the repository."
   },
   {
     "objectID": "website/04_branch.html#making-a-branch",
     "href": "website/04_branch.html#making-a-branch",
-    "title": "5  Branch",
-    "section": "5.1 Making a branch",
-    "text": "5.1 Making a branch\nNote that these instructions are intentionally redundant to the section on making a branch to edit the Guide. You can make a new branch either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch,\nClicking “New Branch” in the Git pane in RStudio\n\nIf you used method #1, pull the GitHub repository. The new branch will appear on the right side of the Git pane. If you used method #2, the branch should automatically be pushed to GitHub and RStudio will switch to this branch."
+    "title": "7  Branch",
+    "section": "7.1 Making a branch",
+    "text": "7.1 Making a branch\nNote that these instructions are intentionally redundant to the section on making a branch to edit the Guide. You can make a new branch either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch,\nClicking “New Branch” in the Git pane in RStudio\n\nIf you used method #1, pull the GitHub repository. The new branch will appear on the right side of the Git pane. If you used method #2, the branch should automatically be pushed to GitHub and RStudio will switch to this branch."
   },
   {
     "objectID": "website/05_write.html",
     "href": "website/05_write.html",
-    "title": "6  Write",
+    "title": "8  Write",
     "section": "",
     "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar or are ready to nudge things to the actual website, go to Build > Preview Site. This will convert everything to HTML behind the scenes."
   },
   {
     "objectID": "website/06_commit.html",
     "href": "website/06_commit.html",
-    "title": "7  Commit",
+    "title": "9  Commit",
     "section": "",
     "text": "Saving a version of all of the files in your repository is called a “commit”. To do so, click the “Commit” button in the Git pane. It will open another window showing you all of the files that have changed and their difference from previous versions: green means that something has been added and red means that something has been removed.\nClick the little box in the “Staged” column next to a file or files, then type a little note as to what you’ve changed in the “Commit message” box. Then click the “Commit” button et voilà! These frozen snapshots of differences in your code or text will be stored on your computer and can be accessed later if necessary.\nFrom Happy Git:\n\nThe daily workflow is probably not dramatically different from what you do currently. You work in the usual way, writing R scripts or authoring reports in LaTeX or R Markdown. But instead of only saving individual files, periodically you make a commit, which takes a snapshot of all the files in the entire project. If you have ever versioned a file by adding your initials or the date, you have effectively made a commit, albeit only for a single file. It is a version that is significant to you and that you might want to inspect or revert to later. Periodically, you push commits to GitHub. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. By pushing to GitHub, you make your work and all your accumulated progress accessible to others.\n\nDon’t be afraid to “commit” changes early and often – think of these as breadcrumbs leading you back from where you came. If you’re confident you can get back there, no need to commit everything. If you’re trailblazing through uncharted territory, you probably want to commit more often."
   },
   {
     "objectID": "website/07_pull.html",
     "href": "website/07_pull.html",
-    "title": "8  Pull",
+    "title": "10  Pull",
     "section": "",
     "text": "No, we’re not shooting skeet.\nThere will probably come a time when someone has made changes to the website between the time that you last downloaded things from GitHub and now. If you try to send your changes (commits) back up to GitHub, it will stop and let you know that things have changed.\nIn order to get ahead of this, click the “Pull” button. This will pull the changes from GitHub onto your computer. Hopefully, it’ll go ahead and merge everything together for you. If it can’t – usually when you have edited the same lines that someone else has – it will combine the two versions of the files and ask you to sort it out. This usually means opening the files and making an executive decision about what text/code you wish to keep."
   },
   {
     "objectID": "website/08_push.html",
     "href": "website/08_push.html",
-    "title": "9  Push",
+    "title": "11  Push",
     "section": "",
     "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build > Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git."
   },
   {
     "objectID": "website/09_pull_request.html#open-a-pull-request",
     "href": "website/09_pull_request.html#open-a-pull-request",
-    "title": "10  Pull request",
-    "section": "10.1 Open a pull request",
-    "text": "10.1 Open a pull request\nTo open a pull request:\\\n\nGo to the website’s GitHub page\nSelect your branch by clicking the button that says “main” on the left just above all of the code.\nThere will be a button that says “Compare & pull request”. Click it.\nThis opens a “Open a pull request” page. Go ahead and make a note about what this is going to do and click “Create pull request”.\nAt this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!\nAfter thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it’s good to go ahead and let this happen. Don’t worry, all of the changes you’ve made are cataloged in commits, which have now been tacked onto the main branch!"
+    "title": "12  Pull request",
+    "section": "12.1 Open a pull request",
+    "text": "12.1 Open a pull request\nTo open a pull request:\\\n\nGo to the website’s GitHub page\nSelect your branch by clicking the button that says “main” on the left just above all of the code.\nThere will be a button that says “Compare & pull request”. Click it.\nThis opens a “Open a pull request” page. Go ahead and make a note about what this is going to do and click “Create pull request”.\nAt this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!\nAfter thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it’s good to go ahead and let this happen. Don’t worry, all of the changes you’ve made are cataloged in commits, which have now been tacked onto the main branch!"
   },
   {
     "objectID": "website/09_pull_request.html#prune-a-deleted-branch",
     "href": "website/09_pull_request.html#prune-a-deleted-branch",
-    "title": "10  Pull request",
-    "section": "10.2 Prune a deleted branch",
-    "text": "10.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
+    "title": "12  Pull request",
+    "section": "12.2 Prune a deleted branch",
+    "text": "12.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
+  },
+  {
+    "objectID": "website/10_guide.html#guide-editing-workflow",
+    "href": "website/10_guide.html#guide-editing-workflow",
+    "title": "13  Guide editing",
+    "section": "13.1 Guide editing workflow",
+    "text": "13.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
   },
   {
     "objectID": "frm/01_pot.html#site-selection-process",
     "href": "frm/01_pot.html#site-selection-process",
-    "title": "13  Pot survey",
-    "section": "13.1 Site selection process",
-    "text": "13.1 Site selection process"
+    "title": "16  Pot survey",
+    "section": "16.1 Site selection process",
+    "text": "16.1 Site selection process"
   },
   {
     "objectID": "frm/01_pot.html#packing-list",
     "href": "frm/01_pot.html#packing-list",
-    "title": "13  Pot survey",
-    "section": "13.2 Packing list",
-    "text": "13.2 Packing list"
+    "title": "16  Pot survey",
+    "section": "16.2 Packing list",
+    "text": "16.2 Packing list"
   },
   {
     "objectID": "frm/01_pot.html#protocols",
     "href": "frm/01_pot.html#protocols",
-    "title": "13  Pot survey",
-    "section": "13.3 Protocols",
-    "text": "13.3 Protocols"
+    "title": "16  Pot survey",
+    "section": "16.3 Protocols",
+    "text": "16.3 Protocols"
   },
   {
     "objectID": "frm/01_pot.html#vessels",
     "href": "frm/01_pot.html#vessels",
-    "title": "13  Pot survey",
-    "section": "13.4 Vessels",
-    "text": "13.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+    "title": "16  Pot survey",
+    "section": "16.4 Vessels",
+    "text": "16.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
   },
   {
     "objectID": "frm/03_rec.html#site-selection-process",
     "href": "frm/03_rec.html#site-selection-process",
-    "title": "15  Recreational survey",
-    "section": "15.1 Site selection process",
-    "text": "15.1 Site selection process"
+    "title": "18  Recreational survey",
+    "section": "18.1 Site selection process",
+    "text": "18.1 Site selection process"
   },
   {
     "objectID": "frm/03_rec.html#packing-list",
     "href": "frm/03_rec.html#packing-list",
-    "title": "15  Recreational survey",
-    "section": "15.2 Packing list",
-    "text": "15.2 Packing list"
+    "title": "18  Recreational survey",
+    "section": "18.2 Packing list",
+    "text": "18.2 Packing list"
   },
   {
     "objectID": "frm/03_rec.html#protocols",
     "href": "frm/03_rec.html#protocols",
-    "title": "15  Recreational survey",
-    "section": "15.3 Protocols",
-    "text": "15.3 Protocols"
+    "title": "18  Recreational survey",
+    "section": "18.3 Protocols",
+    "text": "18.3 Protocols"
   },
   {
     "objectID": "frm/05_permits.html#iacuc",
     "href": "frm/05_permits.html#iacuc",
-    "title": "17  Permits",
-    "section": "17.1 IACUC",
-    "text": "17.1 IACUC"
+    "title": "20  Permits",
+    "section": "20.1 IACUC",
+    "text": "20.1 IACUC"
   },
   {
     "objectID": "frm/05_permits.html#efp",
     "href": "frm/05_permits.html#efp",
-    "title": "17  Permits",
-    "section": "17.2 EFP",
-    "text": "17.2 EFP"
+    "title": "20  Permits",
+    "section": "20.2 EFP",
+    "text": "20.2 EFP"
   },
   {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
-    "title": "18  Supplies",
-    "section": "18.1 Pot survey",
-    "text": "18.1 Pot survey\n\n18.1.1 Pot warp\n\n\n18.1.2 Hardware"
+    "title": "21  Supplies",
+    "section": "21.1 Pot survey",
+    "text": "21.1 Pot survey\n\n21.1.1 Pot warp\n\n\n21.1.2 Hardware"
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
-    "title": "18  Supplies",
-    "section": "18.2 Recreational survey",
-    "text": "18.2 Recreational survey"
+    "title": "21  Supplies",
+    "section": "21.2 Recreational survey",
+    "text": "21.2 Recreational survey"
   },
   {
     "objectID": "purchasing.html#sole-sources",
     "href": "purchasing.html#sole-sources",
-    "title": "19  Purchasing",
-    "section": "19.1 Sole sources",
-    "text": "19.1 Sole sources"
+    "title": "22  Purchasing",
+    "section": "22.1 Sole sources",
+    "text": "22.1 Sole sources"
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "19  Purchasing",
-    "section": "19.2 Sneades Ace",
-    "text": "19.2 Sneades Ace"
+    "title": "22  Purchasing",
+    "section": "22.2 Sneades Ace",
+    "text": "22.2 Sneades Ace"
   }
 ]
