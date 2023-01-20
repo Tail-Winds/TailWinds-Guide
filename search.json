@@ -42,11 +42,32 @@
     "text": "Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
   },
   {
+    "objectID": "guide/index.html#editing-the-guide",
+    "href": "guide/index.html#editing-the-guide",
+    "title": "TailWinds Guide",
+    "section": "Editing the Guide",
+    "text": "Editing the Guide\nEditing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type\nquarto publish\ninto the terminal. This compiles everything and commits the changes to the gh-pages branch. This branch is then used to deploy the website, so don’t edit that branch.\nNote that quarto publish will publish changes from ANY BRANCH, so the branching paradigm doesn’t necessarily work once that command has been run."
+  },
+  {
+    "objectID": "guide/index.html#guide-editing-workflow",
+    "href": "guide/index.html#guide-editing-workflow",
+    "title": "TailWinds Guide",
+    "section": "Guide editing workflow",
+    "text": "Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
+  },
+  {
+    "objectID": "guide/01_quarto.html#index.qmd",
+    "href": "guide/01_quarto.html#index.qmd",
+    "title": "1  Quarto",
+    "section": "1.1 index.qmd",
+    "text": "1.1 index.qmd\nThere should be an index.qmd file for every subsection/folder of the website or guide. Every .qmd file is rendered to a .html file behind the scenes. In website speak, ending a URL in “index.html” means that your referring to the folder/directory, itself. This means that https://tailwinds.umces.edu/frm/ goes to the same place as https://tailwinds.umces.edu/frm/index.html, for example."
+  },
+  {
     "objectID": "guide/01_quarto.html#buildingrendering",
     "href": "guide/01_quarto.html#buildingrendering",
     "title": "1  Quarto",
-    "section": "1.1 Building/Rendering",
-    "text": "1.1 Building/Rendering"
+    "section": "1.2 Building/Rendering",
+    "text": "1.2 Building/Rendering\nWhen you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called _site and the Guide stores them in a folder called _book. These documents are re-written every time you hit that render button, so we’ve set it up so that they are ignored – you can see them in the respective .gitignore files.\nWhen we’re ready for prime time, we’ll run quarto publish gh-pages in the terminal. This compiles any code chunks locally and commits them to the gh-pages branch on GitHub. In the cloud, GitHub takes all of those files, turns the Markdown into HTML, and publishes it to the website."
   },
   {
     "objectID": "guide/02_yaml.html#spacing-and-new-lines",
@@ -77,11 +98,18 @@
     "text": "2.4 Code block YAML\nLastly, you can add YAML in individual code blocks by adding “#|”, followed by the YAML. This takes precedence over the YAML in the document header, _metadata.yml file, and _quarto.yml file.\n```{r}\n#| eval: false\n\n1+1\n```"
   },
   {
-    "objectID": "guide/03_git.html#merge-conflicts",
-    "href": "guide/03_git.html#merge-conflicts",
+    "objectID": "guide/03_git.html#hansel-and-gretel",
+    "href": "guide/03_git.html#hansel-and-gretel",
     "title": "3  Git",
-    "section": "3.1 Merge conflicts",
-    "text": "3.1 Merge conflicts"
+    "section": "3.1 Hansel and Gretel",
+    "text": "3.1 Hansel and Gretel\nImagine you’re Gretel, running off to Grandma’s house. You don’t actually know how to get there, so you leave a trail of breadcrumbs to get back home. If you know where you are and how you’ve gotten there – you literally just walked out of your door and down the street – you may go a while before dropping a breadcrumb. If you’re unsure, you might drop bread more frequently.\nEach crumb of bread here is a commit. It saves a version of your project that you can jump back to if needed.\nHowever, Hansel is out there too, plowing on ahead and dropping his own crumbs every time you stop to have a snack or a potty break. If he’s out ahead of you, you can just follow his trail (git pull). What if, at a fork in the road, you went left and he went right? Which trail is correct? This is where git gives up and kicks it back to you to solve.\nHappy Git has a walkthrough for some of them, but here is the workflow that Kirsten and I have stumbled on."
+  },
+  {
+    "objectID": "guide/03_git.html#cant-pull",
+    "href": "guide/03_git.html#cant-pull",
+    "title": "3  Git",
+    "section": "3.2 Can’t pull",
+    "text": "3.2 Can’t pull\n\n3.2.1 Files may be overwritten\nWhen pulling from Github, you may get a message that says something like “Your local changes to the following files would be overwritten by merge”. This means that you have files you’ve changed but haven’t logged a commit for.\n\n“Revert” (send back to the previous breadcrumb/commit) anything in the docs/, _site/, or _book/ folder. As outlined here, they shouldn’t be tracked (a different issue) and we don’t need to worry about tracking anything in there.\n\n<add image>\n\nThink about whether you’ve added anything substantial – sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the “Diff”. If it’s nothing major, revert the file.\n\n<add image>\n\nCommit the rest.\nTry to pull again.\n\n\n\n3.2.2 Divergent branches\nNow your error may say something like “You have divergent branches and need to specify how to reconcile them.”\n\ngit merge in the terminal?"
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
@@ -151,7 +179,7 @@
     "href": "website/05_write.html",
     "title": "8  Write",
     "section": "",
-    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar or are ready to nudge things to the actual website, go to Build > Preview Site. This will convert everything to HTML behind the scenes."
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar go to Build > Preview Site. This will convert everything to HTML behind the scenes."
   },
   {
     "objectID": "website/06_commit.html",
@@ -189,101 +217,94 @@
     "text": "12.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
   },
   {
-    "objectID": "website/10_guide.html#guide-editing-workflow",
-    "href": "website/10_guide.html#guide-editing-workflow",
-    "title": "13  Guide editing",
-    "section": "13.1 Guide editing workflow",
-    "text": "13.1 Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
-  },
-  {
     "objectID": "frm/01_pot.html#site-selection-process",
     "href": "frm/01_pot.html#site-selection-process",
-    "title": "16  Pot survey",
-    "section": "16.1 Site selection process",
-    "text": "16.1 Site selection process"
+    "title": "15  Pot survey",
+    "section": "15.1 Site selection process",
+    "text": "15.1 Site selection process"
   },
   {
     "objectID": "frm/01_pot.html#packing-list",
     "href": "frm/01_pot.html#packing-list",
-    "title": "16  Pot survey",
-    "section": "16.2 Packing list",
-    "text": "16.2 Packing list"
+    "title": "15  Pot survey",
+    "section": "15.2 Packing list",
+    "text": "15.2 Packing list"
   },
   {
     "objectID": "frm/01_pot.html#protocols",
     "href": "frm/01_pot.html#protocols",
-    "title": "16  Pot survey",
-    "section": "16.3 Protocols",
-    "text": "16.3 Protocols"
+    "title": "15  Pot survey",
+    "section": "15.3 Protocols",
+    "text": "15.3 Protocols"
   },
   {
     "objectID": "frm/01_pot.html#vessels",
     "href": "frm/01_pot.html#vessels",
-    "title": "16  Pot survey",
-    "section": "16.4 Vessels",
-    "text": "16.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+    "title": "15  Pot survey",
+    "section": "15.4 Vessels",
+    "text": "15.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
   },
   {
     "objectID": "frm/03_rec.html#site-selection-process",
     "href": "frm/03_rec.html#site-selection-process",
-    "title": "18  Recreational survey",
-    "section": "18.1 Site selection process",
-    "text": "18.1 Site selection process"
+    "title": "17  Recreational survey",
+    "section": "17.1 Site selection process",
+    "text": "17.1 Site selection process"
   },
   {
     "objectID": "frm/03_rec.html#packing-list",
     "href": "frm/03_rec.html#packing-list",
-    "title": "18  Recreational survey",
-    "section": "18.2 Packing list",
-    "text": "18.2 Packing list"
+    "title": "17  Recreational survey",
+    "section": "17.2 Packing list",
+    "text": "17.2 Packing list"
   },
   {
     "objectID": "frm/03_rec.html#protocols",
     "href": "frm/03_rec.html#protocols",
-    "title": "18  Recreational survey",
-    "section": "18.3 Protocols",
-    "text": "18.3 Protocols"
+    "title": "17  Recreational survey",
+    "section": "17.3 Protocols",
+    "text": "17.3 Protocols"
   },
   {
     "objectID": "frm/05_permits.html#iacuc",
     "href": "frm/05_permits.html#iacuc",
-    "title": "20  Permits",
-    "section": "20.1 IACUC",
-    "text": "20.1 IACUC"
+    "title": "19  Permits",
+    "section": "19.1 IACUC",
+    "text": "19.1 IACUC"
   },
   {
     "objectID": "frm/05_permits.html#efp",
     "href": "frm/05_permits.html#efp",
-    "title": "20  Permits",
-    "section": "20.2 EFP",
-    "text": "20.2 EFP"
+    "title": "19  Permits",
+    "section": "19.2 EFP",
+    "text": "19.2 EFP"
   },
   {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
-    "title": "21  Supplies",
-    "section": "21.1 Pot survey",
-    "text": "21.1 Pot survey\n\n21.1.1 Pot warp\n\n\n21.1.2 Hardware"
+    "title": "20  Supplies",
+    "section": "20.1 Pot survey",
+    "text": "20.1 Pot survey\n\n20.1.1 Pot warp\n\n\n20.1.2 Hardware"
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
-    "title": "21  Supplies",
-    "section": "21.2 Recreational survey",
-    "text": "21.2 Recreational survey"
+    "title": "20  Supplies",
+    "section": "20.2 Recreational survey",
+    "text": "20.2 Recreational survey"
   },
   {
     "objectID": "purchasing.html#sole-sources",
     "href": "purchasing.html#sole-sources",
-    "title": "22  Purchasing",
-    "section": "22.1 Sole sources",
-    "text": "22.1 Sole sources"
+    "title": "21  Purchasing",
+    "section": "21.1 Sole sources",
+    "text": "21.1 Sole sources"
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "22  Purchasing",
-    "section": "22.2 Sneades Ace",
-    "text": "22.2 Sneades Ace"
+    "title": "21  Purchasing",
+    "section": "21.2 Sneades Ace",
+    "text": "21.2 Sneades Ace"
   }
 ]
