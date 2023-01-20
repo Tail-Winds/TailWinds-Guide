@@ -1,1 +1,34 @@
 # Git
+
+## Hansel and Gretel
+
+Imagine you're Gretel, running off to Grandma's house. You don't actually know how to get there, so you leave a trail of breadcrumbs to get back home. If you know where you are and how you've gotten there -- you literally just walked out of your door and down the street -- you may go a while before dropping a breadcrumb. If you're unsure, you might drop bread more frequently.
+
+Each crumb of bread here is a commit. It saves a version of your project that you can jump back to if needed.
+
+However, Hansel is out there too, plowing on ahead and dropping his own crumbs every time you stop to have a snack or a potty break. If he's out ahead of you, you can just follow his trail (`git pull`). What if, at a fork in the road, you went left and he went right? Which trail is correct? This is where git gives up and kicks it back to you to solve.
+
+[Happy Git](https://happygitwithr.com/workflows-intro.html) has a walkthrough for some of them, but here is the workflow that Kirsten and I have stumbled on.
+
+## Can't pull
+
+### Files may be overwritten
+
+When pulling from Github, you may get a message that says something like "*Your local changes to the following files would be overwritten by merge*". This means that you have files you've changed but haven't logged a commit for.
+
+-   "Revert" (send back to the previous breadcrumb/commit) anything in the `docs/`, `_site/`, or `_book/` folder. [As outlined here](01_quarto.html#buildingrendering), they shouldn't be tracked (a different issue) and we don't need to worry about tracking anything in there.
+
+\<add image\>
+
+-   Think about whether you've added anything substantial -- sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the "Diff". If it's nothing major, revert the file.
+
+\<add image\>
+
+-   Commit the rest.
+-   Try to pull again.
+
+### Divergent branches
+
+Now your error may say something like "*You have divergent branches and need to specify how to reconcile them.*"
+
+-   `git merge` in the terminal?
