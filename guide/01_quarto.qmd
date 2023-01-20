@@ -13,4 +13,6 @@ There should be an `index.qmd` file for every subsection/folder of the website o
 
 ## Building/Rendering
 
-When you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called `docs/`, and the Guide stores them in a folder called `_book`. These documents are re-written every time you hit that render button, so it's not crucial to track changes to these documents. When you're ready for primetime, however, these rendered documents should be pushed to GitHub.
+When you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called `_site` and the Guide stores them in a folder called `_book`. These documents are re-written every time you hit that render button, so we've set it up so that they are ignored -- you can see them in the respective `.gitignore` files.
+
+When we're ready for prime time, we'll run `quarto publish gh-pages` in the terminal. This compiles any code chunks locally and commits them to the `gh-pages` branch on GitHub. In the cloud, GitHub takes all of those files, turns the Markdown into HTML, and publishes it to the website.
