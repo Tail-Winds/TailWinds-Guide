@@ -11,3 +11,39 @@ Pretty much everything you write for the Guide (and the website) will use Markdo
 All of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.
 
 RStudio has a visual editor for markdown documents (also called a "what-you-see-is-what-you-get" editor, or WYSIWYG, or "wizzy-wig", how fun!). You can activate this by clicking "Visual" in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you're curious as to what the markdown code looks like, click "Source" and it will switch to editing as if you were a coding expert.
+
+## Editing the Guide
+
+Editing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don't run "render website", but instead type
+
+``` bash
+quarto publish
+```
+
+into the terminal. This compiles everything and commits the changes to the `gh-pages` branch. This branch is then used to deploy the website, so don't edit that branch.
+
+Note that `quarto publish` will publish changes from ***ANY BRANCH***, so the branching paradigm doesn't necessarily work once that command has been run.
+
+## Guide editing workflow
+
+1.  Clone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide
+
+2.  If you're making relatively minor changes, commit them to the `master` branch.
+
+3.  If you're making substantial changes, create a new branch. You can do this either by:
+
+    1.  On GitHub, clicking the box on the top left that says "master" and typing in whatever you want to call the new branch, or![](images/create_branch.png)
+
+    2.  Clicking "New Branch" in the Git pane in RStudio ![](../website/images/create_branch_rstudio.png)
+
+4.  Preview your changes in one document by clicking "Render" in the editing pane. ![](../website/images/render_button.png)
+
+5.  Preview your changes to the whole document by clicking "Render Book" in the Build pane. ![](../website/images/render_book.png)
+
+6.  Commit your changes to your working branch.
+
+7.  If you'd like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).
+
+8.  If your changes are ready for prime time, enter `quarto publish` into the Terminal. ![](../website/images/quarto_publish.png)
+
+    It will ask you to confirm if you want to update the website version of the Guide by typing "Yes"/"y"/"Y". ![](../website/images/quarto_publish_confirm.png)

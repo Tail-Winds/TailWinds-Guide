@@ -23,7 +23,6 @@ book:
         - website/07_pull.qmd
         - website/08_push.qmd
         - website/09_pull_request.qmd
-        - website/10_guide.qmd
     - part: delphinus/index.qmd
       chapters:
         - delphinus/rstudio.qmd
