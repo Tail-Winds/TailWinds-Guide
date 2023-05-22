@@ -25,8 +25,11 @@ book:
         - website/09_pull_request.qmd
     - part: delphinus/index.qmd
       chapters:
+        - delphinus/login.qmd
+        - delphinus/password.qmd
+        - delphinus/files.qmd
+        - delphinus/cli.qmd
         - delphinus/rstudio.qmd
-        - delphinus/gitlab.qmd
     - part: frm/index.qmd
       chapters:
         - frm/01_pot.qmd
