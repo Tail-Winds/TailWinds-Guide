@@ -1,0 +1,72 @@
+# File management
+
+## Mapping a network drive
+
+### Windows
+
+-   Right click "This PC" and select "Map Network Drive"
+-   Select an unused drive (D: in the picture, but it can be whichever you'd like) and enter `\\delphinus\NAMEOFSHARE` for the folder
+    -   Shares are the names of the various users (`mike`/`jamie`/`kirsten`/etc) and `uswind`
+
+![](map_drive.png)
+
+-   Enter your username and ***PASSWORD REDACTED*** as the password. Click "Use a different account" if your username is pre-populated
+
+![](map_drive_creds.png)
+
+-   You are connected!
+-   If you would like to move things between shares (directories), you need to repeat this process, mounting (mapping) each directory to a differently-lettered drive
+
+### Mac
+-   To do
+
+## Moving files
+
+### GUI (Filezilla)
+-   To do
+
+### CLI
+-   Use the `mv` command (“move”)
+-   `mv from/here.txt to/here.txt`
+
+![](mv.png)
+
+-   **WARNING!** This will automatically overwrite any existing files!
+    -   Use the `-i` flag to have the system warn you before copying
+    -   `mv -i from/here.txt to/here.txt`
+
+![](mv_overwrite.png)
+
+## Uploading files
+
+### GUI
+
+-   To do
+
+### CLI
+-   Use the `scp` command, which stands for “secure copy protocol”. If you are “`ssh`-d” into delphinus, log out by typing `exit` and hitting `enter`; `ssh` is baked into `scp`, and they wind up not working together
+-   If on Windows, type, for example:
+    -   `scp C:\path\to\file.wav YOURUSERNAME@delphinus:/path/to/copy`
+    -   **Note the change in slash direction!!**
+    -   **Note that everything is case sensitive!!**
+    -   You will be asked for your password, then files are copied (uploaded) to delphinus
+
+![](scp.png)
+
+-   To upload a whole folder, add `-r` after `scp` and before the file path. The `r` stands for “recursive”
+    - `scp -r C:\path\to\directory YOURUSERNAME@delphinus:/path/to/copy`
+
+## Downloading files
+
+### GUI
+-   To do
+
+### CLI 
+-   Navigate to your file’s directory and type `pwd` to find the path to your file
+-   As when [uploading](#uploading-files), use the `scp` command, which stands for “secure copy protocol”. If you are “`ssh`-d” into delphinus, log out by typing `exit` and hitting `enter`; `ssh` is baked into `scp`, and they wind up not working together.
+-   If on Windows, type:
+    -   `scp YOURUSERNAME@delphinus:/path/to/filename.docx C:\path\to\copy`
+    -   **Note the change in slash direction!!**
+    -   **Note that everything is case sensitive!!**
+    -   You will be asked for your password, then files are copied (downloaded) to your computer
+
