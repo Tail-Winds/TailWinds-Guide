@@ -1,3 +1,6 @@
+---
+engine: knitr
+---
 # Command Line Interface (the Terminal)
 
 This is... admittedly daunting. However, it's incredibly powerful and unlocks a whole world of computing -- so stick with it!
@@ -11,10 +14,10 @@ If there were another one-dash argument, it could be placed directly after the f
 
 ## Useful CLI commands
 ### The `--help` flag
-Type this after a command for which you need information. It's not guaranteed to work, but most commands have a help page you can call this way.
+Type this after a command for which you need information. It's not guaranteed to work, but most commands have a help page you can call this way. For example, here's the help documentation for the `passwd` ("password") command.
 
 ```{bash}
-pwd --help
+passwd --help
 ```
 
 ### `pwd`
@@ -36,7 +39,9 @@ ls
 
 ```{bash}
 pwd
-cd delphinus
+```
+```{bash}
+cd test_dir
 pwd
 ```
 #### `cd ..`
@@ -44,8 +49,8 @@ pwd
 
 ```{bash}
 pwd
-cd delphinus
-pwd
+```
+```{bash}
 cd ..
 pwd
 ```
@@ -54,6 +59,8 @@ pwd
 -   `cd ~` means "go back to your user directory
 ```{bash}
 pwd
+```
+```{bash}
 cd ~
 pwd
 ```
@@ -63,6 +70,8 @@ pwd
 
 ```{bash}
 pwd
+```
+```{bash}
 cd /
 pwd
 ```
