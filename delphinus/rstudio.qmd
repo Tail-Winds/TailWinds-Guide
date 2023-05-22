@@ -1,1 +1,22 @@
 # RStudio Server
+
+RStudio Server can be accessed by going to <http://delphinus:8787> while on the CBL network. You will be prompted to log in -- the credentials should be your *delphinus* username and password.
+
+## Advantages of RStudio Server
+
+-   *delphinus* is big and fast.
+    -   There are 128 GB of RAM, while most laptops have 4-16 GB; the server is not going to get as bogged down as your machine.
+    -   There are 48 cores, which mean you can run your code in parallel -- think 48 concurrent R sessions grinding away at your analyses. Some packages leverage these cores automatically, but you'll likely have to code this in; look into the ["futureverse" packages](https://www.futureverse.org/) and/or talk to Mike O'Brien if you would like to leverage multiple cores.
+-   If you log out (by clicking File \> Sign Out or the box with a right arrow in the top-right of the screen) or close the browser window, your code will keep running in the background.
+
+## Disadvantages of RStudio Server
+
+-   You need to be connected to the internet
+-   You need to be on the CBL network (either on campus or VPN-d in)
+-   It will use more RAM when idle when compared to RStudio desktop if you're using Chrome or another browser with a lot of extensions
+-   Some other common issues outlined below
+
+## Common issues
+
+-   Windows file paths are not case sensitive; Linux file paths are. So, if using code written while on a Windows machine, you should double-check that any file paths are capitalized correctly.
+-   If using R to access Google services via packages that use the [gargle](https://gargle.r-lib.org/index.html) package for authentication ([googledrive](https://googledrive.tidyverse.org/), [googlesheets4](https://googlesheets4.tidyverse.org/)), you should move to ["out of browser" authentication](https://gargle.r-lib.org/articles/auth-from-web.html). There's a loose outline [here](https://gargle.r-lib.org/articles/non-interactive-auth.html#provide-a-service-account-token-directly) and Mike O'Brien has done this before. Contact him if you need help.
