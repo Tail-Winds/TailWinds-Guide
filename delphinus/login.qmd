@@ -1,0 +1,44 @@
+# Logging in
+
+-   If on campus connect to internet using UMCES-WiFi or CBL-ACADNET
+-   If not on campus or only on UMCES-Guest log into VPN
+-   Can use ACADNET or local; don't need to route all
+
+## Graphical User Interface (GUI)
+
+### Log in on Filezilla
+
+-   [Download Filezilla software here](https://filezilla-project.org/)
+-   Log in by entering
+    -   Host = Delphinus
+    -   Username = \[your first name, all lowercase\]
+    -   Password = \[your password, default is *tailwinds*\]
+    -   Port = 21
+
+![](filezilla.png)
+
+## Command line interface (CLI)
+
+-   Open a terminal window
+    - In Windows, hit the Windows key and type "terminal". Select the terminal app.
+-   "ssh" into the server:
+    -   `ssh YOURUSERNAME@delphinus`
+    -   Enter your password
+        -   No characters will show up after `password:`
+        -   as you type, just enter your password and then hit `Enter`
+-   If you're on Windows and this doesn't work, you might need to [install OpenSSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
+
+![](ssh-in.png)
+
+### Bash CLI shell
+If this is your first time logging in, you will probably want to switch to a "Bash" terminal. This has nifty things like coloring, copy/paste, and auto-complete. To do this:
+
+-   Type `chsh -s /bin/bash` and hit `Enter`
+-   You will be prompted to enter your password
+-   Log out by typing `logout` and hit `Enter`
+-   Log back in using the instructions above
+
+## Remote Desktop
+
+- TBD
+
