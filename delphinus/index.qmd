@@ -1,1 +1,45 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Delphinus
+
+-   OS: Ubuntu 20.04 LTS
+-   RAM: 128 GB
+-   Storage: 150 TB
+-   CPU: 3.8 GHz, 24 cores, 48 threads
+-   User profiles for:
+
+::: columns
+::: {.column style="width: 5%"}
+:::
+::: {.column style="width: 25%"}
+-   amber
+-   ctribbs
+-   dave
+-   jamie
+-   kirsten
+:::
+
+::: {.column style="width: 33%"}
+-   larry
+-   mdren
+-   mike
+-   rbell (ADMIN/"sudo")
+:::
+
+::: {.column style="width: 33%"}
+-   robert
+-   slava
+-   system (CBL IT, ADMIN/"sudo")
+-   tailwinds
+:::
+:::
+
+## Command line interface (CLI)
+
+As delphinus is running Ubuntu, which is a Linux operating system, everything can be done via the command line, or terminal. There is a steep learning curve here, but it is very fast as resources are not used running a graphical user interface (GUI).
+
+Information in further chapters in this section will be provided both for those using a GUI or the CLI.
