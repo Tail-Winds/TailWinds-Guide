@@ -18,7 +18,7 @@
     "href": "index.html#definitions",
     "title": "TailWinds Guide",
     "section": "Definitions",
-    "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools > Terminal > New Terminal"
+    "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools &gt; Terminal &gt; New Terminal"
   },
   {
     "objectID": "index.html#software",
@@ -109,7 +109,7 @@
     "href": "guide/03_git.html#cant-pull",
     "title": "3  Git",
     "section": "3.2 Can’t pull",
-    "text": "3.2 Can’t pull\n\n3.2.1 Files may be overwritten\nWhen pulling from Github, you may get a message that says something like “Your local changes to the following files would be overwritten by merge”. This means that you have files you’ve changed but haven’t logged a commit for.\n\n“Revert” (send back to the previous breadcrumb/commit) anything in the docs/, _site/, or _book/ folder. As outlined here, they shouldn’t be tracked (a different issue) and we don’t need to worry about tracking anything in there.\n\n<add image>\n\nThink about whether you’ve added anything substantial – sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the “Diff”. If it’s nothing major, revert the file.\n\n<add image>\n\nCommit the rest.\nTry to pull again.\n\n\n\n3.2.2 Divergent branches\nNow your error may say something like “You have divergent branches and need to specify how to reconcile them.”\n\ngit merge in the terminal?"
+    "text": "3.2 Can’t pull\n\n3.2.1 Files may be overwritten\nWhen pulling from Github, you may get a message that says something like “Your local changes to the following files would be overwritten by merge”. This means that you have files you’ve changed but haven’t logged a commit for.\n\n“Revert” (send back to the previous breadcrumb/commit) anything in the docs/, _site/, or _book/ folder. As outlined here, they shouldn’t be tracked (a different issue) and we don’t need to worry about tracking anything in there.\n\n&lt;add image&gt;\n\nThink about whether you’ve added anything substantial – sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the “Diff”. If it’s nothing major, revert the file.\n\n&lt;add image&gt;\n\nCommit the rest.\nTry to pull again.\n\n\n\n3.2.2 Divergent branches\nNow your error may say something like “You have divergent branches and need to specify how to reconcile them.”\n\ngit merge in the terminal?"
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
@@ -123,7 +123,7 @@
     "href": "website/01_downloading.html#install-r",
     "title": "4  R",
     "section": "4.1 Install R",
-    "text": "4.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.2.2 (2022-10-31 ucrt)\"\n\n\nYep."
+    "text": "4.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.3.0 (2023-04-21 ucrt)\"\n\n\nYep."
   },
   {
     "objectID": "website/01_downloading.html#rstudio",
@@ -137,7 +137,7 @@
     "href": "website/01_downloading.html#quarto",
     "title": "4  R",
     "section": "4.3 Quarto",
-    "text": "4.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools > Terminal >New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n4.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n4.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools > Terminal > New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n4.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools > Terminal > New Terminal and type:\nquarto install extension schochastics/academicons"
+    "text": "4.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools &gt; Terminal &gt;New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n4.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n4.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n4.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension schochastics/academicons"
   },
   {
     "objectID": "website/01_downloading.html#github",
@@ -179,7 +179,7 @@
     "href": "website/05_write.html",
     "title": "8  Write",
     "section": "",
-    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File > New File > Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar go to Build > Preview Site. This will convert everything to HTML behind the scenes."
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File &gt; New File &gt; Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar go to Build &gt; Preview Site. This will convert everything to HTML behind the scenes."
   },
   {
     "objectID": "website/06_commit.html",
@@ -200,7 +200,7 @@
     "href": "website/08_push.html",
     "title": "11  Push",
     "section": "",
-    "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build > Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git."
+    "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build &gt; Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git."
   },
   {
     "objectID": "website/09_pull_request.html#open-a-pull-request",
@@ -217,94 +217,199 @@
     "text": "12.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
   },
   {
+    "objectID": "delphinus/index.html#command-line-interface-cli",
+    "href": "delphinus/index.html#command-line-interface-cli",
+    "title": "Delphinus",
+    "section": "Command line interface (CLI)",
+    "text": "Command line interface (CLI)\nAs delphinus is running Ubuntu, which is a Linux operating system, everything can be done via the command line, or terminal. There is a steep learning curve here, but it is very fast as resources are not used running a graphical user interface (GUI).\nInformation in further chapters in this section will be provided both for those using a GUI or the CLI."
+  },
+  {
+    "objectID": "delphinus/login.html#graphical-user-interface-gui",
+    "href": "delphinus/login.html#graphical-user-interface-gui",
+    "title": "13  Logging in",
+    "section": "13.1 Graphical User Interface (GUI)",
+    "text": "13.1 Graphical User Interface (GUI)\n\n13.1.1 Log in on Filezilla\n\nDownload Filezilla software here\nLog in by entering\n\nHost = Delphinus\nUsername = [your first name, all lowercase]\nPassword = [your password, default is tailwinds]\nPort = 21"
+  },
+  {
+    "objectID": "delphinus/login.html#command-line-interface-cli",
+    "href": "delphinus/login.html#command-line-interface-cli",
+    "title": "13  Logging in",
+    "section": "13.2 Command line interface (CLI)",
+    "text": "13.2 Command line interface (CLI)\n\nOpen a terminal window\n\nIn Windows, hit the Windows key and type “terminal”. Select the terminal app.\n\n“ssh” into the server:\n\nssh YOURUSERNAME@delphinus\nEnter your password\n\nNo characters will show up after password:\nas you type, just enter your password and then hit Enter\n\n\nIf you’re on Windows and this doesn’t work, you might need to install OpenSSH\n\n\n\n13.2.1 Bash CLI shell\nIf this is your first time logging in, you will probably want to switch to a “Bash” terminal. This has nifty things like coloring, copy/paste, and auto-complete. To do this:\n\nType chsh -s /bin/bash and hit Enter\nYou will be prompted to enter your password\nLog out by typing logout and hit Enter\nLog back in using the instructions above"
+  },
+  {
+    "objectID": "delphinus/login.html#remote-desktop",
+    "href": "delphinus/login.html#remote-desktop",
+    "title": "13  Logging in",
+    "section": "13.3 Remote Desktop",
+    "text": "13.3 Remote Desktop\n\nTBD"
+  },
+  {
+    "objectID": "delphinus/password.html#gui",
+    "href": "delphinus/password.html#gui",
+    "title": "14  Changing a password",
+    "section": "14.1 GUI",
+    "text": "14.1 GUI\n\nTo do"
+  },
+  {
+    "objectID": "delphinus/password.html#cli",
+    "href": "delphinus/password.html#cli",
+    "title": "14  Changing a password",
+    "section": "14.2 CLI",
+    "text": "14.2 CLI\n\nAfter ssh-ing into delphinus, type passwd and follow the prompts"
+  },
+  {
+    "objectID": "delphinus/files.html#mapping-a-network-drive",
+    "href": "delphinus/files.html#mapping-a-network-drive",
+    "title": "15  File management",
+    "section": "15.1 Mapping a network drive",
+    "text": "15.1 Mapping a network drive\n\n15.1.1 Windows\n\nRight click “This PC” and select “Map Network Drive”\nSelect an unused drive (D: in the picture, but it can be whichever you’d like) and enter \\\\delphinus\\NAMEOFSHARE for the folder\n\nShares are the names of the various users (mike/jamie/kirsten/etc) and uswind\n\n\n\n\nEnter your username and PASSWORD REDACTED as the password. Click “Use a different account” if your username is pre-populated\n\n\n\nYou are connected!\nIf you would like to move things between shares (directories), you need to repeat this process, mounting (mapping) each directory to a differently-lettered drive\n\n\n\n15.1.2 Mac\n\nTo do"
+  },
+  {
+    "objectID": "delphinus/files.html#moving-files",
+    "href": "delphinus/files.html#moving-files",
+    "title": "15  File management",
+    "section": "15.2 Moving files",
+    "text": "15.2 Moving files\n\n15.2.1 GUI (Filezilla)\n\nTo do\n\n\n\n15.2.2 CLI\n\nUse the mv command (“move”)\nmv from/here.txt to/here.txt\n\n\n\nWARNING! This will automatically overwrite any existing files!\n\nUse the -i flag to have the system warn you before copying\nmv -i from/here.txt to/here.txt"
+  },
+  {
+    "objectID": "delphinus/files.html#uploading-files",
+    "href": "delphinus/files.html#uploading-files",
+    "title": "15  File management",
+    "section": "15.3 Uploading files",
+    "text": "15.3 Uploading files\n\n15.3.1 GUI\n\nTo do\n\n\n\n15.3.2 CLI\n\nUse the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together\nIf on Windows, type, for example:\n\nscp C:\\path\\to\\file.wav YOURUSERNAME@delphinus:/path/to/copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (uploaded) to delphinus\n\n\n\n\nTo upload a whole folder, add -r after scp and before the file path. The r stands for “recursive”\n\nscp -r C:\\path\\to\\directory YOURUSERNAME@delphinus:/path/to/copy"
+  },
+  {
+    "objectID": "delphinus/files.html#downloading-files",
+    "href": "delphinus/files.html#downloading-files",
+    "title": "15  File management",
+    "section": "15.4 Downloading files",
+    "text": "15.4 Downloading files\n\n15.4.1 GUI\n\nTo do\n\n\n\n15.4.2 CLI\n\nNavigate to your file’s directory and type pwd to find the path to your file\nAs when uploading, use the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together.\nIf on Windows, type:\n\nscp YOURUSERNAME@delphinus:/path/to/filename.docx C:\\path\\to\\copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (downloaded) to your computer"
+  },
+  {
+    "objectID": "delphinus/cli.html#functions-and-arguments-options",
+    "href": "delphinus/cli.html#functions-and-arguments-options",
+    "title": "16  Command Line Interface (the Terminal)",
+    "section": "16.1 Functions and arguments (options)",
+    "text": "16.1 Functions and arguments (options)\nIn R, you might see a function of the form sum(1, na.rm = TRUE). Here, sum would be the function, and na.rm would be an argument.\nIf this function existed in Linux (it doesn’t), it would be in the form sum 1 --na.rm. Here, --na.rm is called a “flag” or “option”. Often these are shortened to one letter and one dash. For example, lets say the na.rm flag in our dummy function can be shortened to n. This would then be sum 1 -n.\nIf there were another one-dash argument, it could be placed directly after the first. Say an --abs.val or -a flag takes the absolute value, our code could be sum 1 --na.rm --abs.val OR sum 1 -na."
+  },
+  {
+    "objectID": "delphinus/cli.html#useful-cli-commands",
+    "href": "delphinus/cli.html#useful-cli-commands",
+    "title": "16  Command Line Interface (the Terminal)",
+    "section": "16.2 Useful CLI commands",
+    "text": "16.2 Useful CLI commands\n\n16.2.1 The --help flag\nType this after a command for which you need information. It’s not guaranteed to work, but most commands have a help page you can call this way. For example, here’s the help documentation for the passwd (“password”) command.\n\npasswd --help\n\nUsage: passwd [options] [LOGIN]\n\nOptions:\n  -a, --all                     report password status on all accounts\n  -d, --delete                  delete the password for the named account\n  -e, --expire                  force expire the password for the named account\n  -h, --help                    display this help message and exit\n  -k, --keep-tokens             change password only if expired\n  -i, --inactive INACTIVE       set password inactive after expiration\n                                to INACTIVE\n  -l, --lock                    lock the password of the named account\n  -n, --mindays MIN_DAYS        set minimum number of days before password\n                                change to MIN_DAYS\n  -q, --quiet                   quiet mode\n  -r, --repository REPOSITORY   change password in REPOSITORY repository\n  -R, --root CHROOT_DIR         directory to chroot into\n  -S, --status                  report password status on the named account\n  -u, --unlock                  unlock the password of the named account\n  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS\n  -x, --maxdays MAX_DAYS        set maximum number of days before password\n                                change to MAX_DAYS\n\n\n\n\n16.2.2 pwd\n\nUse the pwd command to see where you are (pwd stands for “print working directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\n\n16.2.3 ls\n\nUse the ls command to list files (ls stands for “list”)\n\n\nls\n\ncli.qmd\ncli.rmarkdown\nfiles.html\nfiles.qmd\nfilezilla.png\nindex.html\nindex.qmd\nlogin.html\nlogin.qmd\nmap_drive.png\nmap_drive_creds.png\nmv.png\nmv_overwrite.png\npasswd.png\npassword.html\npassword.qmd\nrstudio.qmd\nscp.png\nssh-in.png\ntest_dir\n\n\n\n\n16.2.4 cd\n\nUse the cd command and one of the directories (folders) to change directories (cd stands for “change directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd test_dir\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus/test_dir\n\n\n\n16.2.4.1 cd ..\n\ncd .. means “go back one folder”\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ..\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide\n\n\n\n\n16.2.4.2 cd ~\n\ncd ~ means “go back to your user directory\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ~\npwd\n\n/home/darpa2\n\n\n\n\n16.2.4.3 cd /\n\ncd / goes back to the main server directory. You can access other users’ directories via /home\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd /\npwd\n\n/"
+  },
+  {
+    "objectID": "delphinus/rstudio.html#advantages-of-rstudio-server",
+    "href": "delphinus/rstudio.html#advantages-of-rstudio-server",
+    "title": "17  RStudio Server",
+    "section": "17.1 Advantages of RStudio Server",
+    "text": "17.1 Advantages of RStudio Server\n\ndelphinus is big and fast.\n\nThere are 128 GB of RAM, while most laptops have 4-16 GB; the server is not going to get as bogged down as your machine.\nThere are 48 cores, which mean you can run your code in parallel – think 48 concurrent R sessions grinding away at your analyses. Some packages leverage these cores automatically, but you’ll likely have to code this in; look into the “futureverse” packages and/or talk to Mike O’Brien if you would like to leverage multiple cores.\n\nIf you log out (by clicking File &gt; Sign Out or the box with a right arrow in the top-right of the screen) or close the browser window, your code will keep running in the background."
+  },
+  {
+    "objectID": "delphinus/rstudio.html#disadvantages-of-rstudio-server",
+    "href": "delphinus/rstudio.html#disadvantages-of-rstudio-server",
+    "title": "17  RStudio Server",
+    "section": "17.2 Disadvantages of RStudio Server",
+    "text": "17.2 Disadvantages of RStudio Server\n\nYou need to be connected to the internet\nYou need to be on the CBL network (either on campus or VPN-d in)\nIt will use more RAM when idle when compared to RStudio desktop if you’re using Chrome or another browser with a lot of extensions\nSome other common issues outlined below"
+  },
+  {
+    "objectID": "delphinus/rstudio.html#common-issues",
+    "href": "delphinus/rstudio.html#common-issues",
+    "title": "17  RStudio Server",
+    "section": "17.3 Common issues",
+    "text": "17.3 Common issues\n\nWindows file paths are not case sensitive; Linux file paths are. So, if using code written while on a Windows machine, you should double-check that any file paths are capitalized correctly.\nIf using R to access Google services via packages that use the gargle package for authentication (googledrive, googlesheets4), you should move to “out of browser” authentication. There’s a loose outline here and Mike O’Brien has done this before. Contact him if you need help."
+  },
+  {
     "objectID": "frm/01_pot.html#site-selection-process",
     "href": "frm/01_pot.html#site-selection-process",
-    "title": "15  Pot survey",
-    "section": "15.1 Site selection process",
-    "text": "15.1 Site selection process"
+    "title": "18  Pot survey",
+    "section": "18.1 Site selection process",
+    "text": "18.1 Site selection process"
   },
   {
     "objectID": "frm/01_pot.html#packing-list",
     "href": "frm/01_pot.html#packing-list",
-    "title": "15  Pot survey",
-    "section": "15.2 Packing list",
-    "text": "15.2 Packing list"
+    "title": "18  Pot survey",
+    "section": "18.2 Packing list",
+    "text": "18.2 Packing list"
   },
   {
     "objectID": "frm/01_pot.html#protocols",
     "href": "frm/01_pot.html#protocols",
-    "title": "15  Pot survey",
-    "section": "15.3 Protocols",
-    "text": "15.3 Protocols"
+    "title": "18  Pot survey",
+    "section": "18.3 Protocols",
+    "text": "18.3 Protocols"
   },
   {
     "objectID": "frm/01_pot.html#vessels",
     "href": "frm/01_pot.html#vessels",
-    "title": "15  Pot survey",
-    "section": "15.4 Vessels",
-    "text": "15.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+    "title": "18  Pot survey",
+    "section": "18.4 Vessels",
+    "text": "18.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
   },
   {
     "objectID": "frm/03_rec.html#site-selection-process",
     "href": "frm/03_rec.html#site-selection-process",
-    "title": "17  Recreational survey",
-    "section": "17.1 Site selection process",
-    "text": "17.1 Site selection process"
+    "title": "20  Recreational survey",
+    "section": "20.1 Site selection process",
+    "text": "20.1 Site selection process"
   },
   {
     "objectID": "frm/03_rec.html#packing-list",
     "href": "frm/03_rec.html#packing-list",
-    "title": "17  Recreational survey",
-    "section": "17.2 Packing list",
-    "text": "17.2 Packing list"
+    "title": "20  Recreational survey",
+    "section": "20.2 Packing list",
+    "text": "20.2 Packing list"
   },
   {
     "objectID": "frm/03_rec.html#protocols",
     "href": "frm/03_rec.html#protocols",
-    "title": "17  Recreational survey",
-    "section": "17.3 Protocols",
-    "text": "17.3 Protocols"
+    "title": "20  Recreational survey",
+    "section": "20.3 Protocols",
+    "text": "20.3 Protocols"
   },
   {
     "objectID": "frm/05_permits.html#iacuc",
     "href": "frm/05_permits.html#iacuc",
-    "title": "19  Permits",
-    "section": "19.1 IACUC",
-    "text": "19.1 IACUC"
+    "title": "22  Permits",
+    "section": "22.1 IACUC",
+    "text": "22.1 IACUC"
   },
   {
     "objectID": "frm/05_permits.html#efp",
     "href": "frm/05_permits.html#efp",
-    "title": "19  Permits",
-    "section": "19.2 EFP",
-    "text": "19.2 EFP"
+    "title": "22  Permits",
+    "section": "22.2 EFP",
+    "text": "22.2 EFP"
   },
   {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
-    "title": "20  Supplies",
-    "section": "20.1 Pot survey",
-    "text": "20.1 Pot survey\n\n20.1.1 Pot warp\n\n\n20.1.2 Hardware"
+    "title": "23  Supplies",
+    "section": "23.1 Pot survey",
+    "text": "23.1 Pot survey\n\n23.1.1 Pot warp\n\n\n23.1.2 Hardware"
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
-    "title": "20  Supplies",
-    "section": "20.2 Recreational survey",
-    "text": "20.2 Recreational survey"
+    "title": "23  Supplies",
+    "section": "23.2 Recreational survey",
+    "text": "23.2 Recreational survey"
   },
   {
     "objectID": "purchasing.html#sole-sources",
     "href": "purchasing.html#sole-sources",
-    "title": "21  Purchasing",
-    "section": "21.1 Sole sources",
-    "text": "21.1 Sole sources"
+    "title": "24  Purchasing",
+    "section": "24.1 Sole sources",
+    "text": "24.1 Sole sources"
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "21  Purchasing",
-    "section": "21.2 Sneades Ace",
-    "text": "21.2 Sneades Ace"
+    "title": "24  Purchasing",
+    "section": "24.2 Sneades Ace",
+    "text": "24.2 Sneades Ace"
   }
 ]

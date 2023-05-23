@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TailWinds Guide - 9&nbsp; Commit</title>
+<title>TailWinds Guide - 16&nbsp; Command Line Interface (the Terminal)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../website/07_pull.html" rel="next">
-<link href="../website/05_write.html" rel="prev">
+<link href="../delphinus/rstudio.html" rel="next">
+<link href="../delphinus/files.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../website/index.html">Website and Guide</a></li><li class="breadcrumb-item"><a href="../website/06_commit.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Commit</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../delphinus/index.html">Delphinus</a></li><li class="breadcrumb-item"><a href="../delphinus/cli.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Command Line Interface (the Terminal)</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -174,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../website/06_commit.html" class="sidebar-item-text sidebar-link active">
+  <a href="../website/06_commit.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Commit</span></span></a>
   </div>
 </li>
@@ -227,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../delphinus/cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../delphinus/cli.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Command Line Interface (the Terminal)</span></span></a>
   </div>
 </li>
@@ -304,14 +338,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#functions-and-arguments-options" id="toc-functions-and-arguments-options" class="nav-link active" data-scroll-target="#functions-and-arguments-options"><span class="header-section-number">16.1</span> Functions and arguments (options)</a></li>
+  <li><a href="#useful-cli-commands" id="toc-useful-cli-commands" class="nav-link" data-scroll-target="#useful-cli-commands"><span class="header-section-number">16.2</span> Useful CLI commands</a>
+  <ul class="collapse">
+  <li><a href="#the---help-flag" id="toc-the---help-flag" class="nav-link" data-scroll-target="#the---help-flag"><span class="header-section-number">16.2.1</span> The <code>--help</code> flag</a></li>
+  <li><a href="#pwd" id="toc-pwd" class="nav-link" data-scroll-target="#pwd"><span class="header-section-number">16.2.2</span> <code>pwd</code></a></li>
+  <li><a href="#ls" id="toc-ls" class="nav-link" data-scroll-target="#ls"><span class="header-section-number">16.2.3</span> <code>ls</code></a></li>
+  <li><a href="#cd" id="toc-cd" class="nav-link" data-scroll-target="#cd"><span class="header-section-number">16.2.4</span> <code>cd</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Commit</span></h1>
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Command Line Interface (the Terminal)</span></h1>
 </div>
 
 
@@ -326,15 +373,167 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Saving a version of all of the files in your repository is called a “commit”. To do so, click the “Commit” button in the Git pane. It will open another window showing you all of the files that have changed and their difference from previous versions: green means that something has been added and red means that something has been removed.</p>
-<p>Click the little box in the “Staged” column next to a file or files, then type a little note as to what you’ve changed in the “Commit message” box. Then click the “Commit” button <em>et voilà</em>! These frozen snapshots of differences in your code or text will be stored on your computer and can be accessed later if necessary.</p>
-<p>From <a href="https://happygitwithr.com/git-basics.html">Happy Git</a>:</p>
-<blockquote class="blockquote">
-<p>The daily workflow is probably not dramatically different from what you do currently. You work in the usual way, writing R scripts or authoring reports in LaTeX or R Markdown. But instead of only <em>saving</em> individual files, periodically you make a <strong>commit</strong>, which takes a snapshot of all the files in the entire project. If you have ever versioned a file <a href="http://www.phdcomics.com/comics/archive.php?comicid=1531">by adding your initials or the date</a>, you have effectively made a commit, albeit only for a single file. It is a version that is significant to you and that you might want to inspect or revert to later. Periodically, you push commits to GitHub. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. By pushing to GitHub, you make your work and all your accumulated progress accessible to others.</p>
-</blockquote>
-<p>Don’t be afraid to “commit” changes early and often – think of these as breadcrumbs leading you back from where you came. If you’re confident you can get back there, no need to commit everything. If you’re trailblazing through uncharted territory, you probably want to commit more often.</p>
+<p>This is… admittedly daunting. However, it’s incredibly powerful and unlocks a whole world of computing – so stick with it!</p>
+<section id="functions-and-arguments-options" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="functions-and-arguments-options"><span class="header-section-number">16.1</span> Functions and arguments (options)</h2>
+<p>In R, you might see a function of the form <code>sum(1, na.rm = TRUE)</code>. Here, <code>sum</code> would be the function, and <code>na.rm</code> would be an argument.</p>
+<p>If this function existed in Linux (it doesn’t), it would be in the form <code>sum 1 --na.rm</code>. Here, <code>--na.rm</code> is called a “flag” or “option”. Often these are shortened to one letter and one dash. For example, lets say the <code>na.rm</code> flag in our dummy function can be shortened to <code>n</code>. This would then be <code>sum 1 -n</code>.</p>
+<p>If there were another one-dash argument, it could be placed directly after the first. Say an <code>--abs.val</code> or <code>-a</code> flag takes the absolute value, our code could be <code>sum 1 --na.rm --abs.val</code> <strong>OR</strong> <code>sum 1 -na</code>.</p>
+</section>
+<section id="useful-cli-commands" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="useful-cli-commands"><span class="header-section-number">16.2</span> Useful CLI commands</h2>
+<section id="the---help-flag" class="level3" data-number="16.2.1">
+<h3 data-number="16.2.1" class="anchored" data-anchor-id="the---help-flag"><span class="header-section-number">16.2.1</span> The <code>--help</code> flag</h3>
+<p>Type this after a command for which you need information. It’s not guaranteed to work, but most commands have a help page you can call this way. For example, here’s the help documentation for the <code>passwd</code> (“password”) command.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">passwd</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Usage: passwd [options] [LOGIN]
+
+Options:
+  -a, --all                     report password status on all accounts
+  -d, --delete                  delete the password for the named account
+  -e, --expire                  force expire the password for the named account
+  -h, --help                    display this help message and exit
+  -k, --keep-tokens             change password only if expired
+  -i, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -l, --lock                    lock the password of the named account
+  -n, --mindays MIN_DAYS        set minimum number of days before password
+                                change to MIN_DAYS
+  -q, --quiet                   quiet mode
+  -r, --repository REPOSITORY   change password in REPOSITORY repository
+  -R, --root CHROOT_DIR         directory to chroot into
+  -S, --status                  report password status on the named account
+  -u, --unlock                  unlock the password of the named account
+  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
+  -x, --maxdays MAX_DAYS        set maximum number of days before password
+                                change to MAX_DAYS</code></pre>
+</div>
+</div>
+</section>
+<section id="pwd" class="level3" data-number="16.2.2">
+<h3 data-number="16.2.2" class="anchored" data-anchor-id="pwd"><span class="header-section-number">16.2.2</span> <code>pwd</code></h3>
+<ul>
+<li>Use the <code>pwd</code> command to see where you are (<code>pwd</code> stands for “print working directory”)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus</code></pre>
+</div>
+</div>
+</section>
+<section id="ls" class="level3" data-number="16.2.3">
+<h3 data-number="16.2.3" class="anchored" data-anchor-id="ls"><span class="header-section-number">16.2.3</span> <code>ls</code></h3>
+<ul>
+<li>Use the <code>ls</code> command to list files (<code>ls</code> stands for “list”)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>cli.qmd
+cli.rmarkdown
+files.html
+files.qmd
+filezilla.png
+index.html
+index.qmd
+login.html
+login.qmd
+map_drive.png
+map_drive_creds.png
+mv.png
+mv_overwrite.png
+passwd.png
+password.html
+password.qmd
+rstudio.qmd
+scp.png
+ssh-in.png
+test_dir</code></pre>
+</div>
+</div>
+</section>
+<section id="cd" class="level3" data-number="16.2.4">
+<h3 data-number="16.2.4" class="anchored" data-anchor-id="cd"><span class="header-section-number">16.2.4</span> <code>cd</code></h3>
+<ul>
+<li>Use the <code>cd</code> command and one of the directories (folders) to change directories (<code>cd</code> stands for “change directory”)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> test_dir</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus/test_dir</code></pre>
+</div>
+</div>
+<section id="cd-.." class="level4" data-number="16.2.4.1">
+<h4 data-number="16.2.4.1" class="anchored" data-anchor-id="cd-.."><span class="header-section-number">16.2.4.1</span> <code>cd ..</code></h4>
+<ul>
+<li><code>cd ..</code> means “go back one folder”</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide</code></pre>
+</div>
+</div>
+</section>
+<section id="cd-1" class="level4" data-number="16.2.4.2">
+<h4 data-number="16.2.4.2" class="anchored" data-anchor-id="cd-1"><span class="header-section-number">16.2.4.2</span> <code>cd ~</code></h4>
+<ul>
+<li><code>cd ~</code> means “go back to your user directory</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/home/darpa2</code></pre>
+</div>
+</div>
+</section>
+<section id="cd-2" class="level4" data-number="16.2.4.3">
+<h4 data-number="16.2.4.3" class="anchored" data-anchor-id="cd-2"><span class="header-section-number">16.2.4.3</span> <code>cd /</code></h4>
+<ul>
+<li><code>cd /</code> goes back to the main server directory. You can access other users’ directories via <code>/home</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> /</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/</code></pre>
+</div>
+</div>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -572,13 +771,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../website/05_write.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Write</span></span>
+      <a href="../delphinus/files.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">File management</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../website/07_pull.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Pull</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../delphinus/rstudio.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">RStudio Server</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
