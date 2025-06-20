@@ -38,6 +38,7 @@ book:
         - frm/04_dissection.qmd
         - frm/05_permits.qmd
         - frm/supplies.qmd
+    - soundscape_figures.qmd
     - purchasing.qmd
     - references.qmd
 

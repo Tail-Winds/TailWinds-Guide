@@ -1,0 +1,190 @@
+---
+title: "Sound through time figures"
+format: html
+editor: visual
+---
+
+The goal of this document is to recreate a few bioacoustic-y figures in R.
+
+## "Ribbon spectrograms" and "ribbon plots"
+
+The first is a figure from a presentation entitled ["Long-duration Audio-recordings of the Environment"](https://research.ecosounds.org/research/eadm-towsey/long-duration-audio-recordings-of-the-environment) from the Queensland University of Technology in 2017.
+
+[A "ribbon plot"](https://research.ecosounds.org/research/eadm-towsey/long-duration-audio-recordings-of-the-environment#slide-17-44-days-of-ocean-recordings) has multiple days worth of "ribbon spectrograms"; the figure below runs from day 1 at the top to day 44 at the bottom. Each ribbon is a time series (minutes, x axis) of the frequencies (Hz/kHz, y axis) of "acoustic events" (colors) that have variable amplitude (intensity of color). As an added bonus, the figure also shows sunrise/sunset (linked vertical lines) and times of high and low tides (disjointed vertical lines).
+
+![](https://research.ecosounds.org/research/eadm-towsey/Slides/Slide22.png)
+
+First, we'll create some dummy data from, say the month of June, 2025. We'll have a frequency range of 1 to 50 kHz and acoustic events that range in amplitude from 1 to 153. Keep in mind that I have no idea what I'm talking about, so these values are completely unrepresentative of reality.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Load packages and create dummy data"
+#| message: false
+
+library(suncalc)
+library(lubridate)
+library(ggplot2)
+library(scales)
+library(dplyr)
+
+# Dummy data
+#   Let's say the month of June, 2025
+#   Say SPL ranges from 0 to 153 (just a random number to display rescaling)
+#   Randomly assign these to one of three species
+
+mins_in_day <- 60*24
+n_days <- 30
+n_freqs <- 50
+
+spl <- 
+  # Create time series of days and minutes for each frequency band
+  expand.grid(
+    day = 1:n_days,
+    minute = 1:mins_in_day,
+    freq = 1:n_freqs
+  ) |> 
+  mutate(
+    # Create a random SPL at each frequency for each minute
+    spl = runif(mins_in_day * n_days * n_freqs, min = 0, max = 153),
+    # Randomly assign species
+    event = sample(
+      c('dolphin', 'fish', 'porpoise'),
+      mins_in_day * n_days * n_freqs, replace = T
+    ),
+    # rescale frequency and spl range to 0-1 range
+    freq_scaled = rescale(freq, to = c(0, 1)),
+    spl_scaled = rescale(spl, to = c(0, 1))
+  )
+head(spl)
+```
+
+Note that this is already a lot of information -- `r nrow(spl)` rows!! This figure is *incredibly* information dense.
+
+We'll use the `suncalc` package to get sunrise and sunset times near the RTWB. I'm not going to mess with tide at this point.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Pull June 2025 sunrise and sunset times"
+
+
+# Grab sunrise/set times using the suncalc package
+sun <- getSunlightTimes(
+  seq.Date('2025-06-01', '2025-06-30'),
+  lat = 38.3, lon = -74.6,
+  keep = c('sunrise', 'sunset'),
+  tz = 'America/New_York'
+) |> 
+  # Pull out day number and minute of day to plot everything together
+  mutate(
+    day = day(date),
+    sunrise_minute = minute(sunrise) + (hour(sunrise) * 60),
+    sunset_minute = minute(sunset) + (hour(sunset) * 60)
+  )
+
+head(sun)
+```
+
+We're going to use `ggplot2` to create this figure, but it's not really meant to do this. As a result, there's some code we're going to reuse a bunch that isn't too important. We'll use this as a base on which we'll build the rest of the figure.
+
+```{r}
+base_plot <- ggplot() +
+  facet_wrap(~day, ncol = 1, strip.position = 'left') +
+  labs(y = NULL) +
+  theme_minimal() +
+  theme(
+    plot.background = element_rect(fill = 'black'),
+    panel.background = element_rect(fill = 'black'),
+    strip.background = element_blank(),
+    strip.text.y.left = element_text(angle = 0, color = 'white'),
+    axis.text = element_blank(),
+    axis.ticks.y = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.spacing = unit(0, 'lines')
+  )
+```
+
+Basically, `facet_wrap(~day)` is telling `ggplot` to stack what will be our "ribbon spectrograms", by day, into the "ribbon plot", placing the labels on the left (`strip.position = 'left'`). Everything else is to try and match the figure's style.
+
+We're also going to be reusing the sunrise and sunset times, so we'll throw that on top of our base plot.
+
+```{r}
+base_plot <- base_plot +
+  geom_vline(data = sun, aes(xintercept = sunrise_minute), color = 'yellow') +
+  geom_vline(data = sun, aes(xintercept = sunset_minute), color = 'yellow')
+```
+
+Here's what that looks like:
+
+```{r}
+base_plot
+```
+
+Now we'll layer on our data, thinking in terms of an individual ribbon rather than the whole plot. Since there's so much data, it's computationally quicker to think of this as a regular raster grid with a cell height (`y`) of one frequency unit (Hz? kHz?) and a cell width (`x`) of one minute. Each cell will be colored (`fill`) by event and have an intensity (`alpha`) according to its SPL.
+
+```{r}
+base_plot +
+  geom_raster(
+    data = spl,
+    aes(x = minute, y = freq, fill = event, alpha = spl_scaled),
+    show.legend = FALSE
+  )
+```
+
+Doesn't look like much at the moment, but it's because we used randomly-generated data that has no pattern. Hopefully it'll be more useful when there are patterns to see.
+
+## Temporal changes in sounds
+
+The next is from Figure 4 of [Lin et al. 2021](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008698), described as "**Temporal changes in abiotic sounds, fish choruses, and cetacean vocalizations.** The relative amplitudes were normalized to a range between 0 and 1. Seasonal changes in sunrise and sunset are shown as white and yellow dashed lines, respectively."
+
+![](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1008698.g004)
+
+This figure is similar to the above, but its "events" (species) are in separate plots rather than being over-plotted. This changes the encoding of "event" from a color to a specific plot and the encoding of amplitude from transparency to color. There's no real mention of frequency here, so my assumption is that this is broadband amplitude.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Create 'broadband' values"
+#| message: false
+
+# Cheating and taking the mean SPL across frequencies as the "broadband" SPL
+spl_broadband <- spl |> 
+  group_by(day, minute, event) |> 
+  summarise(spl_broadband = mean(spl)) |> 
+  mutate(spl_broadband = rescale(spl_broadband),
+         hr = minute / 60)
+```
+
+This switch means the figure is much less information dense, using fewer points: `r nrow(spl_broadband)` as compared to `r nrow(spl)`.
+
+As before, there are some hacky things to make our figure look similar to the one linked above that is not very important, so I'll separate that out.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Hacky plot stuff"
+
+base_plot <- ggplot() +
+  scale_x_continuous(breaks = seq(0, 24, 6)) +
+  scale_fill_viridis_c(breaks = c(0, 0.5, 1)) +
+  labs(x = 'Hour', y = NULL) +
+  facet_wrap(~ event, nrow = 1) +
+  theme_minimal() +
+  theme(
+    legend.position = 'bottom',
+    legend.title = element_blank()
+  )
+```
+
+
+```{r}
+base_plot +
+  geom_raster(data = spl_broadband, aes(x = hr, y = day, fill = spl_broadband)) +
+  
+  # this is just adding in the sunrise/set times
+  geom_vline(data = sun,
+             aes(xintercept = sunrise_minute / 60), color = 'white',
+             lty = 'dashed') +
+  geom_vline(data = sun,
+             aes(xintercept = sunset_minute / 60), color = 'yellow',
+             lty = 'dashed') 
+```
+
