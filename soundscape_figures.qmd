@@ -1,5 +1,5 @@
 ---
-title: "Sound through time figures"
+title: "Soundscape figures"
 format: html
 editor: visual
 ---
@@ -174,7 +174,6 @@ base_plot <- ggplot() +
   )
 ```
 
-
 ```{r}
 base_plot +
   geom_raster(data = spl_broadband, aes(x = hr, y = day, fill = spl_broadband)) +
@@ -187,4 +186,3 @@ base_plot +
              aes(xintercept = sunset_minute / 60), color = 'yellow',
              lty = 'dashed') 
 ```
-
