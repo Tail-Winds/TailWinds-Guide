@@ -4,412 +4,776 @@
     "href": "index.html",
     "title": "TailWinds Guide",
     "section": "",
-    "text": "Preface and Definitions\nThis guide is intended to be a place to host our accumulated institutional knowledge and standard operating procedures regarding the TailWinds project. We’ve already had mild amounts of staff turnover, so the hope is that this will alleviate some of the pain associated with onboarding – or “re-onboarding” our current members after periods away from the project.\nInspired by Gavin Fay’s Lab Manual, this is a living document which everyone should be able to edit."
+    "text": "Preface and Definitions\nThis guide is intended to be a place to host our accumulated institutional knowledge and standard operating procedures regarding the TailWinds project. We’ve already had mild amounts of staff turnover, so the hope is that this will alleviate some of the pain associated with onboarding – or “re-onboarding” our current members after periods away from the project.\nInspired by Gavin Fay’s Lab Manual, this is a living document which everyone should be able to edit.",
+    "crumbs": [
+      "Preface and Definitions"
+    ]
   },
   {
     "objectID": "index.html#acronyms",
     "href": "index.html#acronyms",
     "title": "TailWinds Guide",
     "section": "Acronyms",
-    "text": "Acronyms\n\nBACI\n\nBefore-After-Control-Impact design\n\nBAG\n\nBefore-After-Gradient design\n\nBSB\n\nblack sea bass, Centropristis striata\n\nCBL\n\nChesapeake Biological Laboratory\n\nEFP\n\nExempted Fishing Permit\n\nFRM\n\nFishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nIACUC\n\nInstitutional Animal Care and Use Committee\n\nLOA\n\nLetter of Authorization/Acknowledgement\n\nMCBP\n\nMaryland Coastal Bays Program\n\nMD DNR\n\nMaryland Department of Natural Resources\n\nMDWEA\n\nMaryland Wind Energy Area, also known as the Maryland Lease Area\n\nMMM\n\nMarine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nPAM\n\nPassive acoustic monitoring\n\nRTWB\n\n(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?\n\nUMCES\n\nUniversity of Maryland Center for Environmental Science\n\nWHOI\n\nWoods Hole Oceanographic Institute"
+    "text": "Acronyms\n\nBACI\n\nBefore-After-Control-Impact design\n\nBAG\n\nBefore-After-Gradient design\n\nBSB\n\nblack sea bass, Centropristis striata\n\nCBL\n\nChesapeake Biological Laboratory\n\nEFP\n\nExempted Fishing Permit\n\nFRM\n\nFishery Resource Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nIACUC\n\nInstitutional Animal Care and Use Committee\n\nLOA\n\nLetter of Authorization/Acknowledgement\n\nMCBP\n\nMaryland Coastal Bays Program\n\nMD DNR\n\nMaryland Department of Natural Resources\n\nMDWEA\n\nMaryland Wind Energy Area, also known as the Maryland Lease Area\n\nMMM\n\nMarine Mammal Monitoring. One of the three core TailWinds projects. Include FRS #?\n\nPAM\n\nPassive acoustic monitoring\n\nRTWB\n\n(Near) Real-Time Whale Buoy. One of the three core TailWinds projects. FRS #?\n\nUMCES\n\nUniversity of Maryland Center for Environmental Science\n\nWHOI\n\nWoods Hole Oceanographic Institute",
+    "crumbs": [
+      "Preface and Definitions"
+    ]
   },
   {
     "objectID": "index.html#definitions",
     "href": "index.html#definitions",
     "title": "TailWinds Guide",
     "section": "Definitions",
-    "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools &gt; Terminal &gt; New Terminal"
+    "text": "Definitions\n\nConsole\n\nWhere you type commands into R.\n\nTerminal\n\nCommand-line interface to the computer. Access in RStudio via Tools &gt; Terminal &gt; New Terminal",
+    "crumbs": [
+      "Preface and Definitions"
+    ]
   },
   {
     "objectID": "index.html#software",
     "href": "index.html#software",
     "title": "TailWinds Guide",
     "section": "Software",
-    "text": "Software\n\nLFDCS\n\n. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations"
+    "text": "Software\n\nLFDCS\n\n. Allows the detection, characterization, classification, and reporting of marine mammal tonal vocalizations",
+    "crumbs": [
+      "Preface and Definitions"
+    ]
   },
   {
     "objectID": "index.html#hardware",
     "href": "index.html#hardware",
     "title": "TailWinds Guide",
     "section": "Hardware",
-    "text": "Hardware\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco)."
+    "text": "Hardware\n\nC-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the T-POD, predecessor to the F-POD.\n\nDelphinus\n\nServer located on the UMCES-CBL campus\n\nDMON\n\nDigital acoustic monitoring instrument. Deployed on the RTWB, it is capable of recording and processing audio in near real-time using custom detection algorithms\n\nF-POD\n\nRecording device that consists of a hydrophone and a processor which detects “trains” of echolocation clicks from dolphins and porpoises. Operates in the 20-160 kHz range. Manufactured by Chelonia, Ltd.. Successor to the C-POD.\n\nLS1X\n\nHydrophone manufactured by Loggerhead, Inc.\n\nRockhopper\n\nWhale acoustic recording device, owned/operated by Cornell. Successor to the MARU devices.\n\nVR2AR\n\nFish telemetry receiver with built-in acoustic release device. Operates in the 69 kHz range. Manufactured by Innovasea (formerly named Vemco).",
+    "crumbs": [
+      "Preface and Definitions"
+    ]
   },
   {
-    "objectID": "guide/index.html#source-vs-visual-editor",
-    "href": "guide/index.html#source-vs-visual-editor",
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
     "title": "TailWinds Guide",
-    "section": "Source vs Visual editor",
-    "text": "Source vs Visual editor\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert."
+    "section": "",
+    "text": "Source vs Visual editor\nA guide for the guide. Heaven help us.\nThis guide and the TailWinds website were built using Quarto and the tools provided in RStudio. You can use other tools, it’s just what we’re most familiar with, so that’s what we’ll use to walk through the larger concepts. The next sections give a general view of Quarto, Git, and YAML; these were developed by trial-and-error and a lot of failing. Hopefully we can use this as reference.\nPretty much everything you write for the Guide (and the website) will use Markdown. Some basics are outlined on the Quarto website. Note that if you’re Googling for something related to Markdown formatting, anything sold as “RMarkdown” will also work.\nAll of the different options can be confusing and create a barrier to entry. Enter: the RStudio Visual Markdown editor.\nRStudio has a visual editor for markdown documents (also called a “what-you-see-is-what-you-get” editor, or WYSIWYG, or “wizzy-wig”, how fun!). You can activate this by clicking “Visual” in the top left of your code editing pane. Now, R will act as if it were MS Word, allowing you to skip the code and add things with a few clicks. If you’re curious as to what the markdown code looks like, click “Source” and it will switch to editing as if you were a coding expert.",
+    "crumbs": [
+      "TailWinds Guide"
+    ]
   },
   {
     "objectID": "guide/index.html#editing-the-guide",
     "href": "guide/index.html#editing-the-guide",
     "title": "TailWinds Guide",
     "section": "Editing the Guide",
-    "text": "Editing the Guide\nEditing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type\nquarto publish\ninto the terminal. This compiles everything and commits the changes to the gh-pages branch. This branch is then used to deploy the website, so don’t edit that branch.\nNote that quarto publish will publish changes from ANY BRANCH, so the branching paradigm doesn’t necessarily work once that command has been run."
+    "text": "Editing the Guide\nEditing the Guide follows the same steps as editing the website, outlined in the next sections. The main difference is that you don’t run “render website”, but instead type\nquarto publish\ninto the terminal. This compiles everything and commits the changes to the gh-pages branch. This branch is then used to deploy the website, so don’t edit that branch.\nNote that quarto publish will publish changes from ANY BRANCH, so the branching paradigm doesn’t necessarily work once that command has been run.",
+    "crumbs": [
+      "TailWinds Guide"
+    ]
   },
   {
     "objectID": "guide/index.html#guide-editing-workflow",
     "href": "guide/index.html#guide-editing-workflow",
     "title": "TailWinds Guide",
     "section": "Guide editing workflow",
-    "text": "Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”."
+    "text": "Guide editing workflow\n\nClone the TailWinds Guide repository: https://github.com/Tail-Winds/TailWinds-Guide\nIf you’re making relatively minor changes, commit them to the master branch.\nIf you’re making substantial changes, create a new branch. You can do this either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch, or\nClicking “New Branch” in the Git pane in RStudio \n\nPreview your changes in one document by clicking “Render” in the editing pane. \nPreview your changes to the whole document by clicking “Render Book” in the Build pane. \nCommit your changes to your working branch.\nIf you’d like to have your changes reviewed, push your commits to GitHub and notify the reviewer (likely Dave or Mike).\nIf your changes are ready for prime time, enter quarto publish into the Terminal. \nIt will ask you to confirm if you want to update the website version of the Guide by typing “Yes”/“y”/“Y”.",
+    "crumbs": [
+      "TailWinds Guide"
+    ]
   },
   {
-    "objectID": "guide/01_quarto.html#index.qmd",
-    "href": "guide/01_quarto.html#index.qmd",
+    "objectID": "guide/01_quarto.html",
+    "href": "guide/01_quarto.html",
     "title": "1  Quarto",
-    "section": "1.1 index.qmd",
-    "text": "1.1 index.qmd\nThere should be an index.qmd file for every subsection/folder of the website or guide. Every .qmd file is rendered to a .html file behind the scenes. In website speak, ending a URL in “index.html” means that your referring to the folder/directory, itself. This means that https://tailwinds.umces.edu/frm/ goes to the same place as https://tailwinds.umces.edu/frm/index.html, for example."
+    "section": "",
+    "text": "1.1 index.qmd\nThe power of Quarto is that it stitches together tools in a bunch of different “languages”. You are going to be mushing together about 4 different languages – none of which may be R!\nThe Quarto documentation has beginner guides on formatting narrative, figures, etc. here. The main pages of interest are:\nThere should be an index.qmd file for every subsection/folder of the website or guide. Every .qmd file is rendered to a .html file behind the scenes. In website speak, ending a URL in “index.html” means that your referring to the folder/directory, itself. This means that https://tailwinds.umces.edu/frm/ goes to the same place as https://tailwinds.umces.edu/frm/index.html, for example.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Quarto</span>"
+    ]
   },
   {
     "objectID": "guide/01_quarto.html#buildingrendering",
     "href": "guide/01_quarto.html#buildingrendering",
     "title": "1  Quarto",
     "section": "1.2 Building/Rendering",
-    "text": "1.2 Building/Rendering\nWhen you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called _site and the Guide stores them in a folder called _book. These documents are re-written every time you hit that render button, so we’ve set it up so that they are ignored – you can see them in the respective .gitignore files.\nWhen we’re ready for prime time, we’ll run quarto publish gh-pages in the terminal. This compiles any code chunks locally and commits them to the gh-pages branch on GitHub. In the cloud, GitHub takes all of those files, turns the Markdown into HTML, and publishes it to the website."
+    "text": "1.2 Building/Rendering\nWhen you click the Render, Preview, or Build buttons, Quarto takes all of your code and renders it to HTML behind the scenes. The website stores these in a folder called _site and the Guide stores them in a folder called _book. These documents are re-written every time you hit that render button, so we’ve set it up so that they are ignored – you can see them in the respective .gitignore files.\nWhen we’re ready for prime time, we’ll run quarto publish gh-pages in the terminal. This compiles any code chunks locally and commits them to the gh-pages branch on GitHub. In the cloud, GitHub takes all of those files, turns the Markdown into HTML, and publishes it to the website.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "guide/02_yaml.html",
+    "href": "guide/02_yaml.html",
+    "title": "2  YAML",
+    "section": "",
+    "text": "2.1 Spacing and new lines\n“YAML” stands for “YAML Ain’t Markup Language”. Cute, but what the heck does that even mean??\nIn the context of Quarto documents, and to that extent RMarkdown documents, the YAML files and YAML headers store metadata on what the folder/document is, and how it should be handled.\nWhen looking at YAML, the indentation and new lines are very important. Every time we apply a new argument to a YAML option, it needs to be on a new line, indented under the main argument. HTML YAML options are outlined here. Let’s assume that we want the document to be exported in HTML format. We’d write it like this:\nWhat if we want to include a table of contents? Well, that is an argument to html, so we have to now put html on a new line and indent it under format.\nExcept toc has an argument of its own – we’ll have to put that on a new line and indent it, as well.\nThere is a hierarchy in how this is implemented outlined here. I’ll try to plain-English it below.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>YAML</span>"
+    ]
   },
   {
     "objectID": "guide/02_yaml.html#spacing-and-new-lines",
     "href": "guide/02_yaml.html#spacing-and-new-lines",
     "title": "2  YAML",
-    "section": "2.1 Spacing and new lines",
-    "text": "2.1 Spacing and new lines\nWhen looking at YAML, the indentation and new lines are very important. Every time we apply a new argument to a YAML option, it needs to be on a new line, indented under the main argument. HTML YAML options are outlined here. Let’s assume that we want the document to be exported in HTML format. We’d write it like this:\nformat: html\nWhat if we want to include a table of contents? Well, that is an argument to html, so we have to now put html on a new line and indent it under format.\nformat:\n  html: toc\nExcept toc has an argument of its own – we’ll have to put that on a new line and indent it, as well.\nformat:\n  html:\n    toc: true\nThere is a hierarchy in how this is implemented outlined here. I’ll try to plain-English it below."
+    "section": "",
+    "text": "format: html\n\nformat:\n  html: toc\n\nformat:\n  html:\n    toc: true",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>YAML</span>"
+    ]
   },
   {
     "objectID": "guide/02_yaml.html#yml-files",
     "href": "guide/02_yaml.html#yml-files",
     "title": "2  YAML",
     "section": "2.2 .yml files",
-    "text": "2.2 .yml files\n\n2.2.1 _quarto.yml\n.yml files tend to hold the metadata for everything within the folder that it sits. So, the _quarto.yml file in the website and guide’s root directory dictates how everything in the website/guide is handled.\nGo ahead and open the _quarto.yml file and the Guide. See how, in the YAML file, the table of contents is outlined? Now look at the Guide – the table of contents reflects this.\nClick on a different page in the Guide, and you’ll see that the table of contents is unchanged. This is because the _quarto.yml file controls how all of the pages in the project are rendered.\n\n\n2.2.2 _metadata.yml\nWhat if there is a specific group of files for which you want to have special rules? This is done by grouping those files in a folder and adding a _metadata.yml file to that folder. It then follows a loose flowchart:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nWhere there are different options for the same argument, use the option outlined in the folder/_metadata.yml file.\n\nNow, all of the .qmd files in the specific folder will use those options."
+    "text": "2.2 .yml files\n\n2.2.1 _quarto.yml\n.yml files tend to hold the metadata for everything within the folder that it sits. So, the _quarto.yml file in the website and guide’s root directory dictates how everything in the website/guide is handled.\nGo ahead and open the _quarto.yml file and the Guide. See how, in the YAML file, the table of contents is outlined? Now look at the Guide – the table of contents reflects this.\nClick on a different page in the Guide, and you’ll see that the table of contents is unchanged. This is because the _quarto.yml file controls how all of the pages in the project are rendered.\n\n\n2.2.2 _metadata.yml\nWhat if there is a specific group of files for which you want to have special rules? This is done by grouping those files in a folder and adding a _metadata.yml file to that folder. It then follows a loose flowchart:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nWhere there are different options for the same argument, use the option outlined in the folder/_metadata.yml file.\n\nNow, all of the .qmd files in the specific folder will use those options.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>YAML</span>"
+    ]
   },
   {
     "objectID": "guide/02_yaml.html#yaml-headers",
     "href": "guide/02_yaml.html#yaml-headers",
     "title": "2  YAML",
     "section": "2.3 YAML headers",
-    "text": "2.3 YAML headers\nWhat if you have options specific to an individual document? These are outlined in the space between the two sets of “---” at the top of the document. Now the flowchart for that document becomes:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nAdd all of the options outlined in the YAML header of the document (what’s between the two sets of ---).\nWhere there are different options for the same argument, first use the option outlined in the document’s YAML header. If nothing is outlined in the header, use that in the folder/_metadata.yml file.\n\nOpen up the source code for the Real-time Whale Buoy page. There are a series of additions regarding where the page’s audio files are located:\n---\ntitle: \"Real Time Whale Buoy\"\n  format:\n    html:\n      resources:\n        - audio\n---\nThis applies specifically to this document. What if, for instance, we wanted that to apply to all documents in the rtwb folder? Well, then we would stick the lines from “format” to “- audio” into a _metadata.yml file."
+    "text": "2.3 YAML headers\nWhat if you have options specific to an individual document? These are outlined in the space between the two sets of “---” at the top of the document. Now the flowchart for that document becomes:\n\nTake all of the options outlined in the main _quarto.yml file.\nAdd all of the options outlined in the folder/_metadata.yml file.\nAdd all of the options outlined in the YAML header of the document (what’s between the two sets of ---).\nWhere there are different options for the same argument, first use the option outlined in the document’s YAML header. If nothing is outlined in the header, use that in the folder/_metadata.yml file.\n\nOpen up the source code for the Real-time Whale Buoy page. There are a series of additions regarding where the page’s audio files are located:\n---\ntitle: \"Real Time Whale Buoy\"\n  format:\n    html:\n      resources:\n        - audio\n---\nThis applies specifically to this document. What if, for instance, we wanted that to apply to all documents in the rtwb folder? Well, then we would stick the lines from “format” to “- audio” into a _metadata.yml file.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>YAML</span>"
+    ]
   },
   {
     "objectID": "guide/02_yaml.html#code-block-yaml",
     "href": "guide/02_yaml.html#code-block-yaml",
     "title": "2  YAML",
     "section": "2.4 Code block YAML",
-    "text": "2.4 Code block YAML\nLastly, you can add YAML in individual code blocks by adding “#|”, followed by the YAML. This takes precedence over the YAML in the document header, _metadata.yml file, and _quarto.yml file.\n```{r}\n#| eval: false\n\n1+1\n```"
+    "text": "2.4 Code block YAML\nLastly, you can add YAML in individual code blocks by adding “#|”, followed by the YAML. This takes precedence over the YAML in the document header, _metadata.yml file, and _quarto.yml file.\n```{r}\n#| eval: false\n\n1+1\n```",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>YAML</span>"
+    ]
   },
   {
-    "objectID": "guide/03_git.html#hansel-and-gretel",
-    "href": "guide/03_git.html#hansel-and-gretel",
+    "objectID": "guide/03_git.html",
+    "href": "guide/03_git.html",
     "title": "3  Git",
-    "section": "3.1 Hansel and Gretel",
-    "text": "3.1 Hansel and Gretel\nImagine you’re Gretel, running off to Grandma’s house. You don’t actually know how to get there, so you leave a trail of breadcrumbs to get back home. If you know where you are and how you’ve gotten there – you literally just walked out of your door and down the street – you may go a while before dropping a breadcrumb. If you’re unsure, you might drop bread more frequently.\nEach crumb of bread here is a commit. It saves a version of your project that you can jump back to if needed.\nHowever, Hansel is out there too, plowing on ahead and dropping his own crumbs every time you stop to have a snack or a potty break. If he’s out ahead of you, you can just follow his trail (git pull). What if, at a fork in the road, you went left and he went right? Which trail is correct? This is where git gives up and kicks it back to you to solve.\nHappy Git has a walkthrough for some of them, but here is the workflow that Kirsten and I have stumbled on."
+    "section": "",
+    "text": "3.1 Hansel and Gretel\nImagine you’re Gretel, running off to Grandma’s house. You don’t actually know how to get there, so you leave a trail of breadcrumbs to get back home. If you know where you are and how you’ve gotten there – you literally just walked out of your door and down the street – you may go a while before dropping a breadcrumb. If you’re unsure, you might drop bread more frequently.\nEach crumb of bread here is a commit. It saves a version of your project that you can jump back to if needed.\nHowever, Hansel is out there too, plowing on ahead and dropping his own crumbs every time you stop to have a snack or a potty break. If he’s out ahead of you, you can just follow his trail (git pull). What if, at a fork in the road, you went left and he went right? Which trail is correct? This is where git gives up and kicks it back to you to solve.\nHappy Git has a walkthrough for some of them, but here is the workflow that Kirsten and I have stumbled on.",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "guide/03_git.html#cant-pull",
     "href": "guide/03_git.html#cant-pull",
     "title": "3  Git",
     "section": "3.2 Can’t pull",
-    "text": "3.2 Can’t pull\n\n3.2.1 Files may be overwritten\nWhen pulling from Github, you may get a message that says something like “Your local changes to the following files would be overwritten by merge”. This means that you have files you’ve changed but haven’t logged a commit for.\n\n“Revert” (send back to the previous breadcrumb/commit) anything in the docs/, _site/, or _book/ folder. As outlined here, they shouldn’t be tracked (a different issue) and we don’t need to worry about tracking anything in there.\n\n&lt;add image&gt;\n\nThink about whether you’ve added anything substantial – sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the “Diff”. If it’s nothing major, revert the file.\n\n&lt;add image&gt;\n\nCommit the rest.\nTry to pull again.\n\n\n\n3.2.2 Divergent branches\nNow your error may say something like “You have divergent branches and need to specify how to reconcile them.”\n\ngit merge in the terminal?"
+    "text": "3.2 Can’t pull\n\n3.2.1 Files may be overwritten\nWhen pulling from Github, you may get a message that says something like “Your local changes to the following files would be overwritten by merge”. This means that you have files you’ve changed but haven’t logged a commit for.\n\n“Revert” (send back to the previous breadcrumb/commit) anything in the docs/, _site/, or _book/ folder. As outlined here, they shouldn’t be tracked (a different issue) and we don’t need to worry about tracking anything in there.\n\n&lt;add image&gt;\n\nThink about whether you’ve added anything substantial – sometimes just one extra space can mean the difference between things going automagically and you having to handle it yourself. To do this, check out the “Diff”. If it’s nothing major, revert the file.\n\n&lt;add image&gt;\n\nCommit the rest.\nTry to pull again.\n\n\n\n3.2.2 Divergent branches\nNow your error may say something like “You have divergent branches and need to specify how to reconcile them.”\n\ngit merge in the terminal?",
+    "crumbs": [
+      "TailWinds Guide",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "website/index.html",
+    "href": "website/index.html",
+    "title": "Website and Guide",
+    "section": "",
+    "text": "Other websites of which we are covetous\nIn walking through how to operate the website with the whole group then working with Kirsten to get things going on her end, we realized that we need to start writing down some of our pitfalls and how to get over them. At least then, we only need to fall on our face once.\nThe website and guide are both Quarto projects; in fact, the guide, though nominally a book, is just a special kind of website. Because of this, editing the website and the guide follow the same workflow as outlined in further chapters.",
+    "crumbs": [
+      "Website and Guide"
+    ]
   },
   {
     "objectID": "website/index.html#other-websites-of-which-we-are-covetous",
     "href": "website/index.html#other-websites-of-which-we-are-covetous",
     "title": "Website and Guide",
-    "section": "Other websites of which we are covetous",
-    "text": "Other websites of which we are covetous\n\nhttps://rowlrs.marine.rutgers.edu/"
+    "section": "",
+    "text": "https://rowlrs.marine.rutgers.edu/",
+    "crumbs": [
+      "Website and Guide"
+    ]
   },
   {
-    "objectID": "website/01_downloading.html#install-r",
-    "href": "website/01_downloading.html#install-r",
+    "objectID": "website/01_downloading.html",
+    "href": "website/01_downloading.html",
     "title": "4  R",
-    "section": "4.1 Install R",
-    "text": "4.1 Install R\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\n\nR.Version()$version.string\n\n[1] \"R version 4.3.0 (2023-04-21 ucrt)\"\n\n\nYep."
+    "section": "",
+    "text": "4.1 Install R\nWhy do this in R?\nYou don’t have to use R to do any of this – it also will work with Jupyter notebooks or in the command line, e.g. For the purposes of this guide, I (Mike) am assuming that our current lingua franca is R. Also, it’s just the language that I’m used to using.\nSo, if you don’t have R installed on your machine, go ahead and download it here, then install. We’ve already run into issues where old versions of the programs we’re using can mess up how the website renders, so check to see if there’s a new version of R if you haven’t updated in a while. The most-recent version of R, version 4.2.2, was issued on Oct 31, 2022. Am I up to date?\nR.Version()$version.string\n\n[1] \"R version 4.5.0 (2025-04-11 ucrt)\"\nYep.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R</span>"
+    ]
   },
   {
     "objectID": "website/01_downloading.html#rstudio",
     "href": "website/01_downloading.html#rstudio",
     "title": "4  R",
     "section": "4.2 RStudio",
-    "text": "4.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes."
+    "text": "4.2 RStudio\nAgain, this isn’t the only program that will run Quarto, I’m just assuming that it’s common language at this point. If you get in trouble and need to Google something, chances are that people will already assume you’re using RStudio. Download by following this link and install.\nIf you already have RStudio installed, go ahead and check that it’s the most-recent version (version 2022.12.0.353). Am I up to date?\n\nrstudioapi::versionInfo()$version\n\nYes.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R</span>"
+    ]
   },
   {
     "objectID": "website/01_downloading.html#quarto",
     "href": "website/01_downloading.html#quarto",
     "title": "4  R",
     "section": "4.3 Quarto",
-    "text": "4.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools &gt; Terminal &gt;New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n4.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n4.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n4.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension schochastics/academicons"
+    "text": "4.3 Quarto\nI’m fairly certain that RStudio comes with a version of Quarto, the program we’ll use to build the website, installed. However, we need to make sure it is the most up-to-date version. So, go ahead and follow that link and download/install Quarto anyway.\nOnce you install it, restart R/RStudio. Then go to Tools &gt; Terminal &gt;New Terminal and type\nquarto --version\nIt should return 1.2.313 or greater. If it doesn’t, let me know!\n\n4.3.1 Quarto extensions\nOkay, I got a little cute and put fun little icons linking to everyone’s various social media presence on the Team page. I’ve found out that now, because I’ve done that, everyone needs to have the cutesy little icon packages downloaded onto their computer. Don’t worry, they’re safe (and kind of neat if you want to give them a look).\n\n4.3.1.1 Font Awesome\nFont Awesome icons are just what they say they are: some awesome icons! There are literally thousands of them – go check them out. They even have a wind turbine, but you have to pay for it. 🙁\nAnyway, we need to install an extension to get them to work with Quarto. Go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension quarto-ext/fontawesome\nThat’s it!\n\n\n4.3.1.2 academicons\nAcademicons are the academic’s answer to Font Awesome icons. They have icons for Google Scholar, Orcid, Data Dryad, Clarivate (née Web of Science), the list goes on. To install the extension, go to Tools &gt; Terminal &gt; New Terminal and type:\nquarto install extension schochastics/academicons",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R</span>"
+    ]
   },
   {
     "objectID": "website/01_downloading.html#github",
     "href": "website/01_downloading.html#github",
     "title": "4  R",
     "section": "4.4 GitHub",
-    "text": "4.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization."
+    "text": "4.4 GitHub\nPop on over to GitHub and sign up for a free account. After you’re done, let me know and I’ll add you to the TailWinds GitHub organization.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R</span>"
+    ]
   },
   {
-    "objectID": "website/02_git.html#tell-git-who-you-are",
-    "href": "website/02_git.html#tell-git-who-you-are",
+    "objectID": "website/02_git.html",
+    "href": "website/02_git.html",
     "title": "5  Installing Git",
-    "section": "5.1 Tell Git who you are",
-    "text": "5.1 Tell Git who you are\nWe need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.\nI want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:\n\ninstall.packages('usethis')\nusethis::use_git_config(user.name = \"Mike O'Brien\",\n                        user.email = \"obrien@umces.edu\")\n\nAdjust the above code to your own name/email associated with your GitHub account."
+    "section": "",
+    "text": "5.1 Tell Git who you are\nGit gets its own section since it is so horrible to get set up. Seriously. This is the worst part of the whole thing. So much so that I’m going to outsource the explaining of how to do it.\nI’m saying it again: this is the hardest part. Seriously. I’m super serious. Installing git is way more annoying than it should be. Luckily, there’s a really good guide called Happy Git with R that walks through this process in a friendly manner while being candid about the pitfalls.\nThe guide also walks you through connecting git, RStudio, and GitHub, which is easy, free, and necessary for you to access the website.\nI’m going to highlight two things, just because I’ve found them to be sticky parts that push people over the edge after they’ve gone through the (tougher) rigmarole of installing Git in the first place.\nWe need to tell Git who we are, so that all of our changes can be tied to our name and, later, our GitHub account.\nI want to be called “Mike O’Brien”, and my GitHub account is tied to my work email, obrien@umces.edu. I would enter:\ninstall.packages('usethis')\nusethis::use_git_config(user.name = \"Mike O'Brien\",\n                        user.email = \"obrien@umces.edu\")\nAdjust the above code to your own name/email associated with your GitHub account.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Installing Git</span>"
+    ]
   },
   {
     "objectID": "website/02_git.html#connecting-your-computer-to-github",
     "href": "website/02_git.html#connecting-your-computer-to-github",
     "title": "5  Installing Git",
     "section": "5.2 Connecting your computer to GitHub",
-    "text": "5.2 Connecting your computer to GitHub\nPay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on Happy Git and accept the defaults. There are more specifics at that link, but the steps more or less look like this:\n\nDownload the usethis package and run the create_github_token function\n\n\ninstall.packages('usethis')\nusethis::create_github_token()\n\n\nThis will open a website. Click “Generate token”.\nKEEP THIS WINDOW OPEN. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, KEEP THIS WINDOW OPEN.\nType the following into R:\n\n\ngitcreds::gitcreds_set()\n\n\nCopy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes."
+    "text": "5.2 Connecting your computer to GitHub\nPay attention to the section on setting up a personal access token (PAT). This won’t matter at all while your working on the website, but will come back to bite you once you try to send your changes to GitHub. The easiest way is just to follow the instructions on Happy Git and accept the defaults. There are more specifics at that link, but the steps more or less look like this:\n\nDownload the usethis package and run the create_github_token function\n\n\ninstall.packages('usethis')\nusethis::create_github_token()\n\n\nThis will open a website. Click “Generate token”.\nKEEP THIS WINDOW OPEN. It will give you a gibberish string that is basically your computer-to-computer password. Again, for now, KEEP THIS WINDOW OPEN.\nType the following into R:\n\n\ngitcreds::gitcreds_set()\n\n\nCopy the PAT from the window you kept open and paste it into R. If everything worked as it’s supposed to, you should be able to send your changes to GitHub when the time comes.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Installing Git</span>"
+    ]
+  },
+  {
+    "objectID": "website/03_clone.html",
+    "href": "website/03_clone.html",
+    "title": "6  Clone",
+    "section": "",
+    "text": "6.1 Aside: Forking\nDownloading the website’s source code to your computer is also known as “cloning the repository” in Git/GitHub speak.\nThink of GitHub as Google Drive and Git as the “track changes” in a Microsoft Word document. When you want to make changes to the Word doc, you:\nWe’re doing the same thing, but for code. Git can track changes in any text file, which is mostly what we use when writing code. Now, let’s consider the above process, but replacing with Git/GitHub terms:\nI suggest using RStudio, following the instructions in section 16.2.2 here . Use https://github.com/Tail-Winds/tail-winds.github.io.git as the URL for the GitHub repository.\nNow you’re good to go!\nCloning someone else’s GitHub repository is called “forking”. This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.\nGenerally, when you wish to contribute to someone else’s package/code/repository, you:",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clone</span>"
+    ]
   },
   {
     "objectID": "website/03_clone.html#aside-forking",
     "href": "website/03_clone.html#aside-forking",
     "title": "6  Clone",
-    "section": "6.1 Aside: Forking",
-    "text": "6.1 Aside: Forking\nCloning someone else’s GitHub repository is called “forking”. This makes a complete copy of the repository and places it into your GitHub account. You can then use the rest of the steps in this guide to make adjustments to their code.\nGenerally, when you wish to contribute to someone else’s package/code/repository, you:\n\nFork it to your GitHub account,\nClone the forked repository to your computer,\nCreate a new branch (see the next step in this guide),\nCommit your changes to the new branch,\nPush them back to GitHub,\nOpen a pull request for the original repository’s maintainer to pull your changes into their version of the repository."
+    "section": "",
+    "text": "Fork it to your GitHub account,\nClone the forked repository to your computer,\nCreate a new branch (see the next step in this guide),\nCommit your changes to the new branch,\nPush them back to GitHub,\nOpen a pull request for the original repository’s maintainer to pull your changes into their version of the repository.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clone</span>"
+    ]
+  },
+  {
+    "objectID": "website/04_branch.html",
+    "href": "website/04_branch.html",
+    "title": "7  Branch",
+    "section": "",
+    "text": "7.1 Making a branch\nFrom Happy Git:\nSo, in order to make changes to the website that aren’t ready for prime time, we want to make a branch that we can freely edit without making the whole thing come crashing down.\nNote that these instructions are intentionally redundant to the section on making a branch to edit the Guide. You can make a new branch either by:\nIf you used method #1, pull the GitHub repository. The new branch will appear on the right side of the Git pane. If you used method #2, the branch should automatically be pushed to GitHub and RStudio will switch to this branch.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Branch</span>"
+    ]
   },
   {
     "objectID": "website/04_branch.html#making-a-branch",
     "href": "website/04_branch.html#making-a-branch",
     "title": "7  Branch",
-    "section": "7.1 Making a branch",
-    "text": "7.1 Making a branch\nNote that these instructions are intentionally redundant to the section on making a branch to edit the Guide. You can make a new branch either by:\n\nOn GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch,\nClicking “New Branch” in the Git pane in RStudio\n\nIf you used method #1, pull the GitHub repository. The new branch will appear on the right side of the Git pane. If you used method #2, the branch should automatically be pushed to GitHub and RStudio will switch to this branch."
+    "section": "",
+    "text": "On GitHub, clicking the box on the top left that says “master” and typing in whatever you want to call the new branch,\nClicking “New Branch” in the Git pane in RStudio",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Branch</span>"
+    ]
   },
   {
     "objectID": "website/05_write.html",
     "href": "website/05_write.html",
     "title": "8  Write",
     "section": "",
-    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File &gt; New File &gt; Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar go to Build &gt; Preview Site. This will convert everything to HTML behind the scenes."
+    "text": "Now we’re going to create or edit Quarto (.qmd) files for the desired page.\nThe Quarto website has really thorough guides on how to do this. Slava and I are also on call via Slack!\nGenerally:\n\nClick the “Pull” button in the Git tab. This will download any changes that have made to the website that you don’t have.\nGo to File &gt; New File &gt; Quarto Document to make a new page.\nWrite whatever you want to go on the page.\nIf you want the file to show up on the website’s navigation bar, edit the _quarto.yml file – this serves as the website’s map. Feel free to skip this step if you don’t want people to navigate to the page just yet. This is similar to the current page you’re on – you can access directly through the URL, but not by clicking to it.\nIf you want to take a quick glimpse at what the page you are editing will look like, click the “Render” button at the top of the editing pane, between the magnifying glass and cog. This will not change any other page or the locations to which the navigation bar points you.\nIf you made changes to the navigation bar go to Build &gt; Preview Site. This will convert everything to HTML behind the scenes.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Write</span>"
+    ]
   },
   {
     "objectID": "website/06_commit.html",
     "href": "website/06_commit.html",
     "title": "9  Commit",
     "section": "",
-    "text": "Saving a version of all of the files in your repository is called a “commit”. To do so, click the “Commit” button in the Git pane. It will open another window showing you all of the files that have changed and their difference from previous versions: green means that something has been added and red means that something has been removed.\nClick the little box in the “Staged” column next to a file or files, then type a little note as to what you’ve changed in the “Commit message” box. Then click the “Commit” button et voilà! These frozen snapshots of differences in your code or text will be stored on your computer and can be accessed later if necessary.\nFrom Happy Git:\n\nThe daily workflow is probably not dramatically different from what you do currently. You work in the usual way, writing R scripts or authoring reports in LaTeX or R Markdown. But instead of only saving individual files, periodically you make a commit, which takes a snapshot of all the files in the entire project. If you have ever versioned a file by adding your initials or the date, you have effectively made a commit, albeit only for a single file. It is a version that is significant to you and that you might want to inspect or revert to later. Periodically, you push commits to GitHub. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. By pushing to GitHub, you make your work and all your accumulated progress accessible to others.\n\nDon’t be afraid to “commit” changes early and often – think of these as breadcrumbs leading you back from where you came. If you’re confident you can get back there, no need to commit everything. If you’re trailblazing through uncharted territory, you probably want to commit more often."
+    "text": "Saving a version of all of the files in your repository is called a “commit”. To do so, click the “Commit” button in the Git pane. It will open another window showing you all of the files that have changed and their difference from previous versions: green means that something has been added and red means that something has been removed.\nClick the little box in the “Staged” column next to a file or files, then type a little note as to what you’ve changed in the “Commit message” box. Then click the “Commit” button et voilà! These frozen snapshots of differences in your code or text will be stored on your computer and can be accessed later if necessary.\nFrom Happy Git:\n\nThe daily workflow is probably not dramatically different from what you do currently. You work in the usual way, writing R scripts or authoring reports in LaTeX or R Markdown. But instead of only saving individual files, periodically you make a commit, which takes a snapshot of all the files in the entire project. If you have ever versioned a file by adding your initials or the date, you have effectively made a commit, albeit only for a single file. It is a version that is significant to you and that you might want to inspect or revert to later. Periodically, you push commits to GitHub. This is like sharing a document with colleagues on DropBox or sending it out as an email attachment. By pushing to GitHub, you make your work and all your accumulated progress accessible to others.\n\nDon’t be afraid to “commit” changes early and often – think of these as breadcrumbs leading you back from where you came. If you’re confident you can get back there, no need to commit everything. If you’re trailblazing through uncharted territory, you probably want to commit more often.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Commit</span>"
+    ]
+  },
+  {
+    "objectID": "website/07_pull.html",
+    "href": "website/07_pull.html",
+    "title": "10  Pull",
+    "section": "",
+    "text": "10.1 git merge\nNo, we’re not shooting skeet.\nThere will probably come a time when someone has made changes to the website between the time that you last downloaded things from GitHub and now. If you try to send your changes (commits) back up to GitHub, it will stop and let you know that things have changed.\nIn order to get ahead of this, click the “Pull” button. This will pull the changes from GitHub onto your computer. Hopefully, it’ll go ahead and merge everything together for you. If it can’t – usually when you have edited the same lines that someone else has – it will combine the two versions of the files and ask you to sort it out. This usually means opening the files and making an executive decision about what text/code you wish to keep.\nIf you’re working on a development branch (something that isn’t main), you’ll often find that main will sometimes get ahead of you. Maybe there’s been a quick add directly to main, or some other development branch has been merged in.\nTo bring your development branch up to date with these changes, switch to the development branch (either through the drop-down button on the right hand side of RStudio’s git pane or via git branch YOUR-DEV-BRANCH) and run the following in your terminal:\nThis will bring all of the changes that have been made to main that your current branch does not have. Then, git push these back to GitHub to tidy everything up.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Pull</span>"
+    ]
   },
   {
     "objectID": "website/07_pull.html#git-merge",
     "href": "website/07_pull.html#git-merge",
     "title": "10  Pull",
-    "section": "10.1 git merge",
-    "text": "10.1 git merge\nIf you’re working on a development branch (something that isn’t main), you’ll often find that main will sometimes get ahead of you. Maybe there’s been a quick add directly to main, or some other development branch has been merged in.\nTo bring your development branch up to date with these changes, switch to the development branch (either through the drop-down button on the right hand side of RStudio’s git pane or via git branch YOUR-DEV-BRANCH) and run the following in your terminal:\ngit merge main\nThis will bring all of the changes that have been made to main that your current branch does not have. Then, git push these back to GitHub to tidy everything up."
+    "section": "",
+    "text": "git merge main",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Pull</span>"
+    ]
   },
   {
     "objectID": "website/08_push.html",
     "href": "website/08_push.html",
     "title": "11  Push",
     "section": "",
-    "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build &gt; Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git."
+    "text": "Take a deep breath, like Lamaze for your code.\nNow that everything is in line, compile the website one more time via Build &gt; Render, commit changes, and click the “Push” button. This pushes all of the changes you’ve logged on your computer (via commits) to GitHub. If you’ve been editing the master branch, this will automatically change the website.\nIf you’ve been editing in your own branch, things are less stressful. A new branch is your own little sandbox – nothing will get added to the website before it’s approved by Mike. To get that done, you need to open a pull request (next section).\nIf you get an error that looks like this…\nremote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\nremote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\nfatal: Authentication failed for 'https://github.com/OWNER/REPO.git/'\n…you need to let GitHub know that you’re allowed to make changes to your account. Refer back to the section on installing Git.",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Push</span>"
+    ]
+  },
+  {
+    "objectID": "website/09_pull_request.html",
+    "href": "website/09_pull_request.html",
+    "title": "12  Pull request",
+    "section": "",
+    "text": "12.1 Open a pull request\nWe’ve already learned what “pull” means in GitHubspeak, and this is no different. You are requesting that the changes you’ve made in your own branch be pulled into the main branch, i.e., that the changes you’ve made become part of the outward-facing website.\nTo open a pull request:\\",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pull request</span>"
+    ]
   },
   {
     "objectID": "website/09_pull_request.html#open-a-pull-request",
     "href": "website/09_pull_request.html#open-a-pull-request",
     "title": "12  Pull request",
-    "section": "12.1 Open a pull request",
-    "text": "12.1 Open a pull request\nTo open a pull request:\\\n\nGo to the website’s GitHub page\nSelect your branch by clicking the button that says “main” on the left just above all of the code.\nThere will be a button that says “Compare & pull request”. Click it.\nThis opens a “Open a pull request” page. Go ahead and make a note about what this is going to do and click “Create pull request”.\nAt this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!\nAfter thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it’s good to go ahead and let this happen. Don’t worry, all of the changes you’ve made are cataloged in commits, which have now been tacked onto the main branch!"
+    "section": "",
+    "text": "Go to the website’s GitHub page\nSelect your branch by clicking the button that says “main” on the left just above all of the code.\nThere will be a button that says “Compare & pull request”. Click it.\nThis opens a “Open a pull request” page. Go ahead and make a note about what this is going to do and click “Create pull request”.\nAt this point, you and Mike will start to have a conversation about anything that needs to be adjusted before going live on the website. Hopefully the conversation will be short, and the request can be directly merged!\nAfter thr pull request is accepted, GitHub will offer to delete the branch. As we want branches to target singular issues/tasks, it’s good to go ahead and let this happen. Don’t worry, all of the changes you’ve made are cataloged in commits, which have now been tacked onto the main branch!",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pull request</span>"
+    ]
   },
   {
     "objectID": "website/09_pull_request.html#prune-a-deleted-branch",
     "href": "website/09_pull_request.html#prune-a-deleted-branch",
     "title": "12  Pull request",
     "section": "12.2 Prune a deleted branch",
-    "text": "12.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p"
+    "text": "12.2 Prune a deleted branch\nSo you’ve created a branch, made some edits, and had your pull request accepted. Now, you have a branch that was likely deleted on GitHub but is still hanging around on your computer. We can “prune” this branch by running the following in the Terminal, assuming that “branch-to-delete” is the name of the branch you want to delete:\ngit branch -d branch-to-delete\ngit fetch -p",
+    "crumbs": [
+      "Website and Guide",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Pull request</span>"
+    ]
   },
   {
-    "objectID": "delphinus/index.html#command-line-interface-cli",
-    "href": "delphinus/index.html#command-line-interface-cli",
+    "objectID": "delphinus/index.html",
+    "href": "delphinus/index.html",
     "title": "Delphinus",
-    "section": "Command line interface (CLI)",
-    "text": "Command line interface (CLI)\nAs delphinus is running Ubuntu, which is a Linux operating system, everything can be done via the command line, or terminal. There is a steep learning curve here, but it is very fast as resources are not used running a graphical user interface (GUI).\nInformation in further chapters in this section will be provided both for those using a GUI or the CLI."
+    "section": "",
+    "text": "Command line interface (CLI)\nAs delphinus is running Ubuntu, which is a Linux operating system, everything can be done via the command line, or terminal. There is a steep learning curve here, but it is very fast as resources are not used running a graphical user interface (GUI).\nInformation in further chapters in this section will be provided both for those using a GUI or the CLI.",
+    "crumbs": [
+      "Delphinus"
+    ]
+  },
+  {
+    "objectID": "delphinus/login.html",
+    "href": "delphinus/login.html",
+    "title": "13  Logging in",
+    "section": "",
+    "text": "13.1 Graphical User Interface (GUI)",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Logging in</span>"
+    ]
   },
   {
     "objectID": "delphinus/login.html#graphical-user-interface-gui",
     "href": "delphinus/login.html#graphical-user-interface-gui",
     "title": "13  Logging in",
-    "section": "13.1 Graphical User Interface (GUI)",
-    "text": "13.1 Graphical User Interface (GUI)\n\n13.1.1 Log in on Filezilla\n\nDownload Filezilla software here\nLog in by entering\n\nHost = Delphinus\nUsername = [your first name, all lowercase]\nPassword = [your password, default is tailwinds]\nPort = 21"
+    "section": "",
+    "text": "13.1.1 Log in on Filezilla\n\nDownload Filezilla software here\nLog in by entering\n\nHost = Delphinus\nUsername = [your first name, all lowercase]\nPassword = [your password, default is tailwinds]\nPort = 21",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Logging in</span>"
+    ]
   },
   {
     "objectID": "delphinus/login.html#command-line-interface-cli",
     "href": "delphinus/login.html#command-line-interface-cli",
     "title": "13  Logging in",
     "section": "13.2 Command line interface (CLI)",
-    "text": "13.2 Command line interface (CLI)\n\nOpen a terminal window\n\nIn Windows, hit the Windows key and type “terminal”. Select the terminal app.\n\n“ssh” into the server:\n\nssh YOURUSERNAME@delphinus\nEnter your password\n\nNo characters will show up after password:\nas you type, just enter your password and then hit Enter\n\n\nIf you’re on Windows and this doesn’t work, you might need to install OpenSSH\n\n\n\n13.2.1 Bash CLI shell\nIf this is your first time logging in, you will probably want to switch to a “Bash” terminal. This has nifty things like coloring, copy/paste, and auto-complete. To do this:\n\nType chsh -s /bin/bash and hit Enter\nYou will be prompted to enter your password\nLog out by typing logout and hit Enter\nLog back in using the instructions above"
+    "text": "13.2 Command line interface (CLI)\n\nOpen a terminal window\n\nIn Windows, hit the Windows key and type “terminal”. Select the terminal app.\n\n“ssh” into the server:\n\nssh YOURUSERNAME@delphinus\nEnter your password\n\nNo characters will show up after password:\nas you type, just enter your password and then hit Enter\n\n\nIf you’re on Windows and this doesn’t work, you might need to install OpenSSH\n\n\n\n13.2.1 Bash CLI shell\nIf this is your first time logging in, you will probably want to switch to a “Bash” terminal. This has nifty things like coloring, copy/paste, and auto-complete. To do this:\n\nType chsh -s /bin/bash and hit Enter\nYou will be prompted to enter your password\nLog out by typing logout and hit Enter\nLog back in using the instructions above",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Logging in</span>"
+    ]
   },
   {
     "objectID": "delphinus/login.html#remote-desktop",
     "href": "delphinus/login.html#remote-desktop",
     "title": "13  Logging in",
     "section": "13.3 Remote Desktop",
-    "text": "13.3 Remote Desktop\n\nTBD"
+    "text": "13.3 Remote Desktop\n\nTBD",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Logging in</span>"
+    ]
+  },
+  {
+    "objectID": "delphinus/password.html",
+    "href": "delphinus/password.html",
+    "title": "14  Changing a password",
+    "section": "",
+    "text": "14.1 GUI\nEveryone’s initial password is tailwinds. You should change your password to something more-personal the first time that you log in.",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Changing a password</span>"
+    ]
   },
   {
     "objectID": "delphinus/password.html#gui",
     "href": "delphinus/password.html#gui",
     "title": "14  Changing a password",
-    "section": "14.1 GUI",
-    "text": "14.1 GUI\n\nTo do"
+    "section": "",
+    "text": "To do",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Changing a password</span>"
+    ]
   },
   {
     "objectID": "delphinus/password.html#cli",
     "href": "delphinus/password.html#cli",
     "title": "14  Changing a password",
     "section": "14.2 CLI",
-    "text": "14.2 CLI\n\nAfter ssh-ing into delphinus, type passwd and follow the prompts"
+    "text": "14.2 CLI\n\nAfter ssh-ing into delphinus, type passwd and follow the prompts",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Changing a password</span>"
+    ]
+  },
+  {
+    "objectID": "delphinus/files.html",
+    "href": "delphinus/files.html",
+    "title": "15  File management",
+    "section": "",
+    "text": "15.1 Mapping a network drive",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>File management</span>"
+    ]
   },
   {
     "objectID": "delphinus/files.html#mapping-a-network-drive",
     "href": "delphinus/files.html#mapping-a-network-drive",
     "title": "15  File management",
-    "section": "15.1 Mapping a network drive",
-    "text": "15.1 Mapping a network drive\n\n15.1.1 Windows\n\nRight click “This PC” and select “Map Network Drive”\nSelect an unused drive (D: in the picture, but it can be whichever you’d like) and enter \\\\delphinus\\NAMEOFSHARE for the folder\n\nShares are the names of the various users (mike/jamie/kirsten/etc) and uswind\n\n\n\n\nEnter your username and PASSWORD REDACTED as the password. Click “Use a different account” if your username is pre-populated\n\n\n\nYou are connected!\nIf you would like to move things between shares (directories), you need to repeat this process, mounting (mapping) each directory to a differently-lettered drive\n\n\n\n15.1.2 Mac\n\nTo do"
+    "section": "",
+    "text": "15.1.1 Windows\n\nRight click “This PC” and select “Map Network Drive”\nSelect an unused drive (D: in the picture, but it can be whichever you’d like) and enter \\\\delphinus\\NAMEOFSHARE for the folder\n\nShares are the names of the various users (mike/jamie/kirsten/etc) and uswind\n\n\n\n\nEnter your username and PASSWORD REDACTED as the password. Click “Use a different account” if your username is pre-populated\n\n\n\nYou are connected!\nIf you would like to move things between shares (directories), you need to repeat this process, mounting (mapping) each directory to a differently-lettered drive\n\n\n\n15.1.2 Mac\n\nTo do",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>File management</span>"
+    ]
   },
   {
     "objectID": "delphinus/files.html#moving-files",
     "href": "delphinus/files.html#moving-files",
     "title": "15  File management",
     "section": "15.2 Moving files",
-    "text": "15.2 Moving files\n\n15.2.1 GUI (Filezilla)\n\nTo do\n\n\n\n15.2.2 CLI\n\nUse the mv command (“move”)\nmv from/here.txt to/here.txt\n\n\n\nWARNING! This will automatically overwrite any existing files!\n\nUse the -i flag to have the system warn you before copying\nmv -i from/here.txt to/here.txt"
+    "text": "15.2 Moving files\n\n15.2.1 GUI (Filezilla)\n\nTo do\n\n\n\n15.2.2 CLI\n\nUse the mv command (“move”)\nmv from/here.txt to/here.txt\n\n\n\nWARNING! This will automatically overwrite any existing files!\n\nUse the -i flag to have the system warn you before copying\nmv -i from/here.txt to/here.txt",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>File management</span>"
+    ]
   },
   {
     "objectID": "delphinus/files.html#uploading-files",
     "href": "delphinus/files.html#uploading-files",
     "title": "15  File management",
     "section": "15.3 Uploading files",
-    "text": "15.3 Uploading files\n\n15.3.1 GUI\n\nTo do\n\n\n\n15.3.2 CLI\n\nUse the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together\nIf on Windows, type, for example:\n\nscp C:\\path\\to\\file.wav YOURUSERNAME@delphinus:/path/to/copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (uploaded) to delphinus\n\n\n\n\nTo upload a whole folder, add -r after scp and before the file path. The r stands for “recursive”\n\nscp -r C:\\path\\to\\directory YOURUSERNAME@delphinus:/path/to/copy"
+    "text": "15.3 Uploading files\n\n15.3.1 GUI\n\nTo do\n\n\n\n15.3.2 CLI\n\nUse the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together\nIf on Windows, type, for example:\n\nscp C:\\path\\to\\file.wav YOURUSERNAME@delphinus:/path/to/copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (uploaded) to delphinus\n\n\n\n\nTo upload a whole folder, add -r after scp and before the file path. The r stands for “recursive”\n\nscp -r C:\\path\\to\\directory YOURUSERNAME@delphinus:/path/to/copy",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>File management</span>"
+    ]
   },
   {
     "objectID": "delphinus/files.html#downloading-files",
     "href": "delphinus/files.html#downloading-files",
     "title": "15  File management",
     "section": "15.4 Downloading files",
-    "text": "15.4 Downloading files\n\n15.4.1 GUI\n\nTo do\n\n\n\n15.4.2 CLI\n\nNavigate to your file’s directory and type pwd to find the path to your file\nAs when uploading, use the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together.\nIf on Windows, type:\n\nscp YOURUSERNAME@delphinus:/path/to/filename.docx C:\\path\\to\\copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (downloaded) to your computer"
+    "text": "15.4 Downloading files\n\n15.4.1 GUI\n\nTo do\n\n\n\n15.4.2 CLI\n\nNavigate to your file’s directory and type pwd to find the path to your file\nAs when uploading, use the scp command, which stands for “secure copy protocol”. If you are “ssh-d” into delphinus, log out by typing exit and hitting enter; ssh is baked into scp, and they wind up not working together.\nIf on Windows, type:\n\nscp YOURUSERNAME@delphinus:/path/to/filename.docx C:\\path\\to\\copy\nNote the change in slash direction!!\nNote that everything is case sensitive!!\nYou will be asked for your password, then files are copied (downloaded) to your computer",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>File management</span>"
+    ]
   },
   {
-    "objectID": "delphinus/cli.html#functions-and-arguments-options",
-    "href": "delphinus/cli.html#functions-and-arguments-options",
+    "objectID": "delphinus/cli.html",
+    "href": "delphinus/cli.html",
     "title": "16  Command Line Interface (the Terminal)",
-    "section": "16.1 Functions and arguments (options)",
-    "text": "16.1 Functions and arguments (options)\nIn R, you might see a function of the form sum(1, na.rm = TRUE). Here, sum would be the function, and na.rm would be an argument.\nIf this function existed in Linux (it doesn’t), it would be in the form sum 1 --na.rm. Here, --na.rm is called a “flag” or “option”. Often these are shortened to one letter and one dash. For example, lets say the na.rm flag in our dummy function can be shortened to n. This would then be sum 1 -n.\nIf there were another one-dash argument, it could be placed directly after the first. Say an --abs.val or -a flag takes the absolute value, our code could be sum 1 --na.rm --abs.val OR sum 1 -na."
+    "section": "",
+    "text": "16.1 Functions and arguments (options)\nThis is… admittedly daunting. However, it’s incredibly powerful and unlocks a whole world of computing – so stick with it!\nIn R, you might see a function of the form sum(1, na.rm = TRUE). Here, sum would be the function, and na.rm would be an argument.\nIf this function existed in Linux (it doesn’t), it would be in the form sum 1 --na.rm. Here, --na.rm is called a “flag” or “option”. Often these are shortened to one letter and one dash. For example, lets say the na.rm flag in our dummy function can be shortened to n. This would then be sum 1 -n.\nIf there were another one-dash argument, it could be placed directly after the first. Say an --abs.val or -a flag takes the absolute value, our code could be sum 1 --na.rm --abs.val OR sum 1 -na.",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Command Line Interface (the Terminal)</span>"
+    ]
   },
   {
     "objectID": "delphinus/cli.html#useful-cli-commands",
     "href": "delphinus/cli.html#useful-cli-commands",
     "title": "16  Command Line Interface (the Terminal)",
     "section": "16.2 Useful CLI commands",
-    "text": "16.2 Useful CLI commands\n\n16.2.1 The --help flag\nType this after a command for which you need information. It’s not guaranteed to work, but most commands have a help page you can call this way. For example, here’s the help documentation for the passwd (“password”) command.\n\npasswd --help\n\nUsage: passwd [options] [LOGIN]\n\nOptions:\n  -a, --all                     report password status on all accounts\n  -d, --delete                  delete the password for the named account\n  -e, --expire                  force expire the password for the named account\n  -h, --help                    display this help message and exit\n  -k, --keep-tokens             change password only if expired\n  -i, --inactive INACTIVE       set password inactive after expiration\n                                to INACTIVE\n  -l, --lock                    lock the password of the named account\n  -n, --mindays MIN_DAYS        set minimum number of days before password\n                                change to MIN_DAYS\n  -q, --quiet                   quiet mode\n  -r, --repository REPOSITORY   change password in REPOSITORY repository\n  -R, --root CHROOT_DIR         directory to chroot into\n  -S, --status                  report password status on the named account\n  -u, --unlock                  unlock the password of the named account\n  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS\n  -x, --maxdays MAX_DAYS        set maximum number of days before password\n                                change to MAX_DAYS\n\n\n\n\n16.2.2 pwd\n\nUse the pwd command to see where you are (pwd stands for “print working directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\n\n16.2.3 ls\n\nUse the ls command to list files (ls stands for “list”)\n\n\nls\n\ncli.qmd\ncli.rmarkdown\nfiles.html\nfiles.qmd\nfilezilla.png\nindex.html\nindex.qmd\nlogin.html\nlogin.qmd\nmap_drive.png\nmap_drive_creds.png\nmv.png\nmv_overwrite.png\npasswd.png\npassword.html\npassword.qmd\nrstudio.qmd\nscp.png\nssh-in.png\ntest_dir\n\n\n\n\n16.2.4 cd\n\nUse the cd command and one of the directories (folders) to change directories (cd stands for “change directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd test_dir\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus/test_dir\n\n\n\n16.2.4.1 cd ..\n\ncd .. means “go back one folder”\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ..\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide\n\n\n\n\n16.2.4.2 cd ~\n\ncd ~ means “go back to your user directory\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ~\npwd\n\n/home/darpa2\n\n\n\n\n16.2.4.3 cd /\n\ncd / goes back to the main server directory. You can access other users’ directories via /home\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd /\npwd\n\n/"
+    "text": "16.2 Useful CLI commands\n\n16.2.1 The --help flag\nType this after a command for which you need information. It’s not guaranteed to work, but most commands have a help page you can call this way. For example, here’s the help documentation for the passwd (“password”) command.\n\npasswd --help\n\nUsage: passwd [options] [LOGIN]\n\nOptions:\n  -a, --all                     report password status on all accounts\n  -d, --delete                  delete the password for the named account\n  -e, --expire                  force expire the password for the named account\n  -h, --help                    display this help message and exit\n  -k, --keep-tokens             change password only if expired\n  -i, --inactive INACTIVE       set password inactive after expiration\n                                to INACTIVE\n  -l, --lock                    lock the password of the named account\n  -n, --mindays MIN_DAYS        set minimum number of days before password\n                                change to MIN_DAYS\n  -q, --quiet                   quiet mode\n  -r, --repository REPOSITORY   change password in REPOSITORY repository\n  -R, --root CHROOT_DIR         directory to chroot into\n  -S, --status                  report password status on the named account\n  -u, --unlock                  unlock the password of the named account\n  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS\n  -x, --maxdays MAX_DAYS        set maximum number of days before password\n                                change to MAX_DAYS\n\n\n\n\n16.2.2 pwd\n\nUse the pwd command to see where you are (pwd stands for “print working directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\n\n16.2.3 ls\n\nUse the ls command to list files (ls stands for “list”)\n\n\nls\n\ncli.qmd\ncli.rmarkdown\nfiles.html\nfiles.qmd\nfilezilla.png\nindex.html\nindex.qmd\nlogin.html\nlogin.qmd\nmap_drive.png\nmap_drive_creds.png\nmv.png\nmv_overwrite.png\npasswd.png\npassword.html\npassword.qmd\nrstudio.qmd\nscp.png\nssh-in.png\ntest_dir\n\n\n\n\n16.2.4 cd\n\nUse the cd command and one of the directories (folders) to change directories (cd stands for “change directory”)\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd test_dir\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus/test_dir\n\n\n\n16.2.4.1 cd ..\n\ncd .. means “go back one folder”\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ..\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide\n\n\n\n\n16.2.4.2 cd ~\n\ncd ~ means “go back to your user directory\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd ~\npwd\n\n/home/darpa2\n\n\n\n\n16.2.4.3 cd /\n\ncd / goes back to the main server directory. You can access other users’ directories via /home\n\n\npwd\n\n/mnt/c/Users/darpa2/Analysis/TailWinds-Guide/delphinus\n\n\n\ncd /\npwd\n\n/",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Command Line Interface (the Terminal)</span>"
+    ]
+  },
+  {
+    "objectID": "delphinus/rstudio.html",
+    "href": "delphinus/rstudio.html",
+    "title": "17  RStudio Server",
+    "section": "",
+    "text": "17.1 Advantages of RStudio Server\nRStudio Server can be accessed by going to http://delphinus:8787 while on the CBL network. You will be prompted to log in – the credentials should be your delphinus username and password.",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>RStudio Server</span>"
+    ]
   },
   {
     "objectID": "delphinus/rstudio.html#advantages-of-rstudio-server",
     "href": "delphinus/rstudio.html#advantages-of-rstudio-server",
     "title": "17  RStudio Server",
-    "section": "17.1 Advantages of RStudio Server",
-    "text": "17.1 Advantages of RStudio Server\n\ndelphinus is big and fast.\n\nThere are 128 GB of RAM, while most laptops have 4-16 GB; the server is not going to get as bogged down as your machine.\nThere are 48 cores, which mean you can run your code in parallel – think 48 concurrent R sessions grinding away at your analyses. Some packages leverage these cores automatically, but you’ll likely have to code this in; look into the “futureverse” packages and/or talk to Mike O’Brien if you would like to leverage multiple cores.\n\nIf you log out (by clicking File &gt; Sign Out or the box with a right arrow in the top-right of the screen) or close the browser window, your code will keep running in the background."
+    "section": "",
+    "text": "delphinus is big and fast.\n\nThere are 128 GB of RAM, while most laptops have 4-16 GB; the server is not going to get as bogged down as your machine.\nThere are 48 cores, which mean you can run your code in parallel – think 48 concurrent R sessions grinding away at your analyses. Some packages leverage these cores automatically, but you’ll likely have to code this in; look into the “futureverse” packages and/or talk to Mike O’Brien if you would like to leverage multiple cores.\n\nIf you log out (by clicking File &gt; Sign Out or the box with a right arrow in the top-right of the screen) or close the browser window, your code will keep running in the background.",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>RStudio Server</span>"
+    ]
   },
   {
     "objectID": "delphinus/rstudio.html#disadvantages-of-rstudio-server",
     "href": "delphinus/rstudio.html#disadvantages-of-rstudio-server",
     "title": "17  RStudio Server",
     "section": "17.2 Disadvantages of RStudio Server",
-    "text": "17.2 Disadvantages of RStudio Server\n\nYou need to be connected to the internet\nYou need to be on the CBL network (either on campus or VPN-d in)\nIt will use more RAM when idle when compared to RStudio desktop if you’re using Chrome or another browser with a lot of extensions\nSome other common issues outlined below"
+    "text": "17.2 Disadvantages of RStudio Server\n\nYou need to be connected to the internet\nYou need to be on the CBL network (either on campus or VPN-d in)\nIt will use more RAM when idle when compared to RStudio desktop if you’re using Chrome or another browser with a lot of extensions\nSome other common issues outlined below",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>RStudio Server</span>"
+    ]
   },
   {
     "objectID": "delphinus/rstudio.html#common-issues",
     "href": "delphinus/rstudio.html#common-issues",
     "title": "17  RStudio Server",
     "section": "17.3 Common issues",
-    "text": "17.3 Common issues\n\nWindows file paths are not case sensitive; Linux file paths are. So, if using code written while on a Windows machine, you should double-check that any file paths are capitalized correctly.\nIf using R to access Google services via packages that use the gargle package for authentication (googledrive, googlesheets4), you should move to “out of browser” authentication. There’s a loose outline here and Mike O’Brien has done this before. Contact him if you need help."
+    "text": "17.3 Common issues\n\nWindows file paths are not case sensitive; Linux file paths are. So, if using code written while on a Windows machine, you should double-check that any file paths are capitalized correctly.\nIf using R to access Google services via packages that use the gargle package for authentication (googledrive, googlesheets4), you should move to “out of browser” authentication. There’s a loose outline here and Mike O’Brien has done this before. Contact him if you need help.",
+    "crumbs": [
+      "Delphinus",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>RStudio Server</span>"
+    ]
   },
   {
-    "objectID": "frm/01_pot.html#site-selection-process",
-    "href": "frm/01_pot.html#site-selection-process",
+    "objectID": "frm/01_pot.html",
+    "href": "frm/01_pot.html",
     "title": "18  Pot survey",
-    "section": "18.1 Site selection process",
-    "text": "18.1 Site selection process"
+    "section": "",
+    "text": "18.1 Site selection process",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Pot survey</span>"
+    ]
   },
   {
     "objectID": "frm/01_pot.html#packing-list",
     "href": "frm/01_pot.html#packing-list",
     "title": "18  Pot survey",
     "section": "18.2 Packing list",
-    "text": "18.2 Packing list"
+    "text": "18.2 Packing list",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Pot survey</span>"
+    ]
   },
   {
     "objectID": "frm/01_pot.html#protocols",
     "href": "frm/01_pot.html#protocols",
     "title": "18  Pot survey",
     "section": "18.3 Protocols",
-    "text": "18.3 Protocols"
+    "text": "18.3 Protocols",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Pot survey</span>"
+    ]
   },
   {
     "objectID": "frm/01_pot.html#vessels",
     "href": "frm/01_pot.html#vessels",
     "title": "18  Pot survey",
     "section": "18.4 Vessels",
-    "text": "18.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx"
+    "text": "18.4 Vessels\n\n\n\nOwner Name\nVessel Name\nVessel Permit #\nUSCG/State #\n\n\n\n\nCory Harrington\nSea Born\nxxx\nxxx\n\n\nKerry Harrington\nIntegrity\nxxx\nxxx",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Pot survey</span>"
+    ]
   },
   {
-    "objectID": "frm/03_rec.html#site-selection-process",
-    "href": "frm/03_rec.html#site-selection-process",
+    "objectID": "frm/03_rec.html",
+    "href": "frm/03_rec.html",
     "title": "20  Recreational survey",
-    "section": "20.1 Site selection process",
-    "text": "20.1 Site selection process"
+    "section": "",
+    "text": "20.1 Site selection process",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Recreational survey</span>"
+    ]
   },
   {
     "objectID": "frm/03_rec.html#packing-list",
     "href": "frm/03_rec.html#packing-list",
     "title": "20  Recreational survey",
     "section": "20.2 Packing list",
-    "text": "20.2 Packing list"
+    "text": "20.2 Packing list",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Recreational survey</span>"
+    ]
   },
   {
     "objectID": "frm/03_rec.html#protocols",
     "href": "frm/03_rec.html#protocols",
     "title": "20  Recreational survey",
     "section": "20.3 Protocols",
-    "text": "20.3 Protocols"
+    "text": "20.3 Protocols",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Recreational survey</span>"
+    ]
   },
   {
-    "objectID": "frm/05_permits.html#iacuc",
-    "href": "frm/05_permits.html#iacuc",
+    "objectID": "frm/05_permits.html",
+    "href": "frm/05_permits.html",
     "title": "22  Permits",
-    "section": "22.1 IACUC",
-    "text": "22.1 IACUC"
+    "section": "",
+    "text": "22.1 IACUC",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Permits</span>"
+    ]
   },
   {
     "objectID": "frm/05_permits.html#efp",
     "href": "frm/05_permits.html#efp",
     "title": "22  Permits",
     "section": "22.2 EFP",
-    "text": "22.2 EFP"
+    "text": "22.2 EFP",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Permits</span>"
+    ]
+  },
+  {
+    "objectID": "frm/supplies.html",
+    "href": "frm/supplies.html",
+    "title": "23  Supplies",
+    "section": "",
+    "text": "23.1 Pot survey",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supplies</span>"
+    ]
   },
   {
     "objectID": "frm/supplies.html#pot-survey",
     "href": "frm/supplies.html#pot-survey",
     "title": "23  Supplies",
-    "section": "23.1 Pot survey",
-    "text": "23.1 Pot survey\n\n23.1.1 Pot warp\n\n\n23.1.2 Hardware"
+    "section": "",
+    "text": "23.1.1 Pot warp\n\n\n23.1.2 Hardware",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supplies</span>"
+    ]
   },
   {
     "objectID": "frm/supplies.html#recreational-survey",
     "href": "frm/supplies.html#recreational-survey",
     "title": "23  Supplies",
     "section": "23.2 Recreational survey",
-    "text": "23.2 Recreational survey"
+    "text": "23.2 Recreational survey",
+    "crumbs": [
+      "Fishery Resource Monitoring",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supplies</span>"
+    ]
   },
   {
-    "objectID": "purchasing.html#sole-sources",
-    "href": "purchasing.html#sole-sources",
-    "title": "24  Purchasing",
-    "section": "24.1 Sole sources",
-    "text": "24.1 Sole sources"
+    "objectID": "soundscape_figures.html",
+    "href": "soundscape_figures.html",
+    "title": "24  Sound through time figures",
+    "section": "",
+    "text": "24.1 “Ribbon spectrograms” and “ribbon plots”\nThe goal of this document is to recreate a few bioacoustic-y figures in R.\nThe first is a figure from a presentation entitled “Long-duration Audio-recordings of the Environment” from the Queensland University of Technology in 2017.\nA “ribbon plot” has multiple days worth of “ribbon spectrograms”; the figure below runs from day 1 at the top to day 44 at the bottom. Each ribbon is a time series (minutes, x axis) of the frequencies (Hz/kHz, y axis) of “acoustic events” (colors) that have variable amplitude (intensity of color). As an added bonus, the figure also shows sunrise/sunset (linked vertical lines) and times of high and low tides (disjointed vertical lines).\nFirst, we’ll create some dummy data from, say the month of June, 2025. We’ll have a frequency range of 1 to 50 kHz and acoustic events that range in amplitude from 1 to 153. Keep in mind that I have no idea what I’m talking about, so these values are completely unrepresentative of reality.\nLoad packages and create dummy data\nlibrary(suncalc)\nlibrary(lubridate)\nlibrary(ggplot2)\nlibrary(scales)\nlibrary(dplyr)\n\n# Dummy data\n#   Let's say the month of June, 2025\n#   Say SPL ranges from 0 to 153 (just a random number to display rescaling)\n#   Randomly assign these to one of three species\n\nmins_in_day &lt;- 60*24\nn_days &lt;- 30\nn_freqs &lt;- 50\n\nspl &lt;- \n  # Create time series of days and minutes for each frequency band\n  expand.grid(\n    day = 1:n_days,\n    minute = 1:mins_in_day,\n    freq = 1:n_freqs\n  ) |&gt; \n  mutate(\n    # Create a random SPL at each frequency for each minute\n    spl = runif(mins_in_day * n_days * n_freqs, min = 0, max = 153),\n    # Randomly assign species\n    event = sample(\n      c('dolphin', 'fish', 'porpoise'),\n      mins_in_day * n_days * n_freqs, replace = T\n    ),\n    # rescale frequency and spl range to 0-1 range\n    freq_scaled = rescale(freq, to = c(0, 1)),\n    spl_scaled = rescale(spl, to = c(0, 1))\n  )\nhead(spl)\n\n\n  day minute freq        spl   event freq_scaled spl_scaled\n1   1      1    1 102.171505    fish           0 0.66778774\n2   2      1    1  25.556290    fish           0 0.16703435\n3   3      1    1   6.524335 dolphin           0 0.04264240\n4   4      1    1  12.303889 dolphin           0 0.08041729\n5   5      1    1   5.656589 dolphin           0 0.03697085\n6   6      1    1 122.093950 dolphin           0 0.79799989\nNote that this is already a lot of information – 2160000 rows!! This figure is incredibly information dense.\nWe’ll use the suncalc package to get sunrise and sunset times near the RTWB. I’m not going to mess with tide at this point.\nPull June 2025 sunrise and sunset times\n# Grab sunrise/set times using the suncalc package\nsun &lt;- getSunlightTimes(\n  seq.Date('2025-06-01', '2025-06-30'),\n  lat = 38.3, lon = -74.6,\n  keep = c('sunrise', 'sunset'),\n  tz = 'America/New_York'\n) |&gt; \n  # Pull out day number and minute of day to plot everything together\n  mutate(\n    day = day(date),\n    sunrise_minute = minute(sunrise) + (hour(sunrise) * 60),\n    sunset_minute = minute(sunset) + (hour(sunset) * 60)\n  )\n\nhead(sun)\n\n\n        date  lat   lon             sunrise              sunset day\n1 2025-06-01 38.3 -74.6 2025-06-01 05:38:04 2025-06-01 20:17:23   1\n2 2025-06-02 38.3 -74.6 2025-06-02 05:37:42 2025-06-02 20:18:03   2\n3 2025-06-03 38.3 -74.6 2025-06-03 05:37:22 2025-06-03 20:18:42   3\n4 2025-06-04 38.3 -74.6 2025-06-04 05:37:04 2025-06-04 20:19:20   4\n5 2025-06-05 38.3 -74.6 2025-06-05 05:36:48 2025-06-05 20:19:57   5\n6 2025-06-06 38.3 -74.6 2025-06-06 05:36:33 2025-06-06 20:20:33   6\n  sunrise_minute sunset_minute\n1            338          1217\n2            337          1218\n3            337          1218\n4            337          1219\n5            336          1219\n6            336          1220\nWe’re going to use ggplot2 to create this figure, but it’s not really meant to do this. As a result, there’s some code we’re going to reuse a bunch that isn’t too important. We’ll use this as a base on which we’ll build the rest of the figure.\nbase_plot &lt;- ggplot() +\n  facet_wrap(~day, ncol = 1, strip.position = 'left') +\n  labs(y = NULL) +\n  theme_minimal() +\n  theme(\n    plot.background = element_rect(fill = 'black'),\n    panel.background = element_rect(fill = 'black'),\n    strip.background = element_blank(),\n    strip.text.y.left = element_text(angle = 0, color = 'white'),\n    axis.text = element_blank(),\n    axis.ticks.y = element_blank(),\n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank(),\n    panel.spacing = unit(0, 'lines')\n  )\nBasically, facet_wrap(~day) is telling ggplot to stack what will be our “ribbon spectrograms”, by day, into the “ribbon plot”, placing the labels on the left (strip.position = 'left'). Everything else is to try and match the figure’s style.\nWe’re also going to be reusing the sunrise and sunset times, so we’ll throw that on top of our base plot.\nbase_plot &lt;- base_plot +\n  geom_vline(data = sun, aes(xintercept = sunrise_minute), color = 'yellow') +\n  geom_vline(data = sun, aes(xintercept = sunset_minute), color = 'yellow')\nHere’s what that looks like:\nbase_plot\nNow we’ll layer on our data, thinking in terms of an individual ribbon rather than the whole plot. Since there’s so much data, it’s computationally quicker to think of this as a regular raster grid with a cell height (y) of one frequency unit (Hz? kHz?) and a cell width (x) of one minute. Each cell will be colored (fill) by event and have an intensity (alpha) according to its SPL.\nbase_plot +\n  geom_raster(\n    data = spl,\n    aes(x = minute, y = freq, fill = event, alpha = spl_scaled),\n    show.legend = FALSE\n  )\nDoesn’t look like much at the moment, but it’s because we used randomly-generated data that has no pattern. Hopefully it’ll be more useful when there are patterns to see.",
+    "crumbs": [
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Sound through time figures</span>"
+    ]
+  },
+  {
+    "objectID": "soundscape_figures.html#temporal-changes-in-sounds",
+    "href": "soundscape_figures.html#temporal-changes-in-sounds",
+    "title": "24  Sound through time figures",
+    "section": "24.2 Temporal changes in sounds",
+    "text": "24.2 Temporal changes in sounds\nThe next is from Figure 4 of Lin et al. 2021, described as “Temporal changes in abiotic sounds, fish choruses, and cetacean vocalizations. The relative amplitudes were normalized to a range between 0 and 1. Seasonal changes in sunrise and sunset are shown as white and yellow dashed lines, respectively.”\n\nThis figure is similar to the above, but its “events” (species) are in separate plots rather than being over-plotted. This changes the encoding of “event” from a color to a specific plot and the encoding of amplitude from transparency to color. There’s no real mention of frequency here, so my assumption is that this is broadband amplitude.\n\n\nCreate ‘broadband’ values\n# Cheating and taking the mean SPL across frequencies as the \"broadband\" SPL\nspl_broadband &lt;- spl |&gt; \n  group_by(day, minute, event) |&gt; \n  summarise(spl_broadband = mean(spl)) |&gt; \n  mutate(spl_broadband = rescale(spl_broadband),\n         hr = minute / 60)\n\n\nThis switch means the figure is much less information dense, using fewer points: 129600 as compared to 2160000.\nAs before, there are some hacky things to make our figure look similar to the one linked above that is not very important, so I’ll separate that out.\n\n\nHacky plot stuff\nbase_plot &lt;- ggplot() +\n  scale_x_continuous(breaks = seq(0, 24, 6)) +\n  scale_fill_viridis_c(breaks = c(0, 0.5, 1)) +\n  labs(x = 'Hour', y = NULL) +\n  facet_wrap(~ event, nrow = 1) +\n  theme_minimal() +\n  theme(\n    legend.position = 'bottom',\n    legend.title = element_blank()\n  )\n\n\n\nbase_plot +\n  geom_raster(data = spl_broadband, aes(x = hr, y = day, fill = spl_broadband)) +\n  \n  # this is just adding in the sunrise/set times\n  geom_vline(data = sun,\n             aes(xintercept = sunrise_minute / 60), color = 'white',\n             lty = 'dashed') +\n  geom_vline(data = sun,\n             aes(xintercept = sunset_minute / 60), color = 'yellow',\n             lty = 'dashed')",
+    "crumbs": [
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Sound through time figures</span>"
+    ]
+  },
+  {
+    "objectID": "purchasing.html",
+    "href": "purchasing.html",
+    "title": "25  Purchasing",
+    "section": "",
+    "text": "25.1 Sole sources",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Purchasing</span>"
+    ]
   },
   {
     "objectID": "purchasing.html#sneades-ace",
     "href": "purchasing.html#sneades-ace",
-    "title": "24  Purchasing",
-    "section": "24.2 Sneades Ace",
-    "text": "24.2 Sneades Ace"
+    "title": "25  Purchasing",
+    "section": "25.2 Sneades Ace",
+    "text": "25.2 Sneades Ace",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Purchasing</span>"
+    ]
   }
 ]
